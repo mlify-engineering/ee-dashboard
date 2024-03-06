@@ -1,14 +1,14 @@
 /* eslint-env node */
 const dev = {
-  API_ENDPOINT_URL: `${process.env.REACT_APP_API_ENDPOINT_URL}/v1`,
+  DATA_ENDPOINT_URL: `${process.env.PUBLIC_URL}`+`${process.env.REACT_APP_DATA_ENDPOINT_URL}`,
 };
 
 const prod = {
-  API_ENDPOINT_URL: `${process.env.REACT_APP_API_ENDPOINT_URL}/v1`,
+  DATA_ENDPOINT_URL: `${process.env.PUBLIC_URL}`+`${process.env.REACT_APP_DATA_ENDPOINT_URL}`,
 };
 
 const test = {
-  API_ENDPOINT_URL: `${process.env.REACT_APP_TEST_API_ENDPOINT_URL}/v1`,
+  DATA_ENDPOINT_URL: `${process.env.PUBLIC_URL}`+`${process.env.REACT_APP_TEST_DATA_ENDPOINT_URL}`,
 };
 
 const getEnv = () => {
@@ -25,5 +25,7 @@ const getEnv = () => {
 };
 console.log('process.env.NODE_ENV:: ', process.env.NODE_ENV);
 console.log('getEnv: ', getEnv());
+console.log('DATA_ENDPOINT_URL: ', process.env.REACT_APP_DATA_ENDPOINT_URL);
+
 
 export const env = getEnv();
