@@ -1,0 +1,32 @@
+@media only screen and (max-device-width: 480px) {
+    .show-mobile {
+        display: block;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .custom-rate .ant-rate-star {
+        margin-right: 1px !important;
+    }
+
+    .ant-modal {
+        width: 100% !important;
+        top: 0px !important;
+    }
+
+    .ant-modal-content {
+        scale: 0.75;
+    }
+}
+
+@media only screen and (min-device-width: 481px) {
+    .show-mobile {
+        display: none;
+    }
+
+    .hide-mobile {
+        display: block;
+    }
+}

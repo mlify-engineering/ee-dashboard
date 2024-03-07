@@ -8,6 +8,7 @@ import { THEME_CONFIG } from './configs/AppConfig';
 import { PersistGate } from 'redux-persist/integration/react';
 import './index.css';
 import './App.css';
+import './mobile.css';
 
 const themes = {
   dark: `${process.env.PUBLIC_URL}/css/dark-theme.css`,

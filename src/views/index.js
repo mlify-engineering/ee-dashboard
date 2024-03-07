@@ -30,22 +30,44 @@ export const Views = () => {
     <>
       <Header />
       {loading ? <p>Loading...</p> : (
-        <Row gutter={[16, 16]}>
-          {plotData.map((data, index) => (
-            <Col key={index} span={8}>
-              <Card bordered={false}>
-                <Plot
-                  data={[data]}
-                  layout={{
-                    autosize: true,
-                    title: data.name,
-                  }}
-                  useResizeHandler={true}
-                  style={{ width: '100%', height: '100%' }} />
-              </Card>
-            </Col>
-          ))}
-        </Row>
+        <>
+        <div className="hide-mobile">
+            <Row gutter={[16, 16]}>
+                {plotData.map((data, index) => (
+                    <Col key={index} span={8}>
+                        <Card bordered={false}>
+                            <Plot
+                                data={[data]}
+                                layout={{
+                                    autosize: true,
+                                    title: data.name,
+                                }}
+                                useResizeHandler={true}
+                                style={{ width: '100%', height: '100%' }} />
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
+        </div>
+        <div className="show-mobile">
+            <Row gutter={[16,16]}>
+                {plotData.map((data, index) => (
+                    <Col key={index} span={24}>
+                        <Card bordered={false}>
+                            <Plot
+                                data={[data]}
+                                layout={{
+                                    autosize: true,
+                                    title: data.name,
+                                }}
+                                useResizeHandler={true}
+                                style={{ width: '100%', height: '100%' }} />
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
+        </div>
+        </>
       )}
     <div>
         <p>Source: <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html">Canada.ca</a></p>
