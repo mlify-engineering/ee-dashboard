@@ -9,79 +9,12 @@ export const Views = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const fetchBatch = async (batchNumber) => {
-      try {
-        // Adjust the path as needed to include the batch number if necessary
-        const response = await fetch(`${DATA_ENDPOINT_URL}${batchNumber}.json`);
-        if (!response.ok) throw new Error('Batch not found or end of batches');
-        const jsonData = await response.json();
-
-        // Assume jsonData.rounds exists and contains the data for the current batch
-        return jsonData;
-      } catch (error) {
-        console.error('Failed to fetch or process batch', batchNumber, error);
-        return null; // Signify end of batches or error
-      }
-    };
-
-    const processData = (rounds) => {
-      return rounds.reduce((acc, round) => {
-        const { drawName, drawDate, drawCRS } = round;
-        let extractedDrawName = drawName.match(/(.*)(?=\s\()/);
-        extractedDrawName = extractedDrawName ? extractedDrawName[0] : drawName;
-        if (!acc[extractedDrawName]) {
-          acc[extractedDrawName] = { x: [], y: [], type: 'scatter', mode: 'lines+markers', name: extractedDrawName };
-        }
-        acc[extractedDrawName].x.push(drawDate);
-        acc[extractedDrawName].y.push(parseInt(drawCRS, 10));
-        return acc;
-      }, {});
-    };
 
     const fetchData = async () => {
         setLoading(true);
-        let batchNumber = 1;
-        let continueFetching = true;
-        let accumulatedData = {}; // Use an object to accumulate data, keyed by `extractedDrawName`
-      
-        while (continueFetching) {
-          const rounds = await fetchBatch(batchNumber);
-          if (rounds && rounds.length) { // Check if rounds is not null and has length
-            const newData = processData(rounds);
-            // Merge newData into accumulatedData
-            Object.keys(newData).forEach((key) => {
-              if (accumulatedData[key]) {
-                // If the key already exists, concatenate the new data
-                accumulatedData[key].x = accumulatedData[key].x.concat(newData[key].x);
-                accumulatedData[key].y = accumulatedData[key].y.concat(newData[key].y);
-              } else {
-                // Otherwise, simply add the new key and its data
-                accumulatedData[key] = newData[key];
-              }
-            });
-            batchNumber++;
-          } else {
-            continueFetching = false;
-          }
-        }
-
-        // sort the accumulatedData by draw date in ascending order
-        Object.keys(accumulatedData).forEach((key) => {
-          const data = accumulatedData[key];
-          const sortedIndices = data.x.map((_, i) => i).sort((a, b) => new Date(data.x[a]) - new Date(data.x[b]));
-          data.x = sortedIndices.map((i) => data.x[i]);
-          data.y = sortedIndices.map((i) => data.y[i]);
-        });
-
-        // sort by key name in ascending order
-        const sortedKeys = Object.keys(accumulatedData).sort();
-        const sortedData = {};
-        sortedKeys.forEach((key) => {
-          sortedData[key] = accumulatedData[key];
-        });
-      
-        // After all batches have been processed, convert accumulatedData to an array and update the state
-        setPlotData(Object.values(sortedData));
+        const response = await fetch(DATA_ENDPOINT_URL);
+        const data = await response.json();
+        setPlotData(Object.values(data));
         setLoading(false);
       };
       
