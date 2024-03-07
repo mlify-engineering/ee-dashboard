@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import Plot from 'react-plotly.js';
+// import Plot from "react-plotly.js";
+import Plotly from "plotly.js-basic-dist";
+import createPlotlyComponent from "react-plotly.js/factory";
 import { Row, Col, Card } from 'antd';
 import Header from './header';
 import { DATA_ENDPOINT_URL } from '../configs/AppConfig';
+
+const Plot = createPlotlyComponent(Plotly);
 
 export const Views = () => {
   const [plotData, setPlotData] = useState([]);

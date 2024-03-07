@@ -23,6 +23,7 @@
     "lint": "^1.1.2",
     "path": "^0.12.7",
     "plotly.js": "^2.29.1",
+    "plotly.js-basic-dist": "^2.30.0",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
     "react-beautiful-dnd": "^13.1.1",
