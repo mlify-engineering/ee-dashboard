@@ -1,9 +1,15 @@
-import React, { useRef, useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { NAV_TYPE_TOP } from 'constants/ThemeConstant';
+import React, { useRef, useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { NAV_TYPE_TOP } from "constants/ThemeConstant";
 
-export const PageHeaderAlt = ({ children, background, className, overlap, navType }) => {
+export const PageHeaderAlt = ({
+  children,
+  background,
+  className,
+  overlap,
+  navType,
+}) => {
   const [widthOffset, setWidthOffset] = useState(0);
   const ref = useRef(null);
 
@@ -16,7 +22,7 @@ export const PageHeaderAlt = ({ children, background, className, overlap, navTyp
   }, [navType]);
 
   const getStyle = () => {
-    let style = { backgroundImage: background ? `url(${background})` : 'none' };
+    let style = { backgroundImage: background ? `url(${background})` : "none" };
     if (navType === NAV_TYPE_TOP) {
       style.marginRight = -widthOffset;
       style.marginLeft = -widthOffset;
@@ -29,9 +35,16 @@ export const PageHeaderAlt = ({ children, background, className, overlap, navTyp
   return (
     <div
       ref={ref}
-      className={`page-header-alt ${className ? className : ''} ${overlap && 'overlap'}`}
-      style={getStyle()}>
-      {navType === NAV_TYPE_TOP ? <div className="container">{children}</div> : <>{children}</>}
+      className={`page-header-alt ${className ? className : ""} ${
+        overlap && "overlap"
+      }`}
+      style={getStyle()}
+    >
+      {navType === NAV_TYPE_TOP ? (
+        <div className="container">{children}</div>
+      ) : (
+        <>{children}</>
+      )}
     </div>
   );
 };

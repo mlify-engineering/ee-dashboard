@@ -1,14 +1,14 @@
-import React from 'react';
-import { Provider } from 'react-redux';
-import { store, persistor } from './redux/store';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Views from './views';
-import { ThemeSwitcherProvider } from 'react-css-theme-switcher';
-import { THEME_CONFIG } from './configs/AppConfig';
-import { PersistGate } from 'redux-persist/integration/react';
-import './index.css';
-import './App.css';
-import './mobile.css';
+import React from "react";
+import { Provider } from "react-redux";
+import { store, persistor } from "./redux/store";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Views from "./views";
+import { ThemeSwitcherProvider } from "react-css-theme-switcher";
+import { THEME_CONFIG } from "./configs/AppConfig";
+import { PersistGate } from "redux-persist/integration/react";
+import "./index.css";
+import "./App.css";
+import "./mobile.css";
 
 const themes = {
   dark: `${process.env.PUBLIC_URL}/css/dark-theme.css`,
@@ -23,7 +23,8 @@ function App() {
           <ThemeSwitcherProvider
             themeMap={themes}
             defaultTheme={THEME_CONFIG.currentTheme}
-            insertionPoint="styles-insertion-point">
+            insertionPoint="styles-insertion-point"
+          >
             <Router>
               <Routes>
                 {/* Updated from component={Views} to element={<Views />} */}

@@ -1,13 +1,13 @@
-import React from 'react';
-import { Card } from 'antd';
-import PropTypes from 'prop-types';
-import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
+import React from "react";
+import { Card } from "antd";
+import PropTypes from "prop-types";
+import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
 
 const StatisticWidget = ({ title, value, status, subtitle, prefix }) => {
   return (
     <Card>
       {title && <h4 className="mb-0">{title}</h4>}
-      <div className={`${prefix ? 'd-flex' : ''} ${title ? 'mt-3' : ''}`}>
+      <div className={`${prefix ? "d-flex" : ""} ${title ? "mt-3" : ""}`}>
         {prefix ? <div className="mr-2">{prefix}</div> : null}
         <div>
           <div className="d-flex align-items-center">
@@ -15,10 +15,15 @@ const StatisticWidget = ({ title, value, status, subtitle, prefix }) => {
             {status ? (
               <span
                 className={`font-size-md font-weight-bold ml-3 ${
-                  status !== 0 && status > 0 ? 'text-success' : 'text-danger'
-                }`}>
+                  status !== 0 && status > 0 ? "text-success" : "text-danger"
+                }`}
+              >
                 {status}
-                {status !== 0 && status > 0 ? <ArrowUpOutlined /> : <ArrowDownOutlined />}
+                {status !== 0 && status > 0 ? (
+                  <ArrowUpOutlined />
+                ) : (
+                  <ArrowDownOutlined />
+                )}
               </span>
             ) : null}
           </div>

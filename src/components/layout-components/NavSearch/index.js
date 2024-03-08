@@ -1,8 +1,8 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { CloseOutlined } from '@ant-design/icons';
-import utils from 'utils';
-import SearchInput from './SearchInput';
+import React from "react";
+import { connect } from "react-redux";
+import { CloseOutlined } from "@ant-design/icons";
+import utils from "utils";
+import SearchInput from "./SearchInput";
 
 export const NavSearch = (props) => {
   const { active, close, headerNavColor } = props;
@@ -10,8 +10,9 @@ export const NavSearch = (props) => {
 
   return (
     <div
-      className={`nav-search ${active ? 'nav-search-active' : ''} ${mode}`}
-      style={{ backgroundColor: headerNavColor }}>
+      className={`nav-search ${active ? "nav-search-active" : ""} ${mode}`}
+      style={{ backgroundColor: headerNavColor }}
+    >
       <div className="d-flex align-items-center w-100">
         <SearchInput close={close} active={active} />
       </div>

@@ -1,11 +1,15 @@
-import React from 'react';
-import { Dropdown, Menu } from 'antd';
-import { EllipsisOutlined } from '@ant-design/icons';
-import PropTypes from 'prop-types';
+import React from "react";
+import { Dropdown, Menu } from "antd";
+import { EllipsisOutlined } from "@ant-design/icons";
+import PropTypes from "prop-types";
 
 const EllipsisDropdown = (props) => {
   return (
-    <Dropdown overlay={props.menu} placement={props.placement} trigger={['click']}>
+    <Dropdown
+      overlay={props.menu}
+      placement={props.placement}
+      trigger={["click"]}
+    >
       <div className="ellipsis-dropdown">
         <EllipsisOutlined />
       </div>
@@ -19,8 +23,8 @@ EllipsisDropdown.propTypes = {
 };
 
 EllipsisDropdown.defaultProps = {
-  trigger: 'click',
-  placement: 'bottomRight',
+  trigger: "click",
+  placement: "bottomRight",
   menu: <Menu />,
 };
 

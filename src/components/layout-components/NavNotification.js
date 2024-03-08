@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
-import { Menu, Dropdown, Badge, Avatar, List, Button } from 'antd';
-import { MailOutlined, UserSwitchOutlined, WarningOutlined, CheckCircleOutlined } from '@ant-design/icons';
-import notificationData from 'assets/data/notification.data.json';
-import Flex from 'components/shared-components/Flex';
+import React, { useState } from "react";
+import { Menu, Dropdown, Badge, Avatar, List, Button } from "antd";
+import {
+  MailOutlined,
+  UserSwitchOutlined,
+  WarningOutlined,
+  CheckCircleOutlined,
+} from "@ant-design/icons";
+import notificationData from "assets/data/notification.data.json";
+import Flex from "components/shared-components/Flex";
 
 const getIcon = (icon) => {
   switch (icon) {
-    case 'mail':
+    case "mail":
       return <MailOutlined />;
-    case 'alert':
+    case "alert":
       return <WarningOutlined />;
-    case 'check':
+    case "check":
       return <CheckCircleOutlined />;
     default:
       return <MailOutlined />;
@@ -30,7 +35,10 @@ const getNotificationBody = (list) => {
               {item.img ? (
                 <Avatar src={`/img/avatars/${item.img}`} />
               ) : (
-                <Avatar className={`ant-avatar-${item.type}`} icon={getIcon(item.icon)} />
+                <Avatar
+                  className={`ant-avatar-${item.type}`}
+                  icon={getIcon(item.icon)}
+                />
               )}
             </div>
             <div className="mr-3">
@@ -44,7 +52,10 @@ const getNotificationBody = (list) => {
     />
   ) : (
     <div className="empty-notification">
-      <img src="https://gw.alipayobjects.com/zos/rmsportal/sAuJeJzSKbUmHfBQRzmZ.svg" alt="empty" />
+      <img
+        src="https://gw.alipayobjects.com/zos/rmsportal/sAuJeJzSKbUmHfBQRzmZ.svg"
+        alt="empty"
+      />
       <p className="mt-3">You have viewed all notifications</p>
     </div>
   );
@@ -63,7 +74,7 @@ export const NavNotification = () => {
       <div className="nav-notification-header d-flex justify-content-between align-items-center">
         <h4 className="mb-0">Notification</h4>
         <Button type="link" onClick={() => setData([])} size="small">
-          Clear{' '}
+          Clear{" "}
         </Button>
       </div>
       <div className="nav-notification-body">{getNotificationBody(data)}</div>
@@ -83,7 +94,8 @@ export const NavNotification = () => {
       overlay={notificationList}
       onVisibleChange={handleVisibleChange}
       visible={visible}
-      trigger={['click']}>
+      trigger={["click"]}
+    >
       <Menu mode="horizontal">
         <Menu.Item>
           <UserSwitchOutlined className="nav-icon mx-auto" />

@@ -1,21 +1,21 @@
-import React from 'react';
-import { Menu, Dropdown, Avatar } from 'antd';
-import { connect } from 'react-redux';
+import React from "react";
+import { Menu, Dropdown, Avatar } from "antd";
+import { connect } from "react-redux";
 import {
   EditOutlined,
   // ShopOutlined,
   // QuestionCircleOutlined,
   LogoutOutlined,
-} from '@ant-design/icons';
-import Icon from 'components/util-components/Icon';
-import { signOut } from 'redux/actions/Auth';
-import { useSelector } from 'react-redux';
+} from "@ant-design/icons";
+import Icon from "components/util-components/Icon";
+import { signOut } from "redux/actions/Auth";
+import { useSelector } from "react-redux";
 
 const menuItem = [
   {
-    title: 'Edit Profile',
+    title: "Edit Profile",
     icon: EditOutlined,
-    path: '/',
+    path: "/",
   },
   //   {
   // 	title: "Help Center",
@@ -64,7 +64,7 @@ export const NavProfile = ({ signOut }) => {
     </div>
   );
   return (
-    <Dropdown placement="bottomRight" overlay={profileMenu} trigger={['click']}>
+    <Dropdown placement="bottomRight" overlay={profileMenu} trigger={["click"]}>
       <Menu className="d-flex align-item-center" mode="horizontal">
         <Menu.Item>
           <Avatar src={user?.profile?.image_url} />

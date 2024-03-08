@@ -8,7 +8,7 @@ import {
   TOGGLE_MOBILE_NAV,
   SWITCH_THEME,
   DIRECTION_CHANGE,
-} from '../constants/Theme';
+} from "../constants/Theme";
 
 export function toggleCollapsedNav(navCollapsed) {
   return {

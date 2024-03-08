@@ -1,34 +1,34 @@
-import React, { useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { Card } from 'antd';
-import ApexChart from 'react-apexcharts';
+import React, { useRef, useEffect } from "react";
+import PropTypes from "prop-types";
+import { Card } from "antd";
+import ApexChart from "react-apexcharts";
 import {
   apexLineChartDefaultOption,
   apexBarChartDefaultOption,
   apexAreaChartDefaultOption,
-} from 'constants/ChartConstant';
-import ReactResizeDetector from 'react-resize-detector';
-import { DIR_RTL } from 'constants/ThemeConstant';
+} from "constants/ChartConstant";
+import ReactResizeDetector from "react-resize-detector";
+import { DIR_RTL } from "constants/ThemeConstant";
 
 const titleStyle = {
-  position: 'absolute',
-  zIndex: '1',
+  position: "absolute",
+  zIndex: "1",
 };
 
 const extraStyle = {
-  position: 'absolute',
-  zIndex: '1',
-  right: '0',
-  top: '-2px',
+  position: "absolute",
+  zIndex: "1",
+  right: "0",
+  top: "-2px",
 };
 
 const getChartTypeDefaultOption = (type) => {
   switch (type) {
-    case 'line':
+    case "line":
       return apexLineChartDefaultOption;
-    case 'bar':
+    case "bar":
       return apexBarChartDefaultOption;
-    case 'area':
+    case "area":
       return apexAreaChartDefaultOption;
     default:
       return apexLineChartDefaultOption;
@@ -52,16 +52,20 @@ const ChartWidget = ({
   const isMobile = window.innerWidth < 768;
   const setLegendOffset = () => {
     if (chartRef.current) {
-      const lengend = chartRef.current.querySelectorAll('div.apexcharts-legend')[0];
-      lengend.style.marginRight = `${isMobile ? 0 : extraRef.current?.offsetWidth}px`;
+      const lengend = chartRef.current.querySelectorAll(
+        "div.apexcharts-legend"
+      )[0];
+      lengend.style.marginRight = `${
+        isMobile ? 0 : extraRef.current?.offsetWidth
+      }px`;
       if (direction === DIR_RTL) {
-        lengend.style.right = 'auto';
-        lengend.style.left = '0';
+        lengend.style.right = "auto";
+        lengend.style.left = "0";
       }
       if (isMobile) {
-        lengend.style.position = 'relative';
+        lengend.style.position = "relative";
         lengend.style.top = 0;
-        lengend.style.justifyContent = 'start';
+        lengend.style.justifyContent = "start";
         lengend.style.padding = 0;
       }
     }
@@ -87,8 +91,18 @@ const ChartWidget = ({
 
   const renderChart = () => (
     <ReactResizeDetector onResize={onResize()}>
-      <div style={direction === DIR_RTL ? { direction: 'ltr' } : {}} className="chartRef" ref={chartRef}>
-        <ApexChart options={options} type={type} series={series} width={width} height={height} />
+      <div
+        style={direction === DIR_RTL ? { direction: "ltr" } : {}}
+        className="chartRef"
+        ref={chartRef}
+      >
+        <ApexChart
+          options={options}
+          type={type}
+          series={series}
+          width={width}
+          height={height}
+        />
       </div>
     </ReactResizeDetector>
   );
@@ -99,7 +113,10 @@ const ChartWidget = ({
         <Card>
           <div className={`position-relative ${bodyClass}`}>
             {<div style={!isMobile ? titleStyle : {}}>{title}</div> && (
-              <h4 className="font-weight-bold" style={!isMobile ? titleStyle : {}}>
+              <h4
+                className="font-weight-bold"
+                style={!isMobile ? titleStyle : {}}
+              >
                 {title}
               </h4>
             )}
@@ -134,9 +151,9 @@ ChartWidget.propTypes = {
 ChartWidget.defaultProps = {
   series: [],
   height: 300,
-  width: '100%',
+  width: "100%",
   card: true,
-  type: 'line',
+  type: "line",
 };
 
 export default ChartWidget;

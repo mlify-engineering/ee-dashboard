@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { SketchPicker } from 'react-color';
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { SketchPicker } from "react-color";
 
 const ColorPicker = (props) => {
-  const { colorChange, color = '' } = props;
+  const { colorChange, color = "" } = props;
 
   const [visible, setVisible] = useState(false);
   const [pickerColor, setPickerColor] = useState(color);
@@ -31,7 +31,7 @@ const ColorPicker = (props) => {
       <div className="color-picker-dropdown">
         <div
           className="color"
-          style={{ backgroundColor: boxColor ? boxColor : '#ffffff' }}
+          style={{ backgroundColor: boxColor ? boxColor : "#ffffff" }}
           onClick={onPickerDropdown}
         />
       </div>

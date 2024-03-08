@@ -1,67 +1,218 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 const BATCH_SIZE = 8;
-console.log('BATCH_SIZE:: ', BATCH_SIZE);
+console.log("BATCH_SIZE:: ", BATCH_SIZE);
 
-const inputFile = path.join(__dirname, 'public/data/ee_rounds_123_en.json');
-console.log('inputFile:: ', inputFile);
+const inputFile = path.join(__dirname, "public/data/ee_rounds_123_en.json");
+console.log("inputFile:: ", inputFile);
 
 // Read and parse the JSON file
-const data = JSON.parse(fs.readFileSync(inputFile, 'utf8'));
+const data = JSON.parse(fs.readFileSync(inputFile, "utf8"));
 
 // Assuming data is an object with a 'rounds' array
 const rounds = data.rounds; // Adjust this line based on the actual structure
 
 const processData = (rounds) => {
-    return rounds.reduce((acc, round) => {
-      const { drawName, drawDate, drawCRS } = round;
-      let extractedDrawName = drawName.match(/(.*)(?=\s\()/);
-      extractedDrawName = extractedDrawName ? extractedDrawName[0] : drawName;
-      if (!acc[extractedDrawName]) {
-        acc[extractedDrawName] = { x: [], y: [], type: 'scatter', mode: 'lines+markers', name: extractedDrawName };
-      }
-      acc[extractedDrawName].x.push(drawDate);
-      acc[extractedDrawName].y.push(parseInt(drawCRS, 10));
-      return acc;
-    }, {});
+  return rounds.reduce((acc, round) => {
+    const { drawName, drawDate, drawCRS } = round;
+    let extractedDrawName = drawName.match(/(.*)(?=\s\()/);
+    extractedDrawName = extractedDrawName ? extractedDrawName[0] : drawName;
+    if (!acc[extractedDrawName]) {
+      acc[extractedDrawName] = {
+        x: [],
+        y: [],
+        type: "scatter",
+        mode: "lines+markers",
+        name: extractedDrawName,
+      };
+    }
+    acc[extractedDrawName].x.push(drawDate);
+    acc[extractedDrawName].y.push(parseInt(drawCRS.replace(/,/g, ""), 10));
+    return acc;
+  }, {});
 };
 
-let accumulatedData = {}; // Use an object to accumulate data, keyed by `extractedDrawName`
+const accumulatedData = {}; // Use an object to accumulate data, keyed by `extractedDrawName`
 // Split rounds into batches
 for (let i = 0; i < rounds.length; i += BATCH_SIZE) {
-    const batch = rounds.slice(i, i + BATCH_SIZE);
-    if (batch && batch.length) { // Check if batch is not null and has length
-        const newData = processData(batch);
-        // Merge newData into accumulatedData
-        Object.keys(newData).forEach((key) => {
-        if (accumulatedData[key]) {
-            // If the key already exists, concatenate the new data
-            accumulatedData[key].x = accumulatedData[key].x.concat(newData[key].x);
-            accumulatedData[key].y = accumulatedData[key].y.concat(newData[key].y);
-        } else {
-            // Otherwise, simply add the new key and its data
-            accumulatedData[key] = newData[key];
-        }
-        });
-    }
+  const batch = rounds.slice(i, i + BATCH_SIZE);
+  if (batch && batch.length) {
+    // Check if batch is not null and has length
+    const newData = processData(batch);
+    // Merge newData into accumulatedData
+    Object.keys(newData).forEach((key) => {
+      if (accumulatedData[key]) {
+        // If the key already exists, concatenate the new data
+        accumulatedData[key].x = accumulatedData[key].x.concat(newData[key].x);
+        accumulatedData[key].y = accumulatedData[key].y.concat(newData[key].y);
+      } else {
+        // Otherwise, simply add the new key and its data
+        accumulatedData[key] = newData[key];
+      }
+    });
+  }
 }
 
 // sort the accumulatedData by draw date in ascending order
 Object.keys(accumulatedData).forEach((key) => {
-    const data = accumulatedData[key];
-    const sortedIndices = data.x.map((_, i) => i).sort((a, b) => new Date(data.x[a]) - new Date(data.x[b]));
-    data.x = sortedIndices.map((i) => data.x[i]);
-    data.y = sortedIndices.map((i) => data.y[i]);
+  const data = accumulatedData[key];
+  const sortedIndices = data.x
+    .map((_, i) => i)
+    .sort((a, b) => new Date(data.x[a]) - new Date(data.x[b]));
+  data.x = sortedIndices.map((i) => data.x[i]);
+  data.y = sortedIndices.map((i) => data.y[i]);
 });
 
 // sort by key name in ascending order
 const sortedKeys = Object.keys(accumulatedData).sort();
 const sortedData = {};
 sortedKeys.forEach((key) => {
-    sortedData[key] = accumulatedData[key];
+  sortedData[key] = accumulatedData[key];
 });
 // save the sortedData as a json file
-const outputFilePrefix = path.join(__dirname, 'public/data/processed_data.json');
-console.log('outputFilePrefix:: ', outputFilePrefix);
+const outputFilePrefix = path.join(
+  __dirname,
+  "public/data/processed_data_crs_trend.json",
+);
+console.log("outputFilePrefix:: ", outputFilePrefix);
 fs.writeFileSync(`${outputFilePrefix}`, JSON.stringify(sortedData, null, 2));
+
+const poolTitle = [
+  "601-1200",
+  "501-600",
+  "451-500",
+  "491-500",
+  "481-490",
+  "471-480",
+  "461-470",
+  "451-460",
+  "401-450",
+  "441-450",
+  "431-440",
+  "421-430",
+  "411-420",
+  "401-410",
+  "351-400",
+  "301-350",
+  "0-300",
+];
+const processPoolData = (rounds) => {
+  return rounds.reduce((acc, round) => {
+    const { drawDate } = round;
+    // skip if all the pools are 0
+    let count = 0;
+    for (let i = 1; i <= 18; i++) {
+      const drawPool = round[`dd${i}`];
+      if (drawPool === "0") {
+        count += 1;
+      }
+    }
+    if (count === 18) {
+      // go to the next round if all the pools are 0
+      return acc;
+    }
+    for (let i = 1; i <= 18; i++) {
+      const drawPool = round[`dd${i}`].replace(/,/g, "");
+      const poolName = `CRS Range: ` + poolTitle[i - 1];
+      if (drawPool) {
+        if (!acc[poolName]) {
+          acc[poolName] = {
+            x: [],
+            y: [],
+            type: "scatter",
+            mode: "lines+markers",
+            name: poolName,
+          };
+        }
+        acc[poolName].x.push(drawDate);
+        acc[poolName].y.push(parseInt(drawPool, 10));
+      }
+    }
+    return acc;
+  }, {});
+};
+
+const accumulatedPoolData = {}; // Use an object to accumulate data, keyed by `poolName`
+
+// Pool Trend
+for (let i = 0; i < rounds.length; i += BATCH_SIZE) {
+  const batch = rounds.slice(i, i + BATCH_SIZE);
+  if (batch && batch.length) {
+    // Check if batch is not null and has length
+    const newData = processPoolData(batch);
+    // Merge newData into accumulatedPoolData
+    Object.keys(newData).forEach((key) => {
+      if (accumulatedPoolData[key]) {
+        // If the key already exists, concatenate the new data
+        accumulatedPoolData[key].x = accumulatedPoolData[key].x.concat(
+          newData[key].x,
+        );
+        accumulatedPoolData[key].y = accumulatedPoolData[key].y.concat(
+          newData[key].y,
+        );
+      } else {
+        // Otherwise, simply add the new key and its data
+        accumulatedPoolData[key] = newData[key];
+      }
+    });
+  }
+}
+
+// sort the accumulatedPoolData by draw date in ascending order
+Object.keys(accumulatedPoolData).forEach((key) => {
+  const data = accumulatedPoolData[key];
+  const sortedIndices = data.x
+    .map((_, i) => i)
+    .sort((a, b) => new Date(data.x[a]) - new Date(data.x[b]));
+  data.x = sortedIndices.map((i) => data.x[i]);
+  data.y = sortedIndices.map((i) => data.y[i]);
+});
+
+// sort by key name in ascending order
+const sortedPoolKeys = Object.keys(accumulatedPoolData).sort();
+const sortedPoolData = {};
+sortedPoolKeys.forEach((key) => {
+  sortedPoolData[key] = accumulatedPoolData[key];
+});
+// save the sortedPoolData as a json file
+const outputFilePoolPrefix = path.join(
+  __dirname,
+  "public/data/processed_data_pool_trend.json",
+);
+console.log("outputFilePoolPrefix:: ", outputFilePoolPrefix);
+fs.writeFileSync(
+  `${outputFilePoolPrefix}`,
+  JSON.stringify(sortedPoolData, null, 2),
+);
+
+// total drawSize in each year
+
+const drawInvitationsTotalPerYear = {};
+
+data.rounds.forEach((round) => {
+  const drawDate = round.drawDate;
+  const drawInvitations = round.drawSize.replace(/,/g, ""); // Remove commas
+  const year = new Date(drawDate).getFullYear();
+
+  if (!drawInvitationsTotalPerYear[year]) {
+    drawInvitationsTotalPerYear[year] = 0;
+  }
+  drawInvitationsTotalPerYear[year] += parseInt(drawInvitations, 10);
+});
+
+// To see the result
+console.log(drawInvitationsTotalPerYear);
+
+console.log("Draw Invitations:: ", drawInvitationsTotalPerYear);
+
+const drawSizeOutputFilePrefix = path.join(
+  __dirname,
+  "public/data/processed_data_draw_size.json",
+);
+console.log("drawSizeOutputFilePrefix:: ", drawSizeOutputFilePrefix);
+
+fs.writeFileSync(
+  `${drawSizeOutputFilePrefix}`,
+  JSON.stringify(drawInvitationsTotalPerYear, null, 2),
+);

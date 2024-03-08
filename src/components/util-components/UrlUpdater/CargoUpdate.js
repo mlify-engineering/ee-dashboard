@@ -1,44 +1,44 @@
-import { updateUrlByReplacingCurrentParams } from './UpdateURL';
+import { updateUrlByReplacingCurrentParams } from "./UpdateURL";
 
 export function getCargoSearchParams(searchParams) {
-  let length = searchParams.getAll('length');
-  let width = searchParams.getAll('width');
-  let height = searchParams.getAll('height');
-  let dimension_unit = searchParams.getAll('dimension_unit');
-  let weight = searchParams.getAll('weight');
-  let weight_unit = searchParams.getAll('weight_unit');
-  let fragile = searchParams.getAll('fragile');
-  let hazardous = searchParams.getAll('hazardous');
-  let flammable = searchParams.getAll('flammable');
-  let used = searchParams.getAll('used');
-  let cargo_quantity = searchParams.getAll('cargo_quantity');
-  let type = searchParams.getAll('type');
-  let cargo_type = searchParams.getAll('cargo_type');
-  let size = searchParams.getAll('size');
-  let category = searchParams.getAll('category');
-  let item = searchParams.getAll('item');
-  let item_id = searchParams.getAll('item_id');
-  let size_id = searchParams.getAll('size_id');
+  let length = searchParams.getAll("length");
+  let width = searchParams.getAll("width");
+  let height = searchParams.getAll("height");
+  let dimension_unit = searchParams.getAll("dimension_unit");
+  let weight = searchParams.getAll("weight");
+  let weight_unit = searchParams.getAll("weight_unit");
+  let fragile = searchParams.getAll("fragile");
+  let hazardous = searchParams.getAll("hazardous");
+  let flammable = searchParams.getAll("flammable");
+  let used = searchParams.getAll("used");
+  let cargo_quantity = searchParams.getAll("cargo_quantity");
+  let type = searchParams.getAll("type");
+  let cargo_type = searchParams.getAll("cargo_type");
+  let size = searchParams.getAll("size");
+  let category = searchParams.getAll("category");
+  let item = searchParams.getAll("item");
+  let item_id = searchParams.getAll("item_id");
+  let size_id = searchParams.getAll("size_id");
 
   // convert into array
-  length = length.length ? length[0].split(',') : [];
-  width = width.length ? width[0].split(',') : [];
-  height = height.length ? height[0].split(',') : [];
-  dimension_unit = dimension_unit.length ? dimension_unit[0].split(',') : [];
-  weight = weight.length ? weight[0].split(',') : [];
-  weight_unit = weight_unit.length ? weight_unit[0].split(',') : [];
-  fragile = fragile.length ? fragile[0].split(',') : [];
-  hazardous = hazardous.length ? hazardous[0].split(',') : [];
-  flammable = flammable.length ? flammable[0].split(',') : [];
-  used = used.length ? used[0].split(',') : [];
-  cargo_quantity = cargo_quantity.length ? cargo_quantity[0].split(',') : [];
-  type = type.length ? type[0].split(',') : [];
-  cargo_type = cargo_type.length ? cargo_type[0].split(',') : [];
-  size = size.length ? size[0].split(',') : [];
-  category = category.length ? category[0].split(',') : [];
-  item = item.length ? item[0].split(',') : [];
-  item_id = item_id.length ? item_id[0].split(',') : [];
-  size_id = size_id.length ? size_id[0].split(',') : [];
+  length = length.length ? length[0].split(",") : [];
+  width = width.length ? width[0].split(",") : [];
+  height = height.length ? height[0].split(",") : [];
+  dimension_unit = dimension_unit.length ? dimension_unit[0].split(",") : [];
+  weight = weight.length ? weight[0].split(",") : [];
+  weight_unit = weight_unit.length ? weight_unit[0].split(",") : [];
+  fragile = fragile.length ? fragile[0].split(",") : [];
+  hazardous = hazardous.length ? hazardous[0].split(",") : [];
+  flammable = flammable.length ? flammable[0].split(",") : [];
+  used = used.length ? used[0].split(",") : [];
+  cargo_quantity = cargo_quantity.length ? cargo_quantity[0].split(",") : [];
+  type = type.length ? type[0].split(",") : [];
+  cargo_type = cargo_type.length ? cargo_type[0].split(",") : [];
+  size = size.length ? size[0].split(",") : [];
+  category = category.length ? category[0].split(",") : [];
+  item = item.length ? item[0].split(",") : [];
+  item_id = item_id.length ? item_id[0].split(",") : [];
+  size_id = size_id.length ? size_id[0].split(",") : [];
   return {
     length,
     width,
@@ -105,24 +105,24 @@ export const AddCargoToUrl = ({ cargos }) => {
   });
 
   // create a new search params
-  newSearchParams.set('length', length);
-  newSearchParams.set('width', width);
-  newSearchParams.set('height', height);
-  newSearchParams.set('dimension_unit', dimension_unit);
-  newSearchParams.set('weight', weight);
-  newSearchParams.set('weight_unit', weight_unit);
-  newSearchParams.set('fragile', fragile);
-  newSearchParams.set('hazardous', hazardous);
-  newSearchParams.set('flammable', flammable);
-  newSearchParams.set('used', used);
-  newSearchParams.set('cargo_quantity', cargo_quantity);
-  newSearchParams.set('type', type);
-  newSearchParams.set('cargo_type', cargo_type);
-  newSearchParams.set('size', size);
-  newSearchParams.set('category', category);
-  newSearchParams.set('item', item);
-  newSearchParams.set('item_id', item_id);
-  newSearchParams.set('size_id', size_id);
+  newSearchParams.set("length", length);
+  newSearchParams.set("width", width);
+  newSearchParams.set("height", height);
+  newSearchParams.set("dimension_unit", dimension_unit);
+  newSearchParams.set("weight", weight);
+  newSearchParams.set("weight_unit", weight_unit);
+  newSearchParams.set("fragile", fragile);
+  newSearchParams.set("hazardous", hazardous);
+  newSearchParams.set("flammable", flammable);
+  newSearchParams.set("used", used);
+  newSearchParams.set("cargo_quantity", cargo_quantity);
+  newSearchParams.set("type", type);
+  newSearchParams.set("cargo_type", cargo_type);
+  newSearchParams.set("size", size);
+  newSearchParams.set("category", category);
+  newSearchParams.set("item", item);
+  newSearchParams.set("item_id", item_id);
+  newSearchParams.set("size_id", size_id);
 
   // update the url
   updateUrlByReplacingCurrentParams({ newSearchParams });
@@ -204,98 +204,98 @@ export const DeleteCargoFromUrl = ({ cargos }) => {
   });
   if (existingCargos.length === 0) {
     // remove the cart from the url
-    newSearchParams.delete('length');
-    newSearchParams.delete('width');
-    newSearchParams.delete('height');
-    newSearchParams.delete('dimension_unit');
-    newSearchParams.delete('weight');
-    newSearchParams.delete('weight_unit');
-    newSearchParams.delete('fragile');
-    newSearchParams.delete('hazardous');
-    newSearchParams.delete('flammable');
-    newSearchParams.delete('used');
-    newSearchParams.delete('cargo_quantity');
-    newSearchParams.delete('type');
-    newSearchParams.delete('cargo_type');
-    newSearchParams.delete('size');
-    newSearchParams.delete('category');
-    newSearchParams.delete('item');
-    newSearchParams.delete('item_id');
-    newSearchParams.delete('size_id');
+    newSearchParams.delete("length");
+    newSearchParams.delete("width");
+    newSearchParams.delete("height");
+    newSearchParams.delete("dimension_unit");
+    newSearchParams.delete("weight");
+    newSearchParams.delete("weight_unit");
+    newSearchParams.delete("fragile");
+    newSearchParams.delete("hazardous");
+    newSearchParams.delete("flammable");
+    newSearchParams.delete("used");
+    newSearchParams.delete("cargo_quantity");
+    newSearchParams.delete("type");
+    newSearchParams.delete("cargo_type");
+    newSearchParams.delete("size");
+    newSearchParams.delete("category");
+    newSearchParams.delete("item");
+    newSearchParams.delete("item_id");
+    newSearchParams.delete("size_id");
     // update the url
     updateUrlByReplacingCurrentParams({ newSearchParams });
     return;
   } else {
     newSearchParams.set(
-      'length',
+      "length",
       existingCargos.map((cargo) => cargo.length)
     );
     newSearchParams.set(
-      'width',
+      "width",
       existingCargos.map((cargo) => cargo.width)
     );
     newSearchParams.set(
-      'height',
+      "height",
       existingCargos.map((cargo) => cargo.height)
     );
     newSearchParams.set(
-      'dimension_unit',
+      "dimension_unit",
       existingCargos.map((cargo) => cargo.dimension_unit)
     );
     newSearchParams.set(
-      'weight',
+      "weight",
       existingCargos.map((cargo) => cargo.weight)
     );
     newSearchParams.set(
-      'weight_unit',
+      "weight_unit",
       existingCargos.map((cargo) => cargo.weight_unit)
     );
     newSearchParams.set(
-      'fragile',
+      "fragile",
       existingCargos.map((cargo) => cargo.fragile)
     );
     newSearchParams.set(
-      'hazardous',
+      "hazardous",
       existingCargos.map((cargo) => cargo.hazardous)
     );
     newSearchParams.set(
-      'flammable',
+      "flammable",
       existingCargos.map((cargo) => cargo.flammable)
     );
     newSearchParams.set(
-      'used',
+      "used",
       existingCargos.map((cargo) => cargo.used)
     );
     newSearchParams.set(
-      'cargo_quantity',
+      "cargo_quantity",
       existingCargos.map((cargo) => cargo.quantity)
     );
     newSearchParams.set(
-      'type',
+      "type",
       existingCargos.map((cargo) => cargo.type)
     );
     newSearchParams.set(
-      'cargo_type',
+      "cargo_type",
       existingCargos.map((cargo) => cargo.cargo_type)
     );
     newSearchParams.set(
-      'size',
+      "size",
       existingCargos.map((cargo) => cargo.size)
     );
     newSearchParams.set(
-      'category',
+      "category",
       existingCargos.map((cargo) => cargo.category)
     );
     newSearchParams.set(
-      'item',
+      "item",
       existingCargos.map((cargo) => cargo.item)
     );
     newSearchParams.set(
-      'item_id',
+      "item_id",
       existingCargos.map((cargo) => cargo.item_id)
     );
     newSearchParams.set(
-      'size_id',
+      "size_id",
       existingCargos.map((cargo) => cargo.size_id)
     );
 
@@ -357,7 +357,8 @@ export const ReplaceCargoInUrl = ({ oldCargo, newCargo }) => {
       String(existingCargo.length) === String(oldCargo.length) &&
       String(existingCargo.width) === String(oldCargo.width) &&
       String(existingCargo.height) === String(oldCargo.height) &&
-      String(existingCargo.dimension_unit) === String(oldCargo.dimension_unit) &&
+      String(existingCargo.dimension_unit) ===
+        String(oldCargo.dimension_unit) &&
       String(existingCargo.weight) === String(oldCargo.weight) &&
       String(existingCargo.weight_unit) === String(oldCargo.weight_unit) &&
       String(existingCargo.fragile) === String(oldCargo.fragile) &&
@@ -398,98 +399,98 @@ export const ReplaceCargoInUrl = ({ oldCargo, newCargo }) => {
 
   if (existingCargos.length === 0) {
     // remove the cart from the url
-    newSearchParams.delete('length');
-    newSearchParams.delete('width');
-    newSearchParams.delete('height');
-    newSearchParams.delete('dimension_unit');
-    newSearchParams.delete('weight');
-    newSearchParams.delete('weight_unit');
-    newSearchParams.delete('fragile');
-    newSearchParams.delete('hazardous');
-    newSearchParams.delete('flammable');
-    newSearchParams.delete('used');
-    newSearchParams.delete('cargo_quantity');
-    newSearchParams.delete('type');
-    newSearchParams.delete('cargo_type');
-    newSearchParams.delete('size');
-    newSearchParams.delete('category');
-    newSearchParams.delete('item');
-    newSearchParams.delete('item_id');
-    newSearchParams.delete('size_id');
+    newSearchParams.delete("length");
+    newSearchParams.delete("width");
+    newSearchParams.delete("height");
+    newSearchParams.delete("dimension_unit");
+    newSearchParams.delete("weight");
+    newSearchParams.delete("weight_unit");
+    newSearchParams.delete("fragile");
+    newSearchParams.delete("hazardous");
+    newSearchParams.delete("flammable");
+    newSearchParams.delete("used");
+    newSearchParams.delete("cargo_quantity");
+    newSearchParams.delete("type");
+    newSearchParams.delete("cargo_type");
+    newSearchParams.delete("size");
+    newSearchParams.delete("category");
+    newSearchParams.delete("item");
+    newSearchParams.delete("item_id");
+    newSearchParams.delete("size_id");
     // update the url
     updateUrlByReplacingCurrentParams({ newSearchParams });
     return;
   } else {
     newSearchParams.set(
-      'length',
+      "length",
       existingCargos.map((cargo) => cargo.length)
     );
     newSearchParams.set(
-      'width',
+      "width",
       existingCargos.map((cargo) => cargo.width)
     );
     newSearchParams.set(
-      'height',
+      "height",
       existingCargos.map((cargo) => cargo.height)
     );
     newSearchParams.set(
-      'dimension_unit',
+      "dimension_unit",
       existingCargos.map((cargo) => cargo.dimension_unit)
     );
     newSearchParams.set(
-      'weight',
+      "weight",
       existingCargos.map((cargo) => cargo.weight)
     );
     newSearchParams.set(
-      'weight_unit',
+      "weight_unit",
       existingCargos.map((cargo) => cargo.weight_unit)
     );
     newSearchParams.set(
-      'fragile',
+      "fragile",
       existingCargos.map((cargo) => cargo.fragile)
     );
     newSearchParams.set(
-      'hazardous',
+      "hazardous",
       existingCargos.map((cargo) => cargo.hazardous)
     );
     newSearchParams.set(
-      'flammable',
+      "flammable",
       existingCargos.map((cargo) => cargo.flammable)
     );
     newSearchParams.set(
-      'used',
+      "used",
       existingCargos.map((cargo) => cargo.used)
     );
     newSearchParams.set(
-      'cargo_quantity',
+      "cargo_quantity",
       existingCargos.map((cargo) => cargo.quantity)
     );
     newSearchParams.set(
-      'type',
+      "type",
       existingCargos.map((cargo) => cargo.type)
     );
     newSearchParams.set(
-      'cargo_type',
+      "cargo_type",
       existingCargos.map((cargo) => cargo.cargo_type)
     );
     newSearchParams.set(
-      'size',
+      "size",
       existingCargos.map((cargo) => cargo.size)
     );
     newSearchParams.set(
-      'category',
+      "category",
       existingCargos.map((cargo) => cargo.category)
     );
     newSearchParams.set(
-      'item',
+      "item",
       existingCargos.map((cargo) => cargo.item)
     );
     newSearchParams.set(
-      'item_id',
+      "item_id",
       existingCargos.map((cargo) => cargo.item_id)
     );
     newSearchParams.set(
-      'size_id',
+      "size_id",
       existingCargos.map((cargo) => cargo.size_id)
     );
 

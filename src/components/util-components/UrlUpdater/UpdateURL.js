@@ -17,10 +17,10 @@ export function updateUrl({ newSearchParams }) {
   const newUrl = `${currentUrl.pathname}?${currentSearchParams.toString()}`;
 
   // Update the URL using the HTML5 History API without reloading the page
-  window.history.pushState(null, '', newUrl);
+  window.history.pushState(null, "", newUrl);
 }
 
 export function updateUrlByReplacingCurrentParams({ newSearchParams }) {
   const newUrl = `${window.location.pathname}?${newSearchParams.toString()}`;
-  window.history.pushState(null, '', newUrl);
+  window.history.pushState(null, "", newUrl);
 }

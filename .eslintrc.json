@@ -1,0 +1,34 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended", "plugin:jest/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["jest", "react"],
+  "rules": {
+    "prettier-prettier": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/no-unescaped-entities": "off",
+    "react/no-unknown-property": "off",
+    "react/display-name": "off",
+    "react/jsx-no-target-blank": "off",
+    "no-undef": "error",
+    "no-unused-vars": "off",
+    "prettier/prettier": "warn",
+    "react/jsx-key": "off",
+    "no-prototype-builtins": "off",
+    "no-empty": "off",
+    "no-dupe-keys": "off",
+    "no-unreachable": "off"
+  }
+}

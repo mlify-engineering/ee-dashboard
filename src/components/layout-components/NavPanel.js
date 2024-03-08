@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { SettingOutlined } from '@ant-design/icons';
-import { Drawer, Menu } from 'antd';
-import ThemeConfigurator from './ThemeConfigurator';
-import { connect } from 'react-redux';
-import { DIR_RTL } from 'constants/ThemeConstant';
+import React, { useState } from "react";
+import { SettingOutlined } from "@ant-design/icons";
+import { Drawer, Menu } from "antd";
+import ThemeConfigurator from "./ThemeConfigurator";
+import { connect } from "react-redux";
+import { DIR_RTL } from "constants/ThemeConstant";
 
 const NavPanel = (props) => {
   const [visible, setVisible] = useState(false);
@@ -25,10 +25,11 @@ const NavPanel = (props) => {
       </Menu>
       <Drawer
         title="Theme Config"
-        placement={props.direction === DIR_RTL ? 'left' : 'right'}
+        placement={props.direction === DIR_RTL ? "left" : "right"}
         width={350}
         onClose={onClose}
-        visible={visible}>
+        visible={visible}
+      >
         <ThemeConfigurator />
       </Drawer>
     </>

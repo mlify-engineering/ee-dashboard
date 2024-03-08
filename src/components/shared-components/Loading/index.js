@@ -1,7 +1,7 @@
-import React from 'react';
-import { Spin } from 'antd';
-import PropTypes from 'prop-types';
-import { LoadingOutlined } from '@ant-design/icons';
+import React from "react";
+import { Spin } from "antd";
+import PropTypes from "prop-types";
+import { LoadingOutlined } from "@ant-design/icons";
 
 const Icon = <LoadingOutlined style={{ fontSize: 35 }} spin />;
 
@@ -20,8 +20,8 @@ Loading.propTypes = {
 };
 
 Loading.defaultProps = {
-  align: 'center',
-  cover: 'inline',
+  align: "center",
+  cover: "inline",
 };
 
 export default Loading;

@@ -1,29 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, Grid } from 'antd';
-import IntlMessage from '../util-components/IntlMessage';
-import Icon from '../util-components/Icon';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Menu, Grid } from "antd";
+import IntlMessage from "../util-components/IntlMessage";
+import Icon from "../util-components/Icon";
 // import navigationConfig from "configs/NavigationConfig";
-import customBrokerConfig from 'configs/CustomBrokerNavigationConfig';
-import shipperConfig from 'configs/ShipperNavigationConfig';
-import consolidatorConfig from 'configs/ConsolidatorNavigationConfig';
-import deconsolidatorConfig from 'configs/DeConsolidatorNavigationConfig';
-import { connect } from 'react-redux';
-import { SIDE_NAV_LIGHT } from 'constants/ThemeConstant';
-import utils from 'utils';
-import { onMobileNavToggle } from 'redux/actions/Theme';
-import { useSelector } from 'react-redux';
+import customBrokerConfig from "configs/CustomBrokerNavigationConfig";
+import shipperConfig from "configs/ShipperNavigationConfig";
+import consolidatorConfig from "configs/ConsolidatorNavigationConfig";
+import deconsolidatorConfig from "configs/DeConsolidatorNavigationConfig";
+import { connect } from "react-redux";
+import { SIDE_NAV_LIGHT } from "constants/ThemeConstant";
+import utils from "utils";
+import { onMobileNavToggle } from "redux/actions/Theme";
+import { useSelector } from "react-redux";
 
 const { SubMenu } = Menu;
 const { useBreakpoint } = Grid;
 
-const setLocale = (isLocaleOn, localeKey) => (isLocaleOn ? <IntlMessage id={localeKey} /> : localeKey.toString());
+const setLocale = (isLocaleOn, localeKey) =>
+  isLocaleOn ? <IntlMessage id={localeKey} /> : localeKey.toString();
 
 const setDefaultOpen = (key) => {
   let keyList = [];
-  let keyString = '';
+  let keyString = "";
   if (key) {
-    const arr = key.split('-');
+    const arr = key.split("-");
     for (let index = 0; index < arr.length; index++) {
       const elm = arr[index];
       index === 0 ? (keyString = elm) : (keyString = `${keyString}-${elm}`);
@@ -45,16 +46,16 @@ const SideNavContent = (props) => {
   // const { user, accessList, loggedInAs } = useSelector((state) => state.auth);
   let navigationConfig;
   switch (loggedInAs?.type) {
-    case 'SHIPPER':
+    case "SHIPPER":
       navigationConfig = shipperConfig;
       break;
-    case 'CUSTOM_BROKER':
+    case "CUSTOM_BROKER":
       navigationConfig = customBrokerConfig;
       break;
-    case 'CONSOLIDATOR':
+    case "CONSOLIDATOR":
       navigationConfig = consolidatorConfig;
       break;
-    case 'DECONSOLIDATOR':
+    case "DECONSOLIDATOR":
       navigationConfig = deconsolidatorConfig;
       break;
     default:
@@ -62,7 +63,7 @@ const SideNavContent = (props) => {
       break;
   }
 
-  const isMobile = !utils.getBreakPoint(useBreakpoint()).includes('lg');
+  const isMobile = !utils.getBreakPoint(useBreakpoint()).includes("lg");
   const closeMobileNav = () => {
     if (isMobile) {
       onMobileNavToggle(false);
@@ -70,12 +71,13 @@ const SideNavContent = (props) => {
   };
   return (
     <Menu
-      theme={sideNavTheme === SIDE_NAV_LIGHT ? 'light' : 'dark'}
+      theme={sideNavTheme === SIDE_NAV_LIGHT ? "light" : "dark"}
       mode="inline"
-      style={{ height: '100%', borderRight: 0 }}
+      style={{ height: "100%", borderRight: 0 }}
       defaultSelectedKeys={[routeInfo?.key]}
       defaultOpenKeys={setDefaultOpen(routeInfo?.key)}
-      className="hide-group-title">
+      className="hide-group-title"
+    >
       {navigationConfig.map((menu) =>
         menu.submenu.length > 0 ? (
           <Menu.ItemGroup
@@ -85,22 +87,39 @@ const SideNavContent = (props) => {
             {menu.submenu.map((subMenuFirst) =>
               subMenuFirst.submenu.length > 0 ? (
                 <SubMenu
-                  icon={subMenuFirst.icon ? <Icon type={subMenuFirst?.icon} /> : null}
+                  icon={
+                    subMenuFirst.icon ? (
+                      <Icon type={subMenuFirst?.icon} />
+                    ) : null
+                  }
                   key={subMenuFirst.key}
-                  title={setLocale(localization, subMenuFirst.title)}>
+                  title={setLocale(localization, subMenuFirst.title)}
+                >
                   {subMenuFirst.submenu.map((subMenuSecond) => (
                     <Menu.Item key={subMenuSecond.key}>
-                      {subMenuSecond.icon ? <Icon type={subMenuSecond?.icon} /> : null}
-                      <span>{setLocale(localization, subMenuSecond.title)}</span>
-                      <Link onClick={() => closeMobileNav()} to={subMenuSecond.path} />
+                      {subMenuSecond.icon ? (
+                        <Icon type={subMenuSecond?.icon} />
+                      ) : null}
+                      <span>
+                        {setLocale(localization, subMenuSecond.title)}
+                      </span>
+                      <Link
+                        onClick={() => closeMobileNav()}
+                        to={subMenuSecond.path}
+                      />
                     </Menu.Item>
                   ))}
                 </SubMenu>
               ) : (
                 <Menu.Item key={subMenuFirst.key}>
                   {subMenuFirst.icon ? <Icon type={subMenuFirst.icon} /> : null}
-                  <span id={`left-menu-${subMenuFirst.title}`}>{setLocale(localization, subMenuFirst.title)}</span>
-                  <Link onClick={() => closeMobileNav()} to={subMenuFirst.path} />
+                  <span id={`left-menu-${subMenuFirst.title}`}>
+                    {setLocale(localization, subMenuFirst.title)}
+                  </span>
+                  <Link
+                    onClick={() => closeMobileNav()}
+                    to={subMenuFirst.path}
+                  />
                 </Menu.Item>
               )
             )}
@@ -109,7 +128,9 @@ const SideNavContent = (props) => {
           <Menu.Item key={menu.key}>
             {menu.icon ? <Icon type={menu?.icon} /> : null}
             <span>{setLocale(localization, menu?.title)}</span>
-            {menu.path ? <Link onClick={() => closeMobileNav()} to={menu.path} /> : null}
+            {menu.path ? (
+              <Link onClick={() => closeMobileNav()} to={menu.path} />
+            ) : null}
           </Menu.Item>
         )
       )}

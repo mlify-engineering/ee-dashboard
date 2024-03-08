@@ -1,16 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const Value = (props) => {
   let value;
   switch (props.size) {
-    case 'lg':
+    case "lg":
       value = <h1 className="mb-0 font-weight-bold">{props.value}</h1>;
       break;
-    case 'md':
+    case "md":
       value = <h2 className="mb-0 font-weight-bold">{props.value}</h2>;
       break;
-    case 'sm':
+    case "sm":
       value = <h3 className="mb-0 font-weight-bold">{props.value}</h3>;
       break;
     default:
@@ -36,7 +36,7 @@ CustomStatistic.propTypes = {
 };
 
 CustomStatistic.defaultProps = {
-  size: 'md',
+  size: "md",
 };
 
 export default CustomStatistic;

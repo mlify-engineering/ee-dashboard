@@ -1,25 +1,38 @@
-import React from 'react';
-import { Layout, Image, Button } from 'antd';
-import { connect } from 'react-redux';
-import { SIDE_NAV_WIDTH, SIDE_NAV_DARK, NAV_TYPE_SIDE } from 'constants/ThemeConstant';
-import { Scrollbars } from 'react-custom-scrollbars';
-import MenuContent from './MenuContent';
-import { useHistory } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { PlusCircleFilled } from '@ant-design/icons';
+import React from "react";
+import { Layout, Image, Button } from "antd";
+import { connect } from "react-redux";
+import {
+  SIDE_NAV_WIDTH,
+  SIDE_NAV_DARK,
+  NAV_TYPE_SIDE,
+} from "constants/ThemeConstant";
+import { Scrollbars } from "react-custom-scrollbars";
+import MenuContent from "./MenuContent";
+import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { PlusCircleFilled } from "@ant-design/icons";
 
 const { Sider } = Layout;
 
-export const SideNav = ({ navCollapsed, sideNavTheme, routeInfo, hideGroupTitle, localization = true }) => {
+export const SideNav = ({
+  navCollapsed,
+  sideNavTheme,
+  routeInfo,
+  hideGroupTitle,
+  localization = true,
+}) => {
   const props = { sideNavTheme, routeInfo, hideGroupTitle, localization };
   let history = useHistory();
   const { user } = useSelector((state) => state.auth);
 
   return (
     <Sider
-      className={`side-nav ${sideNavTheme === SIDE_NAV_DARK ? 'side-nav-dark' : ''}`}
+      className={`side-nav ${
+        sideNavTheme === SIDE_NAV_DARK ? "side-nav-dark" : ""
+      }`}
       width={SIDE_NAV_WIDTH}
-      collapsed={navCollapsed}>
+      collapsed={navCollapsed}
+    >
       <div className="d-flex flex-column justify-content-center">
         <div className="d-flex p-3 ml-3 mr-3 mt-3">
           <Image
@@ -38,17 +51,18 @@ export const SideNav = ({ navCollapsed, sideNavTheme, routeInfo, hideGroupTitle,
               <p>{`AW-00000${user?.id}`}</p>
             </div>
           ) : (
-            ''
+            ""
           )}
         </div>
         <Button
           type="primary"
           className="m-3"
-          icon={navCollapsed ? <PlusCircleFilled /> : ''}
+          icon={navCollapsed ? <PlusCircleFilled /> : ""}
           onClick={() => {
             history.push(`/app/book_shipment`);
-          }}>
-          {!navCollapsed ? 'Start New Shipment' : ''}
+          }}
+        >
+          {!navCollapsed ? "Start New Shipment" : ""}
         </Button>
       </div>
       <Scrollbars autoHide>
