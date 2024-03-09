@@ -3,7 +3,7 @@ name: Flat
 on:
   push:
     branches:
-      - main
+      - .github/workflows/flat.yml # Only run a new workflow every time this file (flat.yaml) file changes
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *' # Runs every hour
@@ -18,13 +18,15 @@ jobs:
           node-version: '14' # Or any other version of Node.js
       - name: Check out repo
         uses: actions/checkout@v2
+      # This step installs Deno, which is a new Javascript runtime that improves on Node. We'll use it for postprocessing later
+      - name: Setup deno
+        uses: denoland/setup-deno@main
+        with:
+          deno-version: v1.x
       - name: Fetch data
-        uses: githubocto/flat@v3
+        uses: githubocto/flat@mr/node16
         with:
           http_url: https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json
           downloaded_filename: public/data/ee_rounds_123_en.json # Saves the file in src/data folder
-      - name: Install Node.js dependencies
-        run: npm install fs path
-      - name: Split JSON into batches
-        run: node splitJsonIntoBatches.js
+          postprocess: npm install fs path && node splitJsonIntoBatches.js
     

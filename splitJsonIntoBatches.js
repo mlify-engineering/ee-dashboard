@@ -1,14 +1,17 @@
 const fs = require("fs");
 const path = require("path");
+import { readJSON, writeJSON, removeFile } from 'https://deno.land/x/flat@0.0.11/mod.ts'
 
 const BATCH_SIZE = 8;
 console.log("BATCH_SIZE:: ", BATCH_SIZE);
 
-const inputFile = path.join(__dirname, "public/data/ee_rounds_123_en.json");
+const inputFile = Deno.args[0]
+// const inputFile = path.join(__dirname, "public/data/ee_rounds_123_en.json");
 console.log("inputFile:: ", inputFile);
 
 // Read and parse the JSON file
-const data = JSON.parse(fs.readFileSync(inputFile, "utf8"));
+// const data = JSON.parse(fs.readFileSync(inputFile, "utf8"));
+const data = await readJSON(inputFile);
 
 // Assuming data is an object with a 'rounds' array
 const rounds = data.rounds; // Adjust this line based on the actual structure
@@ -76,7 +79,8 @@ const outputFilePrefix = path.join(
   "public/data/processed_data_crs_trend.json",
 );
 console.log("outputFilePrefix:: ", outputFilePrefix);
-fs.writeFileSync(`${outputFilePrefix}`, JSON.stringify(sortedData, null, 2));
+// fs.writeFileSync(`${outputFilePrefix}`, JSON.stringify(sortedData, null, 2));
+await writeJSON(outputFilePrefix, JSON.stringify(sortedData, null, 2))
 
 const poolTitle = [
   "601-1200",
@@ -181,10 +185,11 @@ const outputFilePoolPrefix = path.join(
   "public/data/processed_data_pool_trend.json",
 );
 console.log("outputFilePoolPrefix:: ", outputFilePoolPrefix);
-fs.writeFileSync(
-  `${outputFilePoolPrefix}`,
-  JSON.stringify(sortedPoolData, null, 2),
-);
+// fs.writeFileSync(
+//   `${outputFilePoolPrefix}`,
+//   JSON.stringify(sortedPoolData, null, 2),
+// );
+await writeJSON(outputFilePoolPrefix, JSON.stringify(sortedPoolData, null, 2))
 
 // total drawSize in each year
 
@@ -271,7 +276,8 @@ const drawSizeOutputFilePrefix = path.join(
 );
 console.log("drawSizeOutputFilePrefix:: ", drawSizeOutputFilePrefix);
 
-fs.writeFileSync(
-  `${drawSizeOutputFilePrefix}`,
-  JSON.stringify(finalInvitationTrendData, null, 2),
-);
+// fs.writeFileSync(
+//   `${drawSizeOutputFilePrefix}`,
+//   JSON.stringify(finalInvitationTrendData, null, 2),
+// );
+await writeJSON(drawSizeOutputFilePrefix, JSON.stringify(finalInvitationTrendData, null, 2));
