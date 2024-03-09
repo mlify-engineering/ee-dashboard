@@ -24,7 +24,7 @@ jobs:
         with:
           deno-version: v1.x
       - name: Fetch data
-        uses: githubocto/flat@mr/node16
+        uses: githubocto/flat@v3
         with:
           http_url: https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json
           downloaded_filename: public/data/ee_rounds_123_en.json # Saves the file in src/data folder
