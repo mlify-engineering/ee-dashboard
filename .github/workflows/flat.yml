@@ -28,4 +28,4 @@ jobs:
         with:
           http_url: https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json
           downloaded_filename: public/data/ee_rounds_123_en.json # Saves the file in src/data folder
-          postprocess: node splitJsonIntoBatches.js
+          postprocess: node splitJsonIntoBatches.ts
