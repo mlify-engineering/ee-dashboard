@@ -58,13 +58,6 @@ export const HeaderNav = (props) => {
         </h4>
       </div>
       <img
-        className="hide-mobile"
-        src={`${process.env.PUBLIC_URL}/img/mapple-leaf.png`}
-        alt="Canada Logo"
-        style={{ margin: "20px", height: "50px" }}
-      />
-      <img
-        className="show-mobile"
         src={`${process.env.PUBLIC_URL}/img/mapple-leaf.png`}
         alt="Canada Logo"
         style={{ margin: "20px", height: "30px" }}
