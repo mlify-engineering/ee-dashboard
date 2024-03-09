@@ -7,7 +7,7 @@ export const addFromToCityToUrl = ({ from_city_id, to_city_id }) => {
     " and to_city_id: ",
     to_city_id,
     " and currentUrlParams: ",
-    currentUrlParams.toString()
+    currentUrlParams.toString(),
   );
   // Set or update the 'from_city' and 'to_city' params
   currentUrlParams.set("from_city", from_city_id);
@@ -17,7 +17,7 @@ export const addFromToCityToUrl = ({ from_city_id, to_city_id }) => {
   window.history.pushState(
     { from_city: from_city_id, to_city: to_city_id },
     "",
-    newUrl
+    newUrl,
   );
   console.log("newUrl: ", newUrl);
   console.log("Current Params: ", currentUrlParams.toString());

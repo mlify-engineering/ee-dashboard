@@ -53,7 +53,7 @@ const ChartWidget = ({
   const setLegendOffset = () => {
     if (chartRef.current) {
       const lengend = chartRef.current.querySelectorAll(
-        "div.apexcharts-legend"
+        "div.apexcharts-legend",
       )[0];
       lengend.style.marginRight = `${
         isMobile ? 0 : extraRef.current?.offsetWidth

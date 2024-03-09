@@ -104,7 +104,7 @@ export const DeleteVehicleFromUrl = ({ vehicles }) => {
         String(existingVehicle.year) === String(vehicle.year) &&
         existingVehicle.mechanicalCondition === vehicle.mechanicalCondition &&
         existingVehicle.mobilityCondition === vehicle.mobilityCondition &&
-        String(existingVehicle.quantity) === String(vehicle.quantity)
+        String(existingVehicle.quantity) === String(vehicle.quantity),
     );
     if (index !== -1) {
       // remove the vehicle from the existing vehicles
@@ -128,31 +128,31 @@ export const DeleteVehicleFromUrl = ({ vehicles }) => {
   } else {
     newSearchParams.set(
       "makes",
-      existingVehicles.map((vehicle) => vehicle.make)
+      existingVehicles.map((vehicle) => vehicle.make),
     );
     newSearchParams.set(
       "models",
-      existingVehicles.map((vehicle) => vehicle.model)
+      existingVehicles.map((vehicle) => vehicle.model),
     );
     newSearchParams.set(
       "model_ids",
-      existingVehicles.map((vehicle) => vehicle.model_id)
+      existingVehicles.map((vehicle) => vehicle.model_id),
     );
     newSearchParams.set(
       "years",
-      existingVehicles.map((vehicle) => vehicle.year)
+      existingVehicles.map((vehicle) => vehicle.year),
     );
     newSearchParams.set(
       "mechanicalCondition",
-      existingVehicles.map((vehicle) => vehicle.mechanicalCondition)
+      existingVehicles.map((vehicle) => vehicle.mechanicalCondition),
     );
     newSearchParams.set(
       "mobilityCondition",
-      existingVehicles.map((vehicle) => vehicle.mobilityCondition)
+      existingVehicles.map((vehicle) => vehicle.mobilityCondition),
     );
     newSearchParams.set(
       "quantity",
-      existingVehicles.map((vehicle) => vehicle.quantity)
+      existingVehicles.map((vehicle) => vehicle.quantity),
     );
 
     // update the url
@@ -192,7 +192,7 @@ export const ReplaceVehicleInUrl = ({ oldVehicle, newVehicle }) => {
       String(existingVehicle.year) === String(oldVehicle.year) &&
       existingVehicle.mechanicalCondition === oldVehicle.mechanicalCondition &&
       existingVehicle.mobilityCondition === oldVehicle.mobilityCondition &&
-      String(existingVehicle.quantity) === String(oldVehicle.quantity)
+      String(existingVehicle.quantity) === String(oldVehicle.quantity),
   );
 
   if (index !== -1) {
@@ -225,31 +225,31 @@ export const ReplaceVehicleInUrl = ({ oldVehicle, newVehicle }) => {
   } else {
     newSearchParams.set(
       "makes",
-      existingVehicles.map((vehicle) => vehicle.make)
+      existingVehicles.map((vehicle) => vehicle.make),
     );
     newSearchParams.set(
       "models",
-      existingVehicles.map((vehicle) => vehicle.model)
+      existingVehicles.map((vehicle) => vehicle.model),
     );
     newSearchParams.set(
       "model_ids",
-      existingVehicles.map((vehicle) => vehicle.model_id)
+      existingVehicles.map((vehicle) => vehicle.model_id),
     );
     newSearchParams.set(
       "years",
-      existingVehicles.map((vehicle) => vehicle.year)
+      existingVehicles.map((vehicle) => vehicle.year),
     );
     newSearchParams.set(
       "mechanicalCondition",
-      existingVehicles.map((vehicle) => vehicle.mechanicalCondition)
+      existingVehicles.map((vehicle) => vehicle.mechanicalCondition),
     );
     newSearchParams.set(
       "mobilityCondition",
-      existingVehicles.map((vehicle) => vehicle.mobilityCondition)
+      existingVehicles.map((vehicle) => vehicle.mobilityCondition),
     );
     newSearchParams.set(
       "quantity",
-      existingVehicles.map((vehicle) => vehicle.quantity)
+      existingVehicles.map((vehicle) => vehicle.quantity),
     );
 
     // update the url

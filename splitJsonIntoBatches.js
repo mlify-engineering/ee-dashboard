@@ -102,17 +102,17 @@ const processPoolData = (rounds) => {
     const { drawDate } = round;
     // skip if all the pools are 0
     let count = 0;
-    for (let i = 1; i <= 18; i++) {
+    for (let i = 1; i <= 17; i++) {
       const drawPool = round[`dd${i}`];
       if (drawPool === "0") {
         count += 1;
       }
     }
-    if (count === 18) {
+    if (count === 17) {
       // go to the next round if all the pools are 0
       return acc;
     }
-    for (let i = 1; i <= 18; i++) {
+    for (let i = 1; i <= 17; i++) {
       const drawPool = round[`dd${i}`].replace(/,/g, "");
       const poolName = `CRS Range: ` + poolTitle[i - 1];
       if (drawPool) {
@@ -189,22 +189,81 @@ fs.writeFileSync(
 // total drawSize in each year
 
 const drawInvitationsTotalPerYear = {};
+const totalCandidatesOverTheYears = {};
 
 data.rounds.forEach((round) => {
-  const drawDate = round.drawDate;
-  const drawInvitations = round.drawSize.replace(/,/g, ""); // Remove commas
-  const year = new Date(drawDate).getFullYear();
+  let drawDate = round.drawDate;
+  // get year and month
+  drawDate = drawDate.split("-").slice(0, 2).join("-");
 
-  if (!drawInvitationsTotalPerYear[year]) {
-    drawInvitationsTotalPerYear[year] = 0;
+  const drawInvitations = round.drawSize.replace(/,/g, ""); // Remove commas
+  if (!drawInvitationsTotalPerYear[drawDate]) {
+    drawInvitationsTotalPerYear[drawDate] = 0;
   }
-  drawInvitationsTotalPerYear[year] += parseInt(drawInvitations, 10);
+  const drawPool = round[`dd18`].replace(/,/g, "");
+  if (!totalCandidatesOverTheYears[drawDate]) {
+    totalCandidatesOverTheYears[drawDate] = [];
+  }
+  totalCandidatesOverTheYears[drawDate].push(parseInt(drawPool, 10));
+  drawInvitationsTotalPerYear[drawDate] += parseInt(drawInvitations, 10);
+});
+
+// mean of the totalCandidatesOverTheYears
+const meanTotalCandidatesOverTheYears = {};
+Object.keys(totalCandidatesOverTheYears).forEach((key) => {
+  const totalCandidates = totalCandidatesOverTheYears[key];
+  const mean =
+    totalCandidates.reduce((a, b) => a + b, 0) / totalCandidates.length;
+  meanTotalCandidatesOverTheYears[key] = mean;
 });
 
 // To see the result
 console.log(drawInvitationsTotalPerYear);
+console.log(meanTotalCandidatesOverTheYears);
 
 console.log("Draw Invitations:: ", drawInvitationsTotalPerYear);
+console.log("Total Candidates:: ", meanTotalCandidatesOverTheYears);
+
+// sort by key name in ascending order of date of the key
+const sortedDrawInvitationsTotalPerYear = {};
+Object.keys(drawInvitationsTotalPerYear)
+  .sort()
+  .forEach((key) => {
+    sortedDrawInvitationsTotalPerYear[key] = drawInvitationsTotalPerYear[key];
+  });
+
+const sortedTotalCandidatesOverTheYears = {};
+Object.keys(meanTotalCandidatesOverTheYears)
+  .sort()
+  .forEach((key) => {
+    sortedTotalCandidatesOverTheYears[key] =
+      meanTotalCandidatesOverTheYears[key];
+  });
+
+// remove the all the keys with 0 value from the meanTotalCandidatesOverTheYears
+Object.keys(sortedTotalCandidatesOverTheYears).forEach((key) => {
+  if (sortedTotalCandidatesOverTheYears[key] === 0) {
+    delete sortedTotalCandidatesOverTheYears[key];
+    delete sortedDrawInvitationsTotalPerYear[key];
+  }
+});
+
+const finalInvitationTrendData = [
+  {
+    x: Object.keys(sortedDrawInvitationsTotalPerYear),
+    y: Object.values(sortedDrawInvitationsTotalPerYear),
+    type: "scatter",
+    mode: "lines+markers",
+    name: "Draw Invitations",
+  },
+  {
+    x: Object.keys(sortedTotalCandidatesOverTheYears),
+    y: Object.values(sortedTotalCandidatesOverTheYears),
+    type: "scatter",
+    mode: "lines+markers",
+    name: "Total(Mean) Candidates",
+  },
+];
 
 const drawSizeOutputFilePrefix = path.join(
   __dirname,
@@ -214,5 +273,5 @@ console.log("drawSizeOutputFilePrefix:: ", drawSizeOutputFilePrefix);
 
 fs.writeFileSync(
   `${drawSizeOutputFilePrefix}`,
-  JSON.stringify(drawInvitationsTotalPerYear, null, 2),
+  JSON.stringify(finalInvitationTrendData, null, 2),
 );

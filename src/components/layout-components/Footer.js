@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className="footer">
       <span>
         Copyright &copy; {`${new Date().getFullYear()}`}{" "}
-        <span className="font-weight-semibold">{`${APP_NAME}`}</span> All rights
-        reserved.
+        <a href="https://mlify.ca">MLify Inc.</a>
+        <span className="font-weight-semibold"> | </span> All rights reserved.
       </span>
       <div>
         <a className="text-gray" href="https://mlify.ca/terms-and-conditions/">

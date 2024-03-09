@@ -32,9 +32,9 @@ const getLogo = (props) => {
   const { navCollapsed, logoType } = props;
   if (logoType === "light") {
     if (navCollapsed) {
-      return "/img/logo-sm-white.png";
+      return `${process.env.PUBLIC_URL}` + `/img/MLifyLogo.png`;
     }
-    return "/img/logo-white.png";
+    return `${process.env.PUBLIC_URL}` + `/img/MLifyLogo.png`;
   }
 
   if (navCollapsed) {
@@ -58,9 +58,9 @@ export const Logo = (props) => {
       className={getLogoDisplay(isMobile, props.mobileLogo)}
       style={{ width: `${getLogoWidthGutter(props, isMobile)}` }}
     >
-      <Link to="/app/dashboard/">
+      <Link to="/">
         <img
-          className="rounded"
+          className="rectangular-logo"
           src={getLogo(props)}
           alt={`${APP_NAME} logo`}
           width="50px"
@@ -71,8 +71,8 @@ export const Logo = (props) => {
 };
 
 const mapStateToProps = ({ theme }) => {
-  const { navCollapsed, navType } = theme;
-  return { navCollapsed, navType };
+  const { navCollapsed, navType, logoType } = theme;
+  return { navCollapsed, navType, logoType };
 };
 
 export default connect(mapStateToProps)(Logo);

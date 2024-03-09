@@ -196,7 +196,7 @@ export const DeleteCargoFromUrl = ({ cargos }) => {
         String(existingCargo.category) === String(cargo.category) &&
         String(existingCargo.item) === String(cargo.item) &&
         String(existingCargo.item_id) === String(cargo.item_id) &&
-        String(existingCargo.size_id) === String(cargo.size_id)
+        String(existingCargo.size_id) === String(cargo.size_id),
     );
     if (index !== -1) {
       existingCargos.splice(index, 1);
@@ -228,75 +228,75 @@ export const DeleteCargoFromUrl = ({ cargos }) => {
   } else {
     newSearchParams.set(
       "length",
-      existingCargos.map((cargo) => cargo.length)
+      existingCargos.map((cargo) => cargo.length),
     );
     newSearchParams.set(
       "width",
-      existingCargos.map((cargo) => cargo.width)
+      existingCargos.map((cargo) => cargo.width),
     );
     newSearchParams.set(
       "height",
-      existingCargos.map((cargo) => cargo.height)
+      existingCargos.map((cargo) => cargo.height),
     );
     newSearchParams.set(
       "dimension_unit",
-      existingCargos.map((cargo) => cargo.dimension_unit)
+      existingCargos.map((cargo) => cargo.dimension_unit),
     );
     newSearchParams.set(
       "weight",
-      existingCargos.map((cargo) => cargo.weight)
+      existingCargos.map((cargo) => cargo.weight),
     );
     newSearchParams.set(
       "weight_unit",
-      existingCargos.map((cargo) => cargo.weight_unit)
+      existingCargos.map((cargo) => cargo.weight_unit),
     );
     newSearchParams.set(
       "fragile",
-      existingCargos.map((cargo) => cargo.fragile)
+      existingCargos.map((cargo) => cargo.fragile),
     );
     newSearchParams.set(
       "hazardous",
-      existingCargos.map((cargo) => cargo.hazardous)
+      existingCargos.map((cargo) => cargo.hazardous),
     );
     newSearchParams.set(
       "flammable",
-      existingCargos.map((cargo) => cargo.flammable)
+      existingCargos.map((cargo) => cargo.flammable),
     );
     newSearchParams.set(
       "used",
-      existingCargos.map((cargo) => cargo.used)
+      existingCargos.map((cargo) => cargo.used),
     );
     newSearchParams.set(
       "cargo_quantity",
-      existingCargos.map((cargo) => cargo.quantity)
+      existingCargos.map((cargo) => cargo.quantity),
     );
     newSearchParams.set(
       "type",
-      existingCargos.map((cargo) => cargo.type)
+      existingCargos.map((cargo) => cargo.type),
     );
     newSearchParams.set(
       "cargo_type",
-      existingCargos.map((cargo) => cargo.cargo_type)
+      existingCargos.map((cargo) => cargo.cargo_type),
     );
     newSearchParams.set(
       "size",
-      existingCargos.map((cargo) => cargo.size)
+      existingCargos.map((cargo) => cargo.size),
     );
     newSearchParams.set(
       "category",
-      existingCargos.map((cargo) => cargo.category)
+      existingCargos.map((cargo) => cargo.category),
     );
     newSearchParams.set(
       "item",
-      existingCargos.map((cargo) => cargo.item)
+      existingCargos.map((cargo) => cargo.item),
     );
     newSearchParams.set(
       "item_id",
-      existingCargos.map((cargo) => cargo.item_id)
+      existingCargos.map((cargo) => cargo.item_id),
     );
     newSearchParams.set(
       "size_id",
-      existingCargos.map((cargo) => cargo.size_id)
+      existingCargos.map((cargo) => cargo.size_id),
     );
 
     // update the url
@@ -372,7 +372,7 @@ export const ReplaceCargoInUrl = ({ oldCargo, newCargo }) => {
       String(existingCargo.category) === String(oldCargo.category) &&
       String(existingCargo.item) === String(oldCargo.item) &&
       String(existingCargo.item_id) === String(oldCargo.item_id) &&
-      String(existingCargo.size_id) === String(oldCargo.size_id)
+      String(existingCargo.size_id) === String(oldCargo.size_id),
   );
   if (index !== -1) {
     existingCargos[index] = {
@@ -423,75 +423,75 @@ export const ReplaceCargoInUrl = ({ oldCargo, newCargo }) => {
   } else {
     newSearchParams.set(
       "length",
-      existingCargos.map((cargo) => cargo.length)
+      existingCargos.map((cargo) => cargo.length),
     );
     newSearchParams.set(
       "width",
-      existingCargos.map((cargo) => cargo.width)
+      existingCargos.map((cargo) => cargo.width),
     );
     newSearchParams.set(
       "height",
-      existingCargos.map((cargo) => cargo.height)
+      existingCargos.map((cargo) => cargo.height),
     );
     newSearchParams.set(
       "dimension_unit",
-      existingCargos.map((cargo) => cargo.dimension_unit)
+      existingCargos.map((cargo) => cargo.dimension_unit),
     );
     newSearchParams.set(
       "weight",
-      existingCargos.map((cargo) => cargo.weight)
+      existingCargos.map((cargo) => cargo.weight),
     );
     newSearchParams.set(
       "weight_unit",
-      existingCargos.map((cargo) => cargo.weight_unit)
+      existingCargos.map((cargo) => cargo.weight_unit),
     );
     newSearchParams.set(
       "fragile",
-      existingCargos.map((cargo) => cargo.fragile)
+      existingCargos.map((cargo) => cargo.fragile),
     );
     newSearchParams.set(
       "hazardous",
-      existingCargos.map((cargo) => cargo.hazardous)
+      existingCargos.map((cargo) => cargo.hazardous),
     );
     newSearchParams.set(
       "flammable",
-      existingCargos.map((cargo) => cargo.flammable)
+      existingCargos.map((cargo) => cargo.flammable),
     );
     newSearchParams.set(
       "used",
-      existingCargos.map((cargo) => cargo.used)
+      existingCargos.map((cargo) => cargo.used),
     );
     newSearchParams.set(
       "cargo_quantity",
-      existingCargos.map((cargo) => cargo.quantity)
+      existingCargos.map((cargo) => cargo.quantity),
     );
     newSearchParams.set(
       "type",
-      existingCargos.map((cargo) => cargo.type)
+      existingCargos.map((cargo) => cargo.type),
     );
     newSearchParams.set(
       "cargo_type",
-      existingCargos.map((cargo) => cargo.cargo_type)
+      existingCargos.map((cargo) => cargo.cargo_type),
     );
     newSearchParams.set(
       "size",
-      existingCargos.map((cargo) => cargo.size)
+      existingCargos.map((cargo) => cargo.size),
     );
     newSearchParams.set(
       "category",
-      existingCargos.map((cargo) => cargo.category)
+      existingCargos.map((cargo) => cargo.category),
     );
     newSearchParams.set(
       "item",
-      existingCargos.map((cargo) => cargo.item)
+      existingCargos.map((cargo) => cargo.item),
     );
     newSearchParams.set(
       "item_id",
-      existingCargos.map((cargo) => cargo.item_id)
+      existingCargos.map((cargo) => cargo.item_id),
     );
     newSearchParams.set(
       "size_id",
-      existingCargos.map((cargo) => cargo.size_id)
+      existingCargos.map((cargo) => cargo.size_id),
     );
 
     // update the url

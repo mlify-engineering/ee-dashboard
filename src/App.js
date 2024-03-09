@@ -27,8 +27,10 @@ function App() {
           >
             <Router>
               <Routes>
-                {/* Updated from component={Views} to element={<Views />} */}
-                <Route path="/" element={<Views />} />
+                <Route
+                  path="/"
+                  element={<Views theme={THEME_CONFIG.currentTheme} />}
+                />
               </Routes>
             </Router>
           </ThemeSwitcherProvider>

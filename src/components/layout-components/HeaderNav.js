@@ -1,112 +1,74 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { Layout, Button } from "antd";
-import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+import { Layout } from "antd";
 import Logo from "./Logo";
-import NavProfile from "./NavProfile";
-import UserSwitcher from "./userSwitcher";
-import NavSearch from "./NavSearch";
-import { toggleCollapsedNav, onMobileNavToggle } from "redux/actions/Theme";
 import {
-  NAV_TYPE_TOP,
-  SIDE_NAV_COLLAPSED_WIDTH,
-  SIDE_NAV_WIDTH,
-} from "constants/ThemeConstant";
+  toggleCollapsedNav,
+  onMobileNavToggle,
+} from "../../redux/actions/Theme";
 import utils from "utils";
-import { useHistory } from "react-router-dom";
-import { useSelector } from "react-redux";
 
 const { Header } = Layout;
 
 export const HeaderNav = (props) => {
-  const {
-    navCollapsed,
-    mobileNav,
-    navType,
-    headerNavColor,
-    toggleCollapsedNav,
-    onMobileNavToggle,
-    isMobile,
-    currentTheme,
-  } = props;
-  const [searchActive, setSearchActive] = useState(false);
-  let history = useHistory();
-  const { user } = useSelector((state) => state.auth);
+  const { logoType, headerNavColor, currentTheme } = props;
 
-  const onSearchClose = () => {
-    setSearchActive(false);
-  };
-
-  const onToggle = () => {
-    if (!isMobile) {
-      toggleCollapsedNav(!navCollapsed);
-    } else {
-      onMobileNavToggle(!mobileNav);
-    }
-  };
-
-  const isNavTop = navType === NAV_TYPE_TOP ? true : false;
   const mode = () => {
     if (!headerNavColor) {
       return utils.getColorContrast(
-        currentTheme === "dark" ? "#00000" : "#ffffff"
+        currentTheme === "dark" ? "#00000" : "#ffffff",
       );
     }
     return utils.getColorContrast(headerNavColor);
   };
   const navMode = mode();
-  const getNavWidth = () => {
-    if (isNavTop || isMobile) {
-      return "0px";
-    }
-    if (navCollapsed) {
-      return `${SIDE_NAV_COLLAPSED_WIDTH}px`;
-    } else {
-      return `${SIDE_NAV_WIDTH}px`;
-    }
-  };
 
-  useEffect(() => {
-    if (!isMobile) {
-      onSearchClose();
-    }
-  });
+  useEffect(() => {});
 
   return (
     <Header
       className={`app-header ${navMode}`}
       style={{ backgroundColor: headerNavColor }}
     >
-      <div className={`app-header-wrapper ${isNavTop ? "layout-top-nav" : ""}`}>
-        <Logo logoType={navMode} />
-        <div className="nav" style={{ width: `calc(100% - ${getNavWidth()})` }}>
-          <div className="nav-left">
-            <ul className="ant-menu ant-menu-root ant-menu-horizontal">
-              {isNavTop && !isMobile ? null : (
-                <li
-                  className="ant-menu-item ant-menu-item-only-child"
-                  onClick={() => {
-                    onToggle();
-                  }}
-                >
-                  {navCollapsed || isMobile ? (
-                    <MenuUnfoldOutlined className="nav-icon" />
-                  ) : (
-                    <MenuFoldOutlined className="nav-icon" />
-                  )}
-                </li>
-              )}
-            </ul>
-          </div>
-
-          <div className="nav-right">
-            {/* <Button type="primary">Book A Shipment</Button> */}
-            <UserSwitcher />
-            <NavProfile />
-          </div>
-          <NavSearch active={searchActive} close={onSearchClose} />
-        </div>
+      <div className="app-header--pane">
+        <Logo logoType={logoType} />
       </div>
+      <img
+        className="show-mobile"
+        src={`${process.env.PUBLIC_URL}/img/MLifyLogo.png`}
+        alt="Canada Logo"
+        style={{ height: "30px", width: "30px", margin: "20px" }}
+      />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignContent: "center",
+          textAlign: "center",
+          flexGrow: 1,
+        }}
+      >
+        <h1 className="hide-mobile">
+          Express Entry Visualizer - Overview of Canada&apos;s Immigration
+          Rounds
+        </h1>
+        <h4 className="show-mobile">
+          Express Entry Visualizer <br />
+          Overview of Canada&apos;s Immigration
+        </h4>
+      </div>
+      <img
+        className="hide-mobile"
+        src={`${process.env.PUBLIC_URL}/img/mapple-leaf.png`}
+        alt="Canada Logo"
+        style={{ margin: "20px", height: "50px" }}
+      />
+      <img
+        className="show-mobile"
+        src={`${process.env.PUBLIC_URL}/img/mapple-leaf.png`}
+        alt="Canada Logo"
+        style={{ margin: "20px", height: "30px" }}
+      />
     </Header>
   );
 };

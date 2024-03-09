@@ -87,7 +87,7 @@ const AddressItem = (props) => {
                               },
                               "bg-dark",
                               "Confirm",
-                              "bg-danger"
+                              "bg-danger",
                             );
                           }}
                         >
@@ -157,7 +157,7 @@ const AddAddressForm = (props) => {
     });
 
     setSelectedAddress(
-      `${address[0].address_line_1}, ${address[0].address_line_2}, ${address[0].postcode}`
+      `${address[0].address_line_1}, ${address[0].address_line_2}, ${address[0].postcode}`,
     );
   };
 

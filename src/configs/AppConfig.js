@@ -21,5 +21,6 @@ export const THEME_CONFIG = {
   headerNavColor: "",
   mobileNav: false,
   currentTheme: "dark",
+  logoType: "light",
   direction: DIR_LTR,
 };

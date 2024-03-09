@@ -1,14 +1,11 @@
 import React from "react";
 import { Drawer, Button } from "antd";
 import { connect } from "react-redux";
-import { NAV_TYPE_SIDE } from "constants/ThemeConstant";
-import { Scrollbars } from "react-custom-scrollbars";
-import MenuContent from "./MenuContent";
-import { onMobileNavToggle } from "redux/actions/Theme";
+import { onMobileNavToggle } from "../../redux/actions/Theme";
 import Logo from "./Logo";
 import Flex from "components/shared-components/Flex";
 import { ArrowLeftOutlined } from "@ant-design/icons";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const MobileNav = ({
   sideNavTheme,
@@ -19,7 +16,7 @@ export const MobileNav = ({
   localization = true,
 }) => {
   const props = { sideNavTheme, routeInfo, hideGroupTitle, localization };
-  let history = useHistory();
+  let history = useNavigate();
   const onClose = () => {
     onMobileNavToggle(false);
   };
@@ -39,20 +36,6 @@ export const MobileNav = ({
             <ArrowLeftOutlined />
           </div>
         </Flex>
-        <div className="mobile-nav-menu">
-          <Scrollbars autoHide>
-            <Button
-              type="primary"
-              className="m-3"
-              onClick={() => {
-                history.push(`/app/book_shipment`);
-              }}
-            >
-              Start New Shipment
-            </Button>
-            <MenuContent type={NAV_TYPE_SIDE} {...props} />
-          </Scrollbars>
-        </div>
       </Flex>
     </Drawer>
   );

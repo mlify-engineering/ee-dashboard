@@ -202,7 +202,7 @@ export const ThemeConfigurator = ({
           })}
           onCopy={() =>
             message.success(
-              "Copy Success, please paste it to src/configs/AppConfig.js THEME_CONFIG variable."
+              "Copy Success, please paste it to src/configs/AppConfig.js THEME_CONFIG variable.",
             )
           }
         >
