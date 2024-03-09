@@ -1,7 +1,4 @@
-const fs = require("fs");
-const path = require("path");
 import { readJSON, writeJSON, removeFile } from 'https://deno.land/x/flat@0.0.11/mod.ts'
-
 const BATCH_SIZE = 8;
 console.log("BATCH_SIZE:: ", BATCH_SIZE);
 
@@ -74,10 +71,7 @@ sortedKeys.forEach((key) => {
   sortedData[key] = accumulatedData[key];
 });
 // save the sortedData as a json file
-const outputFilePrefix = path.join(
-  __dirname,
-  "public/data/processed_data_crs_trend.json",
-);
+const outputFilePrefix = "public/data/processed_data_crs_trend.json";
 console.log("outputFilePrefix:: ", outputFilePrefix);
 // fs.writeFileSync(`${outputFilePrefix}`, JSON.stringify(sortedData, null, 2));
 await writeJSON(outputFilePrefix, JSON.stringify(sortedData, null, 2))
@@ -180,10 +174,7 @@ sortedPoolKeys.forEach((key) => {
   sortedPoolData[key] = accumulatedPoolData[key];
 });
 // save the sortedPoolData as a json file
-const outputFilePoolPrefix = path.join(
-  __dirname,
-  "public/data/processed_data_pool_trend.json",
-);
+const outputFilePoolPrefix = "public/data/processed_data_pool_trend.json";
 console.log("outputFilePoolPrefix:: ", outputFilePoolPrefix);
 // fs.writeFileSync(
 //   `${outputFilePoolPrefix}`,
@@ -270,10 +261,7 @@ const finalInvitationTrendData = [
   },
 ];
 
-const drawSizeOutputFilePrefix = path.join(
-  __dirname,
-  "public/data/processed_data_draw_size.json",
-);
+const drawSizeOutputFilePrefix = "public/data/processed_data_draw_size.json";
 console.log("drawSizeOutputFilePrefix:: ", drawSizeOutputFilePrefix);
 
 // fs.writeFileSync(
