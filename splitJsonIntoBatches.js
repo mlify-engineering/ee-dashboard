@@ -1,4 +1,4 @@
-import { readJSON, writeJSON, removeFile } from 'https://deno.land/x/flat@0.0.11/mod.ts'
+import { readJSON, writeJSON } from "https://deno.land/x/flat@0.0.15/mod.ts";
 const BATCH_SIZE = 8;
 console.log("BATCH_SIZE:: ", BATCH_SIZE);
 
