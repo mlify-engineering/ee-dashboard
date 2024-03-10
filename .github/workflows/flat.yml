@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14' # Or any other version of Node.js
+          node-version: '16' # Or any other version of Node.js
       - name: Check out repo
         uses: actions/checkout@v2
       # This step installs Deno, which is a new Javascript runtime that improves on Node. We'll use it for postprocessing later
@@ -28,4 +28,4 @@ jobs:
         with:
           http_url: https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json
           downloaded_filename: public/data/ee_rounds_123_en.json # Saves the file in src/data folder
-          postprocess: node splitJsonIntoBatches.ts
+          postprocess: ./splitJsonIntoBatches.ts
