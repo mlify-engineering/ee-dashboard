@@ -6,7 +6,7 @@ on:
       - .github/workflows/flat.yml # Only run a new workflow every time this file (flat.yaml) file changes
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
+    - cron: '0 15 * * *' # Runs at 15:00 UTC every day
 
 jobs:
   scheduled:
@@ -28,4 +28,4 @@ jobs:
         with:
           http_url: https://www.canada.ca/content/dam/ircc/documents/json/ee_rounds_123_en.json
           downloaded_filename: public/data/ee_rounds_123_en.json # Saves the file in src/data folder
-          postprocess: ./splitJsonIntoBatches.ts
+          postprocess: ./splitJsonIntoBatches.ts public/data/ee_rounds_123_en.json
