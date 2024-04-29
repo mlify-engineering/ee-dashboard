@@ -54,13 +54,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start --host=localhost",
+    "start": "serve -s build",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false",
-    "test:dev": "react-scripts test --watchAll",
-    "coverage": "jest -i --coverage",
-    "coverage:coveralls": "jest -i --coverage --coverageReporters=text-lcov | coveralls",
-    "dev": "concurrently \"PORT=3001 react-scripts start\" \"gulp watch\"",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/ --ext .js",
     "lint:fix": "eslint . --fix --ignore-path .gitignore"
