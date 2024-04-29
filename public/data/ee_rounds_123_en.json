@@ -1,11 +1,273 @@
 {
   "classes": "wb-tables",
   "rounds": [
-	
-        {"drawNumber":"287","drawNumberURL":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=287'>287</a>","drawDate":"2024-02-29","drawDateFull":"February 29, 2024","drawName":"French language proficiency (2024-1)","drawSize":"2,500","drawCRS":"336","mitext":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=287'>Invitations to apply for permanent residence under the Express Entry system #287</a>","DrawText1":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=287'>See full text of Ministerial Instruction</a>","drawText2":"Federal Skilled Worker Program, Canadian Experience Class and Federal Skilled Trades Program","drawDateTime":"February 29, 2024 at 15:58:53 UTC","drawCutOff":"January 18, 2024 at 09:15:46 UTC","drawDistributionAsOn":"February 27, 2024","dd1":"965","dd2":"9,567","dd3":"59,371","dd4":"7,574","dd5":"10,095","dd6":"17,137","dd7":"13,373","dd8":"11,192","dd9":"50,695","dd10":"10,265","dd11":"10,474","dd12":"9,110","dd13":"10,407","dd14":"10,439","dd15":"56,178","dd16":"29,305","dd17":"5,406","dd18":"211,487"},
- 
-		{"drawNumber":"286","drawNumberURL":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=286'>286</a>","drawDate":"2024-02-28","drawDateFull":"February 28, 2024","drawName":"General","drawSize":"1,470","drawCRS":"534","mitext":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=286'>Invitations to apply for permanent residence under the Express Entry system #286</a>","DrawText1":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=286'>See full text of Ministerial Instruction</a>","drawText2":"Federal Skilled Worker Program, Canadian Experience Class, Federal Skilled Trades Program and Provincial Nominee Program","drawDateTime":"February 28, 2024 at 14:57:26 UTC","drawCutOff":"January 16, 2024 at 03:51:05 UTC","drawDistributionAsOn":"February 27, 2024","dd1":"965","dd2":"9,567","dd3":"59,371","dd4":"7,574","dd5":"10,095","dd6":"17,137","dd7":"13,373","dd8":"11,192","dd9":"50,695","dd10":"10,265","dd11":"10,474","dd12":"9,110","dd13":"10,407","dd14":"10,439","dd15":"56,178","dd16":"29,305","dd17":"5,406","dd18":"211,487"},
-
+      {"drawNumber":"295","drawNumberURL":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=295'>295</a>","drawDate":"2024-04-24","drawDateFull":"April 24, 2024","drawName":"French language proficiency (2024-1)","drawSize":"1,400","drawCRS":"410","mitext":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=295'>Invitations to apply for permanent residence under the Express Entry system #295</a>","DrawText1":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=295'>See full text of Ministerial Instruction</a>","drawText2":"Federal Skilled Worker Program, Canadian Experience Class and Federal Skilled Trades Program","drawDateTime":"April 24, 2024 at 14:10:42 UTC","drawCutOff":"April 07, 2024 at 02:06:46 UTC","drawDistributionAsOn":"April 23, 2024","dd1":"1,057","dd2":"10,625","dd3":"60,933","dd4":"7,520","dd5":"11,495","dd6":"16,928","dd7":"13,558","dd8":"11,432","dd9":"52,475","dd10":"10,646","dd11":"10,645","dd12":"9,645","dd13":"10,740","dd14":"10,799","dd15":"56,383","dd16":"27,740","dd17":"5,484","dd18":"214,697"},
+      
+		{"drawNumber":"294","drawNumberURL":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=294'>294</a>","drawDate":"2024-04-23","drawDateFull":"April 23, 2024","drawName":"General","drawSize":"2,095","drawCRS":"529","mitext":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=294'>Invitations to apply for permanent residence under the Express Entry system #294</a>","DrawText1":"<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=294'>See full text of Ministerial Instruction</a>","drawText2":"Federal Skilled Worker Program, Canadian Experience Class, Federal Skilled Trades Program and Provincial Nominee Program","drawDateTime":"April 23, 2024 at 16:54:59 UTC","drawCutOff":"November 08, 2023 at 17:50:29 UTC","drawDistributionAsOn":"April 23, 2024","dd1":"1,057","dd2":"10,625","dd3":"60,933","dd4":"7,520","dd5":"11,495","dd6":"16,928","dd7":"13,558","dd8":"11,432","dd9":"52,475","dd10":"10,646","dd11":"10,645","dd12":"9,645","dd13":"10,740","dd14":"10,799","dd15":"56,383","dd16":"27,740","dd17":"5,484","dd18":"214,697"},
+    {
+      "drawNumber": "293",
+      "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=293'>293</a>",
+      "drawDate": "2024-04-11",
+      "drawDateFull": "April 11, 2024",
+      "drawName": "STEM occupations (2024-1)",
+      "drawSize": "4,500",
+      "drawCRS": "491",
+      "mitext": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=293'>Invitations to apply for permanent residence under the Express Entry system #293</a>",
+      "DrawText1": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=293'>See full text of Ministerial Instruction</a>",
+      "drawText2": "Federal Skilled Worker Program, Canadian Experience Class and Federal Skilled Trades Program",
+      "drawDateTime": "April 11, 2024 at 13:23:42 UTC",
+      "drawCutOff": "February 25, 2024 at 11:55:12 UTC",
+      "drawDistributionAsOn": "April 9, 2024",
+      "dd1": "1,093",
+      "dd2": "12,051",
+      "dd3": "62,073",
+      "dd4": "9,167",
+      "dd5": "11,246",
+      "dd6": "16,933",
+      "dd7": "13,429",
+      "dd8": "11,298",
+      "dd9": "51,694",
+      "dd10": "10,454",
+      "dd11": "10,485",
+      "dd12": "9,461",
+      "dd13": "10,640",
+      "dd14": "10,654",
+      "dd15": "56,015",
+      "dd16": "27,831",
+      "dd17": "5,410",
+      "dd18": "216,167"
+    },
+    {
+      "drawNumber": "292",
+      "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=292'>292</a>",
+      "drawDate": "2024-04-10",
+      "drawDateFull": "April 10, 2024",
+      "drawName": "General",
+      "drawSize": "1,280",
+      "drawCRS": "549",
+      "mitext": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=292'>Invitations to apply for permanent residence under the Express Entry system #292</a>",
+      "DrawText1": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=292'>See full text of Ministerial Instruction</a>",
+      "drawText2": "Federal Skilled Worker Program, Canadian Experience Class, Federal Skilled Trades Program and Provincial Nominee Program",
+      "drawDateTime": "April 10, 2024 at 13:11:33 UTC",
+      "drawCutOff": "March 21, 2024 at 03:37:24 UTC",
+      "drawDistributionAsOn": "April 9, 2024",
+      "dd1": "1,093",
+      "dd2": "12,051",
+      "dd3": "62,073",
+      "dd4": "9,167",
+      "dd5": "11,246",
+      "dd6": "16,933",
+      "dd7": "13,429",
+      "dd8": "11,298",
+      "dd9": "51,694",
+      "dd10": "10,454",
+      "dd11": "10,485",
+      "dd12": "9,461",
+      "dd13": "10,640",
+      "dd14": "10,654",
+      "dd15": "56,015",
+      "dd16": "27,831",
+      "dd17": "5,410",
+      "dd18": "216,167"
+    },
+    {
+      "drawNumber": "291",
+      "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=291'>291</a>",
+      "drawDate": "2024-03-26",
+      "drawDateFull": "March 26, 2024",
+      "drawName": "French language proficiency (2024-1)",
+      "drawSize": "1,500",
+      "drawCRS": "388",
+      "mitext": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=291'>Invitations to apply for permanent residence under the Express Entry system #291</a>",
+      "DrawText1": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=291'>See full text of Ministerial Instruction</a>",
+      "drawText2": "Federal Skilled Worker Program, Canadian Experience Class and Federal Skilled Trades Program",
+      "drawDateTime": "March 26, 2024 at 15:59:36 UTC",
+      "drawCutOff": "March 10, 2024 at 20:06:26 UTC",
+      "drawDistributionAsOn": "March 24, 2024",
+      "dd1": "987",
+      "dd2": "10,342",
+      "dd3": "60,488",
+      "dd4": "8,294",
+      "dd5": "10,683",
+      "dd6": "17,105",
+      "dd7": "13,218",
+      "dd8": "11,188",
+      "dd9": "50,882",
+      "dd10": "10,172",
+      "dd11": "10,309",
+      "dd12": "9,296",
+      "dd13": "10,610",
+      "dd14": "10,495",
+      "dd15": "55,586",
+      "dd16": "28,287",
+      "dd17": "5,390",
+      "dd18": "211,962"
+    },
+    {
+      "drawNumber": "290",
+      "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=290'>290</a>",
+      "drawDate": "2024-03-25",
+      "drawDateFull": "March 25, 2024",
+      "drawName": "General",
+      "drawSize": "1,980",
+      "drawCRS": "524",
+      "mitext": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=290'>Invitations to apply for permanent residence under the Express Entry system #290</a>",
+      "DrawText1": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=290'>See full text of Ministerial Instruction</a>",
+      "drawText2": "Federal Skilled Worker Program, Canadian Experience Class, Federal Skilled Trades Program and Provincial Nominee Program",
+      "drawDateTime": "March 25, 2024 at 17:45:49 UTC",
+      "drawCutOff": "February 25, 2024 at 14:42:38 UTC",
+      "drawDistributionAsOn": "March 24, 2024",
+      "dd1": "987",
+      "dd2": "10,342",
+      "dd3": "60,488",
+      "dd4": "8,294",
+      "dd5": "10,683",
+      "dd6": "17,105",
+      "dd7": "13,218",
+      "dd8": "11,188",
+      "dd9": "50,882",
+      "dd10": "10,172",
+      "dd11": "10,309",
+      "dd12": "9,296",
+      "dd13": "10,610",
+      "dd14": "10,495",
+      "dd15": "55,586",
+      "dd16": "28,287",
+      "dd17": "5,390",
+      "dd18": "211,962"
+    },
+    {
+      "drawNumber": "289",
+      "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=289'>289</a>",
+      "drawDate": "2024-03-13",
+      "drawDateFull": "March 13, 2024",
+      "drawName": "Transport occupations (2024-1)",
+      "drawSize": "975",
+      "drawCRS": "430",
+      "mitext": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=289'>Invitations to apply for permanent residence under the Express Entry system #289</a>",
+      "DrawText1": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=289'>See full text of Ministerial Instruction</a>",
+      "drawText2": "Federal Skilled Worker Program, Canadian Experience Class and Federal Skilled Trades Program",
+      "drawDateTime": "March 13, 2024 at 16:16:01 UTC",
+      "drawCutOff": "July 31, 2023 at 13:27:26 UTC",
+      "drawDistributionAsOn": "March 11, 2024",
+      "dd1": "987",
+      "dd2": "10,573",
+      "dd3": "60,108",
+      "dd4": "8,065",
+      "dd5": "10,499",
+      "dd6": "17,083",
+      "dd7": "13,275",
+      "dd8": "11,186",
+      "dd9": "50,569",
+      "dd10": "10,174",
+      "dd11": "10,410",
+      "dd12": "9,186",
+      "dd13": "10,414",
+      "dd14": "10,385",
+      "dd15": "55,099",
+      "dd16": "28,536",
+      "dd17": "5,348",
+      "dd18": "211,220"
+    },
+    {
+      "drawNumber": "288",
+      "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=288'>288</a>",
+      "drawDate": "2024-03-12",
+      "drawDateFull": "March 12, 2024",
+      "drawName": "General",
+      "drawSize": "2,850",
+      "drawCRS": "525",
+      "mitext": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=288'>Invitations to apply for permanent residence under the Express Entry system #288</a>",
+      "DrawText1": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=288'>See full text of Ministerial Instruction</a>",
+      "drawText2": "Federal Skilled Worker Program, Canadian Experience Class, Federal Skilled Trades Program and Provincial Nominee Program",
+      "drawDateTime": "March 12, 2024 at 14:57:26 UTC",
+      "drawCutOff": "November 01, 2023 at 17:08:51 UTC",
+      "drawDistributionAsOn": "March 11, 2024",
+      "dd1": "987",
+      "dd2": "10,573",
+      "dd3": "60,108",
+      "dd4": "8,065",
+      "dd5": "10,499",
+      "dd6": "17,083",
+      "dd7": "13,275",
+      "dd8": "11,186",
+      "dd9": "50,569",
+      "dd10": "10,174",
+      "dd11": "10,410",
+      "dd12": "9,186",
+      "dd13": "10,414",
+      "dd14": "10,385",
+      "dd15": "55,099",
+      "dd16": "28,536",
+      "dd17": "5,348",
+      "dd18": "211,220"
+    },
+    {
+      "drawNumber": "287",
+      "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=287'>287</a>",
+      "drawDate": "2024-02-29",
+      "drawDateFull": "February 29, 2024",
+      "drawName": "French language proficiency (2024-1)",
+      "drawSize": "2,500",
+      "drawCRS": "336",
+      "mitext": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=287'>Invitations to apply for permanent residence under the Express Entry system #287</a>",
+      "DrawText1": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=287'>See full text of Ministerial Instruction</a>",
+      "drawText2": "Federal Skilled Worker Program, Canadian Experience Class and Federal Skilled Trades Program",
+      "drawDateTime": "February 29, 2024 at 15:58:53 UTC",
+      "drawCutOff": "January 18, 2024 at 09:15:46 UTC",
+      "drawDistributionAsOn": "February 27, 2024",
+      "dd1": "965",
+      "dd2": "9,567",
+      "dd3": "59,371",
+      "dd4": "7,574",
+      "dd5": "10,095",
+      "dd6": "17,137",
+      "dd7": "13,373",
+      "dd8": "11,192",
+      "dd9": "50,695",
+      "dd10": "10,265",
+      "dd11": "10,474",
+      "dd12": "9,110",
+      "dd13": "10,407",
+      "dd14": "10,439",
+      "dd15": "56,178",
+      "dd16": "29,305",
+      "dd17": "5,406",
+      "dd18": "211,487"
+    },
+    {
+      "drawNumber": "286",
+      "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=286'>286</a>",
+      "drawDate": "2024-02-28",
+      "drawDateFull": "February 28, 2024",
+      "drawName": "General",
+      "drawSize": "1,470",
+      "drawCRS": "534",
+      "mitext": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=286'>Invitations to apply for permanent residence under the Express Entry system #286</a>",
+      "DrawText1": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=286'>See full text of Ministerial Instruction</a>",
+      "drawText2": "Federal Skilled Worker Program, Canadian Experience Class, Federal Skilled Trades Program and Provincial Nominee Program",
+      "drawDateTime": "February 28, 2024 at 14:57:26 UTC",
+      "drawCutOff": "January 16, 2024 at 03:51:05 UTC",
+      "drawDistributionAsOn": "February 27, 2024",
+      "dd1": "965",
+      "dd2": "9,567",
+      "dd3": "59,371",
+      "dd4": "7,574",
+      "dd5": "10,095",
+      "dd6": "17,137",
+      "dd7": "13,373",
+      "dd8": "11,192",
+      "dd9": "50,695",
+      "dd10": "10,265",
+      "dd11": "10,474",
+      "dd12": "9,110",
+      "dd13": "10,407",
+      "dd14": "10,439",
+      "dd15": "56,178",
+      "dd16": "29,305",
+      "dd17": "5,406",
+      "dd18": "211,487"
+    },
     {
       "drawNumber": "285",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=285'>285</a>",
@@ -39,8 +301,6 @@
       "dd17": "5,292",
       "dd18": "211,273"
     },
-
-
     {
       "drawNumber": "284",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=284'>284</a>",
@@ -74,7 +334,6 @@
       "dd17": "5,292",
       "dd18": "211,273"
     },
-
     {
       "drawNumber": "283",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=283'>283</a>",
@@ -107,7 +366,8 @@
       "dd16": "29,141",
       "dd17": "5,292",
       "dd18": "211,273"
-    }, {
+    },
+    {
       "drawNumber": "282",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=282'>282</a>",
       "drawDate": "2024-02-01",
@@ -139,7 +399,8 @@
       "dd16": "29,709",
       "dd17": "5,401",
       "dd18": "215,726"
-    }, {
+    },
+    {
       "drawNumber": "281",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=281'>281</a>",
       "drawDate": "2024-01-31",
@@ -171,7 +432,8 @@
       "dd16": "29,709",
       "dd17": "5,401",
       "dd18": "215,726"
-    }, {
+    },
+    {
       "drawNumber": "280",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=280'>280</a>",
       "drawDate": "2024-01-23",
@@ -269,7 +531,8 @@
       "dd16": "29,955",
       "dd17": "5,285",
       "dd18": "208,638"
-    }, {
+    },
+    {
       "drawNumber": "277",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=277'>277</a>",
       "drawDate": "2023-12-20",
@@ -301,7 +564,8 @@
       "dd16": "29,955",
       "dd17": "5,285",
       "dd18": "208,638"
-    }, {
+    },
+    {
       "drawNumber": "276",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=276'>276</a>",
       "drawDate": "2023-12-19",
@@ -334,7 +598,6 @@
       "dd17": "5,285",
       "dd18": "208,638"
     },
-
     {
       "drawNumber": "275",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=275'>275</a>",
@@ -368,7 +631,6 @@
       "dd17": "5,285",
       "dd18": "208,638"
     },
-
     {
       "drawNumber": "274",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=274'>274</a>",
@@ -402,7 +664,6 @@
       "dd17": "5,267",
       "dd18": "217,370"
     },
-
     {
       "drawNumber": "273",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=273'>273</a>",
@@ -436,7 +697,6 @@
       "dd17": "5,267",
       "dd18": "217,370"
     },
-
     {
       "drawNumber": "272",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=272'>272</a>",
@@ -470,7 +730,6 @@
       "dd17": "5,267",
       "dd18": "217,370"
     },
-
     {
       "drawNumber": "271",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=271'>271</a>",
@@ -504,7 +763,6 @@
       "dd17": "5,311",
       "dd18": "214,873"
     },
-
     {
       "drawNumber": "270",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=270'>270</a>",
@@ -538,7 +796,6 @@
       "dd17": "5,311",
       "dd18": "214,873"
     },
-
     {
       "drawNumber": "269",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=269'>269</a>",
@@ -572,8 +829,6 @@
       "dd17": "5,311",
       "dd18": "214,873"
     },
-
-
     {
       "drawNumber": "268",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=268'>268</a>",
@@ -606,7 +861,8 @@
       "dd16": "30,996",
       "dd17": "5,235",
       "dd18": "213,592"
-    }, {
+    },
+    {
       "drawNumber": "267",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=267'>267</a>",
       "drawDate": "2023-09-28",
@@ -639,7 +895,6 @@
       "dd17": "5,288",
       "dd18": "214,000"
     },
-
     {
       "drawNumber": "266",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=266'>266</a>",
@@ -672,7 +927,8 @@
       "dd16": "31,532",
       "dd17": "5,288",
       "dd18": "214,000"
-    }, {
+    },
+    {
       "drawNumber": "265",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=265'>265</a>",
       "drawDate": "2023-09-26",
@@ -705,7 +961,6 @@
       "dd17": "5,288",
       "dd18": "214,000"
     },
-
     {
       "drawNumber": "264",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=264'>264</a>",
@@ -738,7 +993,8 @@
       "dd16": "31,418",
       "dd17": "5,236",
       "dd18": "216,035"
-    }, {
+    },
+    {
       "drawNumber": "263",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=263'>263</a>",
       "drawDate": "2023-09-19",
@@ -770,7 +1026,8 @@
       "dd16": "31,418",
       "dd17": "5,236",
       "dd18": "216,035"
-    }, {
+    },
+    {
       "drawNumber": "262",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=262'>262</a>",
       "drawDate": "2023-08-15",
@@ -803,7 +1060,6 @@
       "dd17": "5,298",
       "dd18": "211,356"
     },
-
     {
       "drawNumber": "261",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=261'>261</a>",
@@ -836,7 +1092,8 @@
       "dd16": "32,077",
       "dd17": "5,219",
       "dd18": "211,529"
-    }, {
+    },
+    {
       "drawNumber": "260",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=260'>260</a>",
       "drawDate": "2023-08-02",
@@ -869,8 +1126,6 @@
       "dd17": "5,219",
       "dd18": "211,529"
     },
-
-
     {
       "drawNumber": "259",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=259'>259</a>",
@@ -904,7 +1159,6 @@
       "dd17": "5,219",
       "dd18": "211,529"
     },
-
     {
       "drawNumber": "258",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=258'>258</a>",
@@ -938,7 +1192,6 @@
       "dd17": "5,299",
       "dd18": "209,263"
     },
-
     {
       "drawNumber": "257",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=257'>257</a>",
@@ -972,7 +1225,6 @@
       "dd17": "5,299",
       "dd18": "209,263"
     },
-
     {
       "drawNumber": "256",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=256'>256</a>",
@@ -1006,8 +1258,6 @@
       "dd17": "5,315",
       "dd18": "214,529"
     },
-
-
     {
       "drawNumber": "255",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=255'>255</a>",
@@ -1041,8 +1291,6 @@
       "dd17": "5,315",
       "dd18": "214,529"
     },
-
-
     {
       "drawNumber": "254",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=254'>254</a>",
@@ -1075,7 +1323,8 @@
       "dd16": "33,051",
       "dd17": "5,315",
       "dd18": "214,529"
-    }, {
+    },
+    {
       "drawNumber": "253",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=253'>253</a>",
       "drawDate": "2023-07-04",
@@ -1108,7 +1357,6 @@
       "dd17": "5,315",
       "dd18": "214,529"
     },
-
     {
       "drawNumber": "252",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=252'>252</a>",
@@ -1142,7 +1390,6 @@
       "dd17": "5,429",
       "dd18": "220,003"
     },
-
     {
       "drawNumber": "251",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=251'>251</a>",
@@ -1176,7 +1423,6 @@
       "dd17": "5,429",
       "dd18": "220,003"
     },
-
     {
       "drawNumber": "250",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=250'>250</a>",
@@ -1210,7 +1456,6 @@
       "dd17": "5,380",
       "dd18": "222,166"
     },
-
     {
       "drawNumber": "249",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=249'>249</a>",
@@ -1244,8 +1489,6 @@
       "dd17": "5,455",
       "dd18": "226,842"
     },
-
-
     {
       "drawNumber": "248",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=248'>248</a>",
@@ -1279,7 +1522,6 @@
       "dd17": "5,470",
       "dd18": "225,388"
     },
-
     {
       "drawNumber": "247",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=247'>247</a>",
@@ -1313,8 +1555,6 @@
       "dd17": "5,585",
       "dd18": "230,189"
     },
-
-
     {
       "drawNumber": "246",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=246'>246</a>",
@@ -1348,7 +1588,6 @@
       "dd17": "5,573",
       "dd18": "231,119"
     },
-
     {
       "drawNumber": "245",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=245'>245</a>",
@@ -1382,8 +1621,6 @@
       "dd17": "5,711",
       "dd18": "234,947"
     },
-
-
     {
       "drawNumber": "244",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=244'>244</a>",
@@ -1417,7 +1654,6 @@
       "dd17": "5,681",
       "dd18": "240,146"
     },
-
     {
       "drawNumber": "243",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=243'>243</a>",
@@ -1451,7 +1687,6 @@
       "dd17": "5,650",
       "dd18": "245,121"
     },
-
     {
       "drawNumber": "242",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=242'>242</a>",
@@ -1485,8 +1720,6 @@
       "dd17": "5,706",
       "dd18": "243,374"
     },
-
-
     {
       "drawNumber": "241",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=241'>241</a>",
@@ -1520,7 +1753,6 @@
       "dd17": "5,596",
       "dd18": "240,264"
     },
-
     {
       "drawNumber": "240",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=240'>240</a>",
@@ -1554,7 +1786,6 @@
       "dd17": "5,502",
       "dd18": "239,415"
     },
-
     {
       "drawNumber": "239",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=239'>239</a>",
@@ -1588,7 +1819,6 @@
       "dd17": "5,502",
       "dd18": "239,415"
     },
-
     {
       "drawNumber": "238",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=238'>238</a>",
@@ -1622,7 +1852,6 @@
       "dd17": "5,519",
       "dd18": "240,013"
     },
-
     {
       "drawNumber": "237",
       "drawNumberURL": "<a href='/content/canadasite/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=237'>237</a>",
@@ -1656,7 +1885,6 @@
       "dd17": "5,469",
       "dd18": "243,255"
     },
-
     {
       "drawNumber": "236",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=236'>236</a>",
@@ -1690,7 +1918,6 @@
       "dd17": "5,252",
       "dd18": "232,215"
     },
-
     {
       "drawNumber": "235",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=235'>235</a>",
@@ -1724,7 +1951,6 @@
       "dd17": "5,087",
       "dd18": "233,619"
     },
-
     {
       "drawNumber": "234",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=234'>234</a>",
@@ -1758,7 +1984,6 @@
       "dd17": "5,108",
       "dd18": "234,981"
     },
-
     {
       "drawNumber": "233",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=233'>233</a>",
@@ -1792,7 +2017,6 @@
       "dd17": "5,055",
       "dd18": "235,120"
     },
-
     {
       "drawNumber": "232",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=232'>232</a>",
@@ -1826,7 +2050,6 @@
       "dd17": "5,112",
       "dd18": "237,423"
     },
-
     {
       "drawNumber": "231",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=231'>231</a>",
@@ -1860,7 +2083,6 @@
       "dd17": "5,068",
       "dd18": "238,273"
     },
-
     {
       "drawNumber": "230",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=230'>230</a>",
@@ -1894,7 +2116,6 @@
       "dd17": "5,120",
       "dd18": "239,196"
     },
-
     {
       "drawNumber": "229",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=229'>229</a>",
@@ -1928,7 +2149,6 @@
       "dd17": "5,137",
       "dd18": "238,947"
     },
-
     {
       "drawNumber": "228",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=228'>228</a>",
@@ -1962,7 +2182,6 @@
       "dd17": "5,145",
       "dd18": "238,924"
     },
-
     {
       "drawNumber": "227",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=227'>227</a>",
@@ -1996,7 +2215,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "226",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=226'>226</a>",
@@ -2030,7 +2248,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "225",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=225'>225</a>",
@@ -2064,7 +2281,6 @@
       "dd17": "4,919",
       "dd18": "220,674"
     },
-
     {
       "drawNumber": "224",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=224'>224</a>",
@@ -2098,7 +2314,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "223",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=223'>223</a>",
@@ -2132,7 +2347,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "222",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=222'>222</a>",
@@ -2166,7 +2380,6 @@
       "dd17": "4,839",
       "dd18": "211,093"
     },
-
     {
       "drawNumber": "221",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=221'>221</a>",
@@ -2200,7 +2413,6 @@
       "dd17": "4,866",
       "dd18": "203,773"
     },
-
     {
       "drawNumber": "220",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=220'>220</a>",
@@ -2234,7 +2446,6 @@
       "dd17": "4,911",
       "dd18": "200,924"
     },
-
     {
       "drawNumber": "219",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=219'>219</a>",
@@ -2268,7 +2479,6 @@
       "dd17": "4,911",
       "dd18": "200,924"
     },
-
     {
       "drawNumber": "218",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=218'>218</a>",
@@ -2302,7 +2512,6 @@
       "dd17": "5,084",
       "dd18": "196,692"
     },
-
     {
       "drawNumber": "217",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=217'>217</a>",
@@ -2336,7 +2545,6 @@
       "dd17": "5,313",
       "dd18": "195,895"
     },
-
     {
       "drawNumber": "216",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=216'>216</a>",
@@ -2370,7 +2578,6 @@
       "dd17": "5,736",
       "dd18": "198,061"
     },
-
     {
       "drawNumber": "215",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=215'>215</a>",
@@ -2404,7 +2611,6 @@
       "dd17": "5,834",
       "dd18": "197,660"
     },
-
     {
       "drawNumber": "214",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=214'>214</a>",
@@ -2438,7 +2644,6 @@
       "dd17": "5,799",
       "dd18": "196,685"
     },
-
     {
       "drawNumber": "213",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=213'>213</a>",
@@ -2472,7 +2677,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "212",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=212'>212</a>",
@@ -2506,7 +2710,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "211",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=211'>211</a>",
@@ -2540,7 +2743,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "210",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=210'>210</a>",
@@ -2574,7 +2776,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "209",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=209'>209</a>",
@@ -2608,7 +2809,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "208",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=208'>208</a>",
@@ -2642,7 +2842,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "207",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=207'>207</a>",
@@ -2676,7 +2875,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "206",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=206'>206</a>",
@@ -2710,7 +2908,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "205",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=205'>205</a>",
@@ -2744,7 +2941,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "204",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=204'>204</a>",
@@ -2778,7 +2974,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "203",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=203'>203</a>",
@@ -2812,7 +3007,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "202",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=202'>202</a>",
@@ -2846,7 +3040,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "201",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=201'>201</a>",
@@ -2880,7 +3073,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "200",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=200'>200</a>",
@@ -2914,7 +3106,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "199",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=199'>199</a>",
@@ -2948,7 +3139,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "198",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=198'>198</a>",
@@ -2982,7 +3172,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "197",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=197'>197</a>",
@@ -3016,7 +3205,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "196",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=196'>196</a>",
@@ -3050,7 +3238,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "195",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=195'>195</a>",
@@ -3084,7 +3271,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "194",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=194'>194</a>",
@@ -3118,7 +3304,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "193",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=193'>193</a>",
@@ -3152,7 +3337,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "192",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=192'>192</a>",
@@ -3186,7 +3370,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "191",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=191'>191</a>",
@@ -3220,7 +3403,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "190",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=190'>190</a>",
@@ -3254,7 +3436,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "189",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=189'>189</a>",
@@ -3288,7 +3469,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "188",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=188'>188</a>",
@@ -3322,7 +3502,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "187",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=187'>187</a>",
@@ -3356,7 +3535,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "186",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=186'>186</a>",
@@ -3390,7 +3568,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "185",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=185'>185</a>",
@@ -3424,7 +3601,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "184",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=184'>184</a>",
@@ -3458,7 +3634,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "183",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=183'>183</a>",
@@ -3492,7 +3667,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "182",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=182'>182</a>",
@@ -3526,7 +3700,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "181",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=181'>181</a>",
@@ -3560,7 +3733,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "180",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=180'>180</a>",
@@ -3594,7 +3766,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "179",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=179'>179</a>",
@@ -3628,7 +3799,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "178",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=178'>178</a>",
@@ -3662,7 +3832,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "177",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=177'>177</a>",
@@ -3696,7 +3865,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "176",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=176'>176</a>",
@@ -3730,7 +3898,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "175",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=175'>175</a>",
@@ -3764,7 +3931,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "174",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=174'>174</a>",
@@ -3798,7 +3964,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "173",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=173'>173</a>",
@@ -3832,7 +3997,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "172",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=172'>172</a>",
@@ -3866,7 +4030,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "171",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=171'>171</a>",
@@ -3900,7 +4063,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "170",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=170'>170</a>",
@@ -3934,7 +4096,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "169",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=169'>169</a>",
@@ -3968,7 +4129,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "168",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=168'>168</a>",
@@ -4002,7 +4162,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "167",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=167'>167</a>",
@@ -4036,7 +4195,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "166",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=166'>166</a>",
@@ -4070,7 +4228,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "165",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=165'>165</a>",
@@ -4104,7 +4261,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "164",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=164'>164</a>",
@@ -4138,7 +4294,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "163",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=163'>163</a>",
@@ -4172,7 +4327,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "162",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=162'>162</a>",
@@ -4206,7 +4360,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "161",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=161'>161</a>",
@@ -4240,7 +4393,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "160",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=160'>160</a>",
@@ -4274,7 +4426,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "159",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=159'>159</a>",
@@ -4308,7 +4459,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "158",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=158'>158</a>",
@@ -4342,7 +4492,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "157",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=157'>157</a>",
@@ -4376,7 +4525,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "156",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=156'>156</a>",
@@ -4410,7 +4558,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "155",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=155'>155</a>",
@@ -4444,7 +4591,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "154",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=154'>154</a>",
@@ -4478,7 +4624,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "153",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=153'>153</a>",
@@ -4512,7 +4657,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "152",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=152'>152</a>",
@@ -4546,7 +4690,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "151",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=151'>151</a>",
@@ -4580,7 +4723,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "150",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=150'>150</a>",
@@ -4614,7 +4756,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "149",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=149'>149</a>",
@@ -4648,7 +4789,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "148",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=148'>148</a>",
@@ -4682,7 +4822,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "147",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=147'>147</a>",
@@ -4716,7 +4855,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "146",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=146'>146</a>",
@@ -4750,7 +4888,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "145",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=145'>145</a>",
@@ -4784,7 +4921,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "144",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=144'>144</a>",
@@ -4818,7 +4954,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "143",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=143'>143</a>",
@@ -4852,7 +4987,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "142",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=142'>142</a>",
@@ -4886,7 +5020,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "141",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=141'>141</a>",
@@ -4920,7 +5053,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "140",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=140'>140</a>",
@@ -4954,7 +5086,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "139",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=139'>139</a>",
@@ -4988,7 +5119,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "138",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=138'>138</a>",
@@ -5022,7 +5152,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "137",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=137'>137</a>",
@@ -5056,7 +5185,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "136",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=136'>136</a>",
@@ -5090,7 +5218,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "135",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=135'>135</a>",
@@ -5124,7 +5251,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "134",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=134'>134</a>",
@@ -5158,7 +5284,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "133",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=133'>133</a>",
@@ -5192,7 +5317,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "132",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=132'>132</a>",
@@ -5226,7 +5350,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "131",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=131'>131</a>",
@@ -5260,7 +5383,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "130",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=130'>130</a>",
@@ -5294,7 +5416,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "129",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=129'>129</a>",
@@ -5328,7 +5449,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "128",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=128'>128</a>",
@@ -5362,7 +5482,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "127",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=127'>127</a>",
@@ -5396,7 +5515,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "126",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=126'>126</a>",
@@ -5430,7 +5548,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "125",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=125'>125</a>",
@@ -5464,7 +5581,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "124",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=124'>124</a>",
@@ -5498,7 +5614,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "123",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=123'>123</a>",
@@ -5532,7 +5647,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "122",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=122'>122</a>",
@@ -5566,7 +5680,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "121",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=121'>121</a>",
@@ -5600,7 +5713,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "120",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=120'>120</a>",
@@ -5634,7 +5746,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "119",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=119'>119</a>",
@@ -5668,7 +5779,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "118",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=118'>118</a>",
@@ -5702,7 +5812,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "117",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=117'>117</a>",
@@ -5736,7 +5845,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "116",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=116'>116</a>",
@@ -5770,7 +5878,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "115",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=115'>115</a>",
@@ -5804,7 +5911,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "114",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=114'>114</a>",
@@ -5838,7 +5944,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "113",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=113'>113</a>",
@@ -5872,7 +5977,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "112",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=112'>112</a>",
@@ -5906,7 +6010,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "111",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=111'>111</a>",
@@ -5940,7 +6043,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "110",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=110'>110</a>",
@@ -5974,7 +6076,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "109",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=109'>109</a>",
@@ -6008,7 +6109,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "108",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=108'>108</a>",
@@ -6042,7 +6142,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "107",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=107'>107</a>",
@@ -6076,7 +6175,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "106",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=106'>106</a>",
@@ -6110,7 +6208,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "105",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=105'>105</a>",
@@ -6144,7 +6241,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "104",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=104'>104</a>",
@@ -6178,7 +6274,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "103",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=103'>103</a>",
@@ -6212,7 +6307,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "102",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=102'>102</a>",
@@ -6246,7 +6340,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "101",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=101'>101</a>",
@@ -6280,7 +6373,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "100",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=100'>100</a>",
@@ -6314,7 +6406,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "99",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=99'>99</a>",
@@ -6348,7 +6439,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "98",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=98'>98</a>",
@@ -6382,7 +6472,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "97",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=97'>97</a>",
@@ -6416,7 +6505,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "96",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=96'>96</a>",
@@ -6450,7 +6538,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "95",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=95'>95</a>",
@@ -6484,7 +6571,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "94",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=94'>94</a>",
@@ -6518,7 +6604,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "93",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=93'>93</a>",
@@ -6552,7 +6637,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "92",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=92'>92</a>",
@@ -6586,7 +6670,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "91b",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=91b'>91b</a>",
@@ -6620,7 +6703,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "91a",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=91a'>91a</a>",
@@ -6654,7 +6736,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "90",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=90'>90</a>",
@@ -6688,7 +6769,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "89",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=89'>89</a>",
@@ -6722,7 +6802,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "88",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=88'>88</a>",
@@ -6756,7 +6835,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "87",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=87'>87</a>",
@@ -6790,7 +6868,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "86",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=86'>86</a>",
@@ -6824,7 +6901,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "85",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=85'>85</a>",
@@ -6858,7 +6934,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "84",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=84'>84</a>",
@@ -6892,7 +6967,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "83",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=83'>83</a>",
@@ -6926,7 +7000,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "82",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=82'>82</a>",
@@ -6960,7 +7033,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "81",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=81'>81</a>",
@@ -6994,7 +7066,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "80",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=80'>80</a>",
@@ -7028,7 +7099,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "79",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=79'>79</a>",
@@ -7062,7 +7132,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "78",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=78'>78</a>",
@@ -7096,7 +7165,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "77",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations.html?q=77'>77</a>",
@@ -7130,7 +7198,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "76",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-76.html'>76</a>",
@@ -7164,7 +7231,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "75",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-75.html'>75</a>",
@@ -7198,7 +7264,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "74",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-74.html'>74</a>",
@@ -7232,7 +7297,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "73",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-73.html'>73</a>",
@@ -7266,7 +7330,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "72",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-72.html'>72</a>",
@@ -7300,7 +7363,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "71",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-71.html'>71</a>",
@@ -7334,7 +7396,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "70",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-70.html'>70</a>",
@@ -7368,7 +7429,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "69",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-69.html'>69</a>",
@@ -7402,7 +7462,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "68",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-68.html'>68</a>",
@@ -7436,7 +7495,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "67",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-67.html'>67</a>",
@@ -7470,7 +7528,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "66",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-66.html'>66</a>",
@@ -7504,7 +7561,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "65",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-65.html'>65</a>",
@@ -7538,7 +7594,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "64",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-64.html'>64</a>",
@@ -7572,7 +7627,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "63",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-63.html'>63</a>",
@@ -7606,7 +7660,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "62",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-62.html'>62</a>",
@@ -7640,7 +7693,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "61",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-61.html'>61</a>",
@@ -7674,7 +7726,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "60",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-60.html'>60</a>",
@@ -7708,7 +7759,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "59",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-59.html'>59</a>",
@@ -7742,7 +7792,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "58",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-58.html'>58</a>",
@@ -7776,7 +7825,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "57",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-57.html'>57</a>",
@@ -7810,7 +7858,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "56",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-56.html'>56</a>",
@@ -7844,7 +7891,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "55",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-55.html'>55</a>",
@@ -7878,7 +7924,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "54",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-54.html'>54</a>",
@@ -7912,7 +7957,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "53",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-53.html'>53</a>",
@@ -7946,7 +7990,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "52",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-52.html'>52</a>",
@@ -7980,7 +8023,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "51",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-51.html'>51</a>",
@@ -8014,7 +8056,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "50",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-50.html'>50</a>",
@@ -8048,7 +8089,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "49",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-49.html'>49</a>",
@@ -8082,7 +8122,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "48",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-48.html'>48</a>",
@@ -8116,7 +8155,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "47",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-47.html'>47</a>",
@@ -8150,7 +8188,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "46",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-46.html'>46</a>",
@@ -8184,7 +8221,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "45",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-45.html'>45</a>",
@@ -8218,7 +8254,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "44",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-44.html'>44</a>",
@@ -8252,7 +8287,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "43",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-43.html'>43</a>",
@@ -8286,7 +8320,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "42",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-42.html'>42</a>",
@@ -8320,7 +8353,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "41",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-41.html'>41</a>",
@@ -8354,7 +8386,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "40",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-40.html'>40</a>",
@@ -8388,7 +8419,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "39",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-39.html'>39</a>",
@@ -8422,7 +8452,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "38",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-38.html'>38</a>",
@@ -8456,7 +8485,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "37",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-37.html'>37</a>",
@@ -8490,7 +8518,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "36",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-36.html'>36</a>",
@@ -8524,7 +8551,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "35",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-35.html'>35</a>",
@@ -8558,7 +8584,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "34",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-34.html'>34</a>",
@@ -8592,7 +8617,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "33",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-33.html'>33</a>",
@@ -8626,7 +8650,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "32",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-32.html'>32</a>",
@@ -8660,7 +8683,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "31",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-31.html'>31</a>",
@@ -8694,7 +8716,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "30",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-30.html'>30</a>",
@@ -8728,7 +8749,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "29",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-29.html'>29</a>",
@@ -8762,7 +8782,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "28",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-28.html'>28</a>",
@@ -8796,7 +8815,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "27",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-27.html'>27</a>",
@@ -8830,7 +8848,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "26",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-26.html'>26</a>",
@@ -8864,7 +8881,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "25",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-25.html'>25</a>",
@@ -8898,7 +8914,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "24",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-24.html'>24</a>",
@@ -8932,7 +8947,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "23",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-23.html'>23</a>",
@@ -8966,7 +8980,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "22",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-22.html'>22</a>",
@@ -9000,7 +9013,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "21",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-21.html'>21</a>",
@@ -9034,7 +9046,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "20",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-20.html'>20</a>",
@@ -9068,7 +9079,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "19",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-19.html'>19</a>",
@@ -9102,7 +9112,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "18",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-18.html'>18</a>",
@@ -9136,7 +9145,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "17",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-17.html'>17</a>",
@@ -9170,7 +9178,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "16",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-16.html'>16</a>",
@@ -9204,7 +9211,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "15",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-15.html'>15</a>",
@@ -9238,7 +9244,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "14",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-14.html'>14</a>",
@@ -9272,7 +9277,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "13",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-13.html'>13</a>",
@@ -9306,7 +9310,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "12",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-12.html'>12</a>",
@@ -9340,7 +9343,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "11",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-11.html'>11</a>",
@@ -9374,7 +9376,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "10",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-10.html'>10</a>",
@@ -9408,7 +9409,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "9",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-9.html'>9</a>",
@@ -9442,7 +9442,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "8",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-8.html'>8</a>",
@@ -9476,7 +9475,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "7",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-7.html'>7</a>",
@@ -9510,7 +9508,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "6",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-6.html'>6</a>",
@@ -9544,7 +9541,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "5",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-5.html'>5</a>",
@@ -9578,7 +9574,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "4",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-4.html'>4</a>",
@@ -9612,7 +9607,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "3",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-3.html'>3</a>",
@@ -9646,7 +9640,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "2",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-2.html'>2</a>",
@@ -9680,7 +9673,6 @@
       "dd17": "0",
       "dd18": "0"
     },
-
     {
       "drawNumber": "1",
       "drawNumberURL": "<a href='/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds/invitations-1.html'>1</a>",

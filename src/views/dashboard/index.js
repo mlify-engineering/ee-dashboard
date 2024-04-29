@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import CRSScoreTrend from "../CRSTrend";
 import PoolScoreTrend from "../PoolTrend";
 import InvitationTrend from "../InvitationTrend";
@@ -15,68 +16,77 @@ export const Dashboard = () => {
       case "invitationsTrend":
         return <InvitationTrend />;
       default:
-        return <></>;
+        return null; // Render nothing if no case matches
     }
   };
 
   return (
     <>
-      <div className="d-flex justify-content-center align-items-center cursor-pointer font-size-base">
-        <div
-          className={`py-2 border rounded-top d-flex align-items-center justify-content-between`}
+      <Helmet>
+        <title>Express Entry Dashboard - Visualize CRS Score Trends</title>
+        <meta
+          name="description"
+          content="Interactive dashboard visualizing CRS score trends, pool trends, and invitation trends from Canada's Express Entry immigration system."
+        />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "http://schema.org",
+              "@type": "WebPage",
+              "name": "Express Entry Dashboard",
+              "description": "Explore detailed visualizations of trends in CRS scores, pool scores, and invitations from Canada's Express Entry system. This tool helps users understand patterns and changes over time.",
+              "author": {
+                "@type": "MLify",
+                "name": "MLify Inc.",
+              }
+            }
+          `}
+        </script>
+      </Helmet>
+      <nav className="d-flex justify-content-center align-items-center">
+        <button
+          className={`tab-button py-2 px-4 border rounded-top ${selectedTrendTab === "crsScore" ? "active" : ""}`}
+          aria-selected={selectedTrendTab === "crsScore"}
           onClick={() => setSelectedTrendTab("crsScore")}
-          style={{
-            backgroundColor:
-              selectedTrendTab === "crsScore" ? "white" : "#3E79F7",
-            color: selectedTrendTab === "crsScore" ? "black" : "white",
-          }}
         >
-          <span style={{ marginRight: "20px", marginLeft: "10px" }}>
-            CRS Score Trend
-          </span>
-        </div>
-        <div
-          className={`py-2 px-4 border rounded-top d-flex align-items-center justify-content-between`}
+          CRS Score Trend
+        </button>
+        <button
+          className={`tab-button py-2 px-4 border rounded-top ${selectedTrendTab === "poolTrend" ? "active" : ""}`}
+          aria-selected={selectedTrendTab === "poolTrend"}
           onClick={() => setSelectedTrendTab("poolTrend")}
-          style={{
-            backgroundColor:
-              selectedTrendTab === "poolTrend" ? "white" : "#3E79F7",
-            color: selectedTrendTab === "poolTrend" ? "black" : "white",
-          }}
         >
-          <span style={{ marginRight: "20px", marginLeft: "10px" }}>
-            Pool Trend
-          </span>
-        </div>
-        <div
-          className={`py-2 px-4 border rounded-top d-flex align-items-center justify-content-between`}
+          Pool Trend
+        </button>
+        <button
+          className={`tab-button py-2 px-4 border rounded-top ${selectedTrendTab === "invitationsTrend" ? "active" : ""}`}
+          aria-selected={selectedTrendTab === "invitationsTrend"}
           onClick={() => setSelectedTrendTab("invitationsTrend")}
-          style={{
-            backgroundColor:
-              selectedTrendTab === "invitationsTrend" ? "white" : "#3E79F7",
-            color: selectedTrendTab === "invitationsTrend" ? "black" : "white",
-          }}
         >
-          <span style={{ marginRight: "20px", marginLeft: "10px" }}>
-            Invitations Trend
-          </span>
-        </div>
-      </div>
-      <SelectedTabView />
-      <div>
+          Invitations Trend
+        </button>
+      </nav>
+      <main>
+        <SelectedTabView />
+      </main>
+      <footer>
         <p>
           Source:{" "}
-          <a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html">
+          <a
+            href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Canada.ca
           </a>
         </p>
         <p>
           Disclaimer: Express Entry Visualizer offers insights into CRS scores
-          and invitations from Canada&apos;s Express Entry draws. This
-          unofficial tool charts CRS score trends and draw volumes over time,
-          using data from the Canadian govt&apos;s official site.
+          and invitations from Canada's Express Entry draws. This unofficial
+          tool charts CRS score trends and draw volumes over time, using data
+          from the Canadian government's official site.
         </p>
-      </div>
+      </footer>
     </>
   );
 };

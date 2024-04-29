@@ -28,8 +28,17 @@ const InvitationTrend = () => {
     const fetchData = async () => {
       setLoading(true);
       const response = await fetch(DATA_INVITATION_ENDPOINT_URL);
-      const data = await response.json();
-      setPlotData(data);
+      const rawData = JSON.parse(await response.text());
+      const cleanData = rawData.replace(/\\n/g, ""); // Adjust based on actual issue
+      const data = JSON.parse(cleanData);
+      const plotData = Object.values(data).map((entry) => ({
+        x: entry.x,
+        y: entry.y,
+        type: entry.type || "scatter", // Default to scatter if not specified
+        mode: entry.mode || "lines+markers", // Default mode
+        name: entry.name,
+      }));
+      setPlotData(plotData);
       setLoading(false);
     };
 
