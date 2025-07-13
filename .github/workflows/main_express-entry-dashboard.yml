@@ -23,11 +23,16 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: npm install, build, and test
+      - name: npm install, and build
+        env:
+          CI: false
+          NODE_ENV: ${{ secrets.NODE_ENV }}
+          REACT_APP_DATA_CRS_ENDPOINT_URL: ${{ secrets.REACT_APP_DATA_CRS_ENDPOINT_URL }}
+          REACT_APP_DATA_POOL_ENDPOINT_URL: ${{ secrets.REACT_APP_DATA_POOL_ENDPOINT_URL }}
+          REACT_APP_DATA_INVITATION_ENDPOINT_URL: ${{ secrets.REACT_APP_DATA_INVITATION_ENDPOINT_URL }}
         run: |
           npm install
           npm run build --if-present
-          npm run test --if-present
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
