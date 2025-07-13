@@ -23,34 +23,14 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: npm install, and build
+      - name: npm install, build, and test
         run: |
-          npm ci --production=false
+          npm install
           npm run build --if-present
-
-      - name: Create deployment package
-        run: |
-          # Only include necessary files for production
-          mkdir deployment-package
-          cp -r node_modules deployment-package/
-          cp -r dist deployment-package/ 2>/dev/null || cp -r build deployment-package/ 2>/dev/null || echo "No dist/build folder found"
-          cp package.json deployment-package/
-          cp package-lock.json deployment-package/
-          # Add any other necessary files like web.config, etc.
-          cp web.config deployment-package/ 2>/dev/null || echo "No web.config found"
+          npm run test --if-present
 
       - name: Zip artifact for deployment
-        run: |
-          cd deployment-package
-          zip -r ../release.zip ./*
+        run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -61,7 +41,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
-    environment: production  # Optional: Use GitHub environment for better security
     
     permissions:
       id-token: write #This is required for requesting the JWT
@@ -79,9 +58,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_F4637AB21149418CAD49A8D055AF95FE }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8CE84AB2B23C41D7982134DEB7B1B111 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2111F6D4B6094E28BC23FB1FB3EC35D2 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_54DB81BF228249ADA3AD9CA36EF76E74 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_83309F63F5F64D9591187EF1D142C3FC }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5BF100869D9F4B2295BBE4FB02EE88E9 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -90,5 +69,4 @@ jobs:
           app-name: 'express-entry-dashboard'
           slot-name: 'Production'
           package: .
-          # Optional: Restart app after deployment
-          restart: true
+          
