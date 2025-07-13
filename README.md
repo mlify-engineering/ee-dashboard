@@ -2,7 +2,7 @@
 
 **Express Entry Dashboard** is a React-based web application that visualizes trends in Canada's Express Entry immigration system. It provides interactive graphs for CRS score distributions, draw sizes, and pool trends, helping users gain insights into historical patterns across various programs and categories.
 
-![screenshot](./public/screenshot.png) <!-- Optional: Add a screenshot if available -->
+![screenshot](./public/img/screenshot.png) <!-- Optional: Add a screenshot if available -->
 
 ---
 
