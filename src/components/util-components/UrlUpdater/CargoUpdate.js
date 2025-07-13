@@ -357,8 +357,7 @@ export const ReplaceCargoInUrl = ({ oldCargo, newCargo }) => {
       String(existingCargo.length) === String(oldCargo.length) &&
       String(existingCargo.width) === String(oldCargo.width) &&
       String(existingCargo.height) === String(oldCargo.height) &&
-      String(existingCargo.dimension_unit) ===
-        String(oldCargo.dimension_unit) &&
+      String(existingCargo.dimension_unit) === String(oldCargo.dimension_unit) &&
       String(existingCargo.weight) === String(oldCargo.weight) &&
       String(existingCargo.weight_unit) === String(oldCargo.weight_unit) &&
       String(existingCargo.fragile) === String(oldCargo.fragile) &&

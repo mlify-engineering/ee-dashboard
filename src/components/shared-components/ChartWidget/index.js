@@ -52,12 +52,8 @@ const ChartWidget = ({
   const isMobile = window.innerWidth < 768;
   const setLegendOffset = () => {
     if (chartRef.current) {
-      const lengend = chartRef.current.querySelectorAll(
-        "div.apexcharts-legend",
-      )[0];
-      lengend.style.marginRight = `${
-        isMobile ? 0 : extraRef.current?.offsetWidth
-      }px`;
+      const lengend = chartRef.current.querySelectorAll("div.apexcharts-legend")[0];
+      lengend.style.marginRight = `${isMobile ? 0 : extraRef.current?.offsetWidth}px`;
       if (direction === DIR_RTL) {
         lengend.style.right = "auto";
         lengend.style.left = "0";
@@ -91,18 +87,8 @@ const ChartWidget = ({
 
   const renderChart = () => (
     <ReactResizeDetector onResize={onResize()}>
-      <div
-        style={direction === DIR_RTL ? { direction: "ltr" } : {}}
-        className="chartRef"
-        ref={chartRef}
-      >
-        <ApexChart
-          options={options}
-          type={type}
-          series={series}
-          width={width}
-          height={height}
-        />
+      <div style={direction === DIR_RTL ? { direction: "ltr" } : {}} className="chartRef" ref={chartRef}>
+        <ApexChart options={options} type={type} series={series} width={width} height={height} />
       </div>
     </ReactResizeDetector>
   );
@@ -113,10 +99,7 @@ const ChartWidget = ({
         <Card>
           <div className={`position-relative ${bodyClass}`}>
             {<div style={!isMobile ? titleStyle : {}}>{title}</div> && (
-              <h4
-                className="font-weight-bold"
-                style={!isMobile ? titleStyle : {}}
-              >
+              <h4 className="font-weight-bold" style={!isMobile ? titleStyle : {}}>
                 {title}
               </h4>
             )}

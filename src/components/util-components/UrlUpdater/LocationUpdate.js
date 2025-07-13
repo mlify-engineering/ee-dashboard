@@ -14,11 +14,7 @@ export const addFromToCityToUrl = ({ from_city_id, to_city_id }) => {
   currentUrlParams.set("to_city", to_city_id);
 
   const newUrl = `${window.location.pathname}?${currentUrlParams.toString()}`;
-  window.history.pushState(
-    { from_city: from_city_id, to_city: to_city_id },
-    "",
-    newUrl,
-  );
+  window.history.pushState({ from_city: from_city_id, to_city: to_city_id }, "", newUrl);
   console.log("newUrl: ", newUrl);
   console.log("Current Params: ", currentUrlParams.toString());
 };

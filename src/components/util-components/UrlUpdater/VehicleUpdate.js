@@ -14,12 +14,8 @@ export function getVehicleSearchParams(searchParams) {
   models = models.length ? models[0].split(",") : [];
   model_ids = model_ids.length ? model_ids[0].split(",") : [];
   years = years.length ? years[0].split(",") : [];
-  mechanicalCondition = mechanicalCondition.length
-    ? mechanicalCondition[0].split(",")
-    : [];
-  mobilityCondition = mobilityCondition.length
-    ? mobilityCondition[0].split(",")
-    : [];
+  mechanicalCondition = mechanicalCondition.length ? mechanicalCondition[0].split(",") : [];
+  mobilityCondition = mobilityCondition.length ? mobilityCondition[0].split(",") : [];
   quantity = quantity.length ? quantity[0].split(",") : [];
   return {
     makes,
@@ -34,15 +30,8 @@ export function getVehicleSearchParams(searchParams) {
 
 export const AddVehicleToUrl = ({ vehicles }) => {
   const searchParams = new URLSearchParams(window.location.search);
-  const {
-    makes,
-    models,
-    model_ids,
-    years,
-    mechanicalCondition,
-    mobilityCondition,
-    quantity,
-  } = getVehicleSearchParams(searchParams);
+  const { makes, models, model_ids, years, mechanicalCondition, mobilityCondition, quantity } =
+    getVehicleSearchParams(searchParams);
   console.log("Before Adding Vehicles: ", makes.length);
   vehicles.forEach((vehicle) => {
     makes.push(vehicle.make_and_model[0]);
@@ -74,15 +63,8 @@ export const AddVehicleToUrl = ({ vehicles }) => {
 export const DeleteVehicleFromUrl = ({ vehicles }) => {
   console.log("DeleteVehicleFromUrl with vehicles: ", vehicles);
   let newSearchParams = new URLSearchParams(window.location.search);
-  const {
-    makes,
-    models,
-    model_ids,
-    years,
-    mechanicalCondition,
-    mobilityCondition,
-    quantity,
-  } = getVehicleSearchParams(newSearchParams);
+  const { makes, models, model_ids, years, mechanicalCondition, mobilityCondition, quantity } =
+    getVehicleSearchParams(newSearchParams);
 
   let existingVehicles = makes.map((make, index) => ({
     make: make,
@@ -163,15 +145,8 @@ export const DeleteVehicleFromUrl = ({ vehicles }) => {
 
 export const ReplaceVehicleInUrl = ({ oldVehicle, newVehicle }) => {
   const newSearchParams = new URLSearchParams(window.location.search);
-  const {
-    makes,
-    models,
-    model_ids,
-    years,
-    mechanicalCondition,
-    mobilityCondition,
-    quantity,
-  } = getVehicleSearchParams(newSearchParams);
+  const { makes, models, model_ids, years, mechanicalCondition, mobilityCondition, quantity } =
+    getVehicleSearchParams(newSearchParams);
 
   let existingVehicles = makes.map((make, index) => ({
     make: make,

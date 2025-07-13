@@ -58,10 +58,7 @@ export const AppLayout = ({ navCollapsed, navType, location, direction }) => {
       <Layout className="app-container">
         <Layout className="app-layout">
           <div className={`app-content ${isNavTop ? "layout-top-nav" : ""}`}>
-            <PageHeader
-              display={currentRouteInfo?.breadcrumb}
-              title={currentRouteInfo?.title}
-            />
+            <PageHeader display={currentRouteInfo?.breadcrumb} title={currentRouteInfo?.title} />
             <Content>
               <Dashboard />
             </Content>

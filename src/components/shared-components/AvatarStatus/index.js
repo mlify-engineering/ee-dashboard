@@ -11,30 +11,14 @@ const renderAvatar = (props) => {
 };
 
 export const AvatarStatus = (props) => {
-  const {
-    name,
-    suffix,
-    subTitle,
-    id,
-    type,
-    src,
-    icon,
-    size,
-    shape,
-    gap,
-    text,
-    onNameClick,
-  } = props;
+  const { name, suffix, subTitle, id, type, src, icon, size, shape, gap, text, onNameClick } = props;
   return (
     <div className="avatar-status d-flex align-items-center">
       {src && renderAvatar({ icon, src, type, size, shape, gap, text })}
       <div className="ml-2">
         <div>
           {onNameClick ? (
-            <div
-              onClick={() => onNameClick({ name, subTitle, src, id })}
-              className="avatar-status-name clickable"
-            >
+            <div onClick={() => onNameClick({ name, subTitle, src, id })} className="avatar-status-name clickable">
               {name}
             </div>
           ) : (

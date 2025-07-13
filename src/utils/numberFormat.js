@@ -1,13 +1,4 @@
-const numberFormat = (
-  num,
-  dec,
-  pnt,
-  thou,
-  curr1 = "",
-  curr2 = "",
-  n1 = "",
-  n2 = "",
-) => {
+const numberFormat = (num, dec, pnt, thou, curr1 = "", curr2 = "", n1 = "", n2 = "") => {
   const x = Math.round(num * Math.pow(10, dec));
   if (x >= 0) n1 = n2 = "";
   const y = `${Math.abs(x)}`.split("");

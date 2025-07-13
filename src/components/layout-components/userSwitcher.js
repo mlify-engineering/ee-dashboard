@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { Menu, Dropdown, Avatar, List, Button } from "antd";
-import {
-  MailOutlined,
-  UserSwitchOutlined,
-  WarningOutlined,
-  CheckCircleOutlined,
-} from "@ant-design/icons";
+import { MailOutlined, UserSwitchOutlined, WarningOutlined, CheckCircleOutlined } from "@ant-design/icons";
 // import accessListData from "assets/data/accesslist.data.json";
 import Flex from "components/shared-components/Flex";
 import { useSelector, useDispatch } from "react-redux";
@@ -41,25 +36,15 @@ const NavUserElement = (props) => {
             {user?.img ? (
               <Avatar src={`/img/avatars/${user?.img}`} />
             ) : (
-              <Avatar
-                className={`ant-avatar-${user?.type}`}
-                icon={getIcon(user?.icon)}
-              />
+              <Avatar className={`ant-avatar-${user?.type}`} icon={getIcon(user?.icon)} />
             )}
           </div>
           <div className="mr-3">
             <div className="font-weight-bold text-dark">{user.name}</div>
-            <div className="text-gray-light">
-              {user?.desc || "Default Account"}
-            </div>
+            <div className="text-gray-light">{user?.desc || "Default Account"}</div>
           </div>
         </Flex>
-        <Button
-          className="float-right"
-          type="link"
-          onClick={() => onSwitch(user)}
-          size="small"
-        >
+        <Button className="float-right" type="link" onClick={() => onSwitch(user)} size="small">
           Access
         </Button>
       </List.Item>
@@ -92,10 +77,7 @@ export const NavUserSwitcher = () => {
                     {item?.img ? (
                       <Avatar src={`/img/avatars/${item?.img}`} />
                     ) : (
-                      <Avatar
-                        className={`ant-avatar-${item?.type}`}
-                        icon={getIcon(item?.icon)}
-                      />
+                      <Avatar className={`ant-avatar-${item?.type}`} icon={getIcon(item?.icon)} />
                     )}
                   </div>
                   <div className="mr-3">
@@ -115,8 +97,7 @@ export const NavUserSwitcher = () => {
                   id={`user-switch-${item?.desc}-${item?.name}-${item?.user.first_name}-${item?.user.last_name}`}
                   type="link"
                   onClick={() => handleSwitch(item)}
-                  size="small"
-                >
+                  size="small">
                   Access
                 </Button>
               </List.Item>
@@ -126,10 +107,7 @@ export const NavUserSwitcher = () => {
       </>
     ) : (
       <div className="empty-notification">
-        <img
-          src="https://gw.alipayobjects.com/zos/rmsportal/sAuJeJzSKbUmHfBQRzmZ.svg"
-          alt="empty"
-        />
+        <img src="https://gw.alipayobjects.com/zos/rmsportal/sAuJeJzSKbUmHfBQRzmZ.svg" alt="empty" />
         <p className="mt-3">You have no additional access</p>
       </div>
     );
@@ -149,9 +127,7 @@ export const NavUserSwitcher = () => {
       <div className="nav-notification-header d-flex justify-content-between align-items-center">
         <h4 className="mb-0">Switch Accounts</h4>
       </div>
-      <div className="nav-notification-body">
-        {getUserSwitcherBody(accessList)}
-      </div>
+      <div className="nav-notification-body">{getUserSwitcherBody(accessList)}</div>
     </div>
   );
 
@@ -162,22 +138,15 @@ export const NavUserSwitcher = () => {
         overlay={notificationList}
         onVisibleChange={handleVisibleChange}
         visible={visible}
-        trigger={["click"]}
-      >
+        trigger={["click"]}>
         <Menu mode="horizontal">
           <Menu.Item>
             <Flex alignItems="center">
               <div className="m-2 mr-3">
-                <div
-                  className="font-weight-bold text-dark text-right"
-                  style={{ lineHeight: "24px" }}
-                >
+                <div className="font-weight-bold text-dark text-right" style={{ lineHeight: "24px" }}>
                   {loggedInAs?.name}{" "}
                 </div>
-                <div
-                  className="text-gray-light lh-1 text-right"
-                  style={{ lineHeight: "24px" }}
-                >
+                <div className="text-gray-light lh-1 text-right" style={{ lineHeight: "24px" }}>
                   {loggedInAs?.desc}
                 </div>
               </div>

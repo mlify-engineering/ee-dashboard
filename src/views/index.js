@@ -15,16 +15,10 @@ const Views = (props) => {
   useBodyClass(`dir-${direction}`);
 
   return (
-    <IntlProvider
-      locale={currentAppLocale.locale}
-      messages={currentAppLocale.messages}
-    >
+    <IntlProvider locale={currentAppLocale.locale} messages={currentAppLocale.messages}>
       <ConfigProvider locale={currentAppLocale.antd} direction={direction}>
         <Routes>
-          <Route
-            path="/"
-            element={<AppLayout direction={direction} location={location} />}
-          />
+          <Route path="/" element={<AppLayout direction={direction} location={location} />} />
         </Routes>
       </ConfigProvider>
     </IntlProvider>

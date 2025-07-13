@@ -14,9 +14,7 @@ const PoolScoreTrend = () => {
     const fetchData = async () => {
       setLoading(true);
       const response = await fetch(DATA_POOL_ENDPOINT_URL);
-      const rawData = JSON.parse(await response.text());
-      const cleanData = rawData.replace(/\\n/g, ""); // Adjust based on actual issue
-      const data = JSON.parse(cleanData);
+      const data = await response.json();
       const plotData = Object.values(data).map((entry) => ({
         x: entry.x,
         y: entry.y,
@@ -42,6 +40,13 @@ const PoolScoreTrend = () => {
                   layout={{
                     autosize: true,
                     title: data.name,
+                    xaxis: {
+                      type: "date",
+                    },
+                    yaxis: {
+                      title: "Number of Candidates",
+                    },
+                    responsive: true,
                   }}
                   useResizeHandler={true}
                   style={{ width: "100%", height: "100%" }}
@@ -61,6 +66,13 @@ const PoolScoreTrend = () => {
                   layout={{
                     autosize: true,
                     title: data.name,
+                    xaxis: {
+                      type: "date",
+                    },
+                    yaxis: {
+                      title: "Number of Candidates",
+                    },
+                    responsive: true,
                   }}
                   useResizeHandler={true}
                   style={{ width: "100%", height: "100%" }}

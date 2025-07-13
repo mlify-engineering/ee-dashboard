@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# 🇨🇦 Express Entry Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Express Entry Dashboard** is a React-based web application that visualizes trends in Canada's Express Entry immigration system. It provides interactive graphs for CRS score distributions, draw sizes, and pool trends, helping users gain insights into historical patterns across various programs and categories.
 
-## Available Scripts
+![screenshot](./public/screenshot.png) <!-- Optional: Add a screenshot if available -->
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📊 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 📈 Interactive CRS Score trends per program
+- 📅 Historical draw size visualization
+- 🧑‍💻 Category-based and program-specific views (e.g., CEC, FSW, PNP)
+- 📁 JSON data served from Azure Blob Storage
+- 📱 Responsive design with mobile-friendly layouts
+- 🎨 Theme customization via Ant Design v5 token system
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** (with CRA)
+- **Ant Design** (custom theming with tokens)
+- **Plotly.js** (interactive charts)
+- **Redux** (state management with persistence)
+- **Azure Blob Storage** (data hosting)
+- **TypeScript** (optional: enable if your project uses it)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone the Repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/your-username/ee-dashboard.git
+cd ee-dashboard
+```
 
-### `npm run eject`
+### 2. Install Dependencies
+```bash
+npm install
+```
+### 3. Set Environment Variables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a .env file in the root directory with the following:
+```bash
+REACT_APP_DATA_CRS_ENDPOINT_URL=https://<your-storage-url>/data/processed_data_crs_trend.json
+REACT_APP_DATA_POOL_ENDPOINT_URL=https://<your-storage-url>/data/processed_data_pool_trend.json
+REACT_APP_DATA_INVITATION_ENDPOINT_URL=https://<your-storage-url>/data/processed_data_draw_size.json
+```
+🔒 Make sure the blob container allows public read access or is proxy-served securely via your backend.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. Start the App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
+Open your browser at: `http://localhost:3000`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧪 Available Scripts
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Command | Description|
+| --------------------- | ---------- | 
+| `npm start`	| Run the app in development mode|
+| `npm run build`	|Build the app for production|
+| `npm test`	| Launch the test runner|
+| `npm run eject`	| Eject configuration (not recommended)|
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 📂 Folder Structure (simplified)
+```bash
+src/
+├── components/
+├── configs/
+│   └── AppConfig.js
+├── redux/
+│   └── store.js
+├── views/
+│   └── CRSScoreTrend.tsx
+├── App.tsx
+├── index.tsx
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📈 Sample Graphs
+- CRS Trend by Program
+- Pool Trend Over Time
+- Invitation Trend Over Time
 
-### Analyzing the Bundle Size
+All charts are rendered using `react-plotly.js` and are fully interactive and responsive.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🧩 Data Backend
 
-### Making a Progressive Web App
+The processed trend data is generated and pushed by the ee-core backend as static JSON files to Azure Blob Storage. The frontend reads them via direct HTTP fetch.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📄 License
 
-### Advanced Configuration
+MIT
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👤 Maintainer
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built by [Habibur Rahman](https://habibrahman.me) with ❤️ for the 🇨🇦 Canadian immigration tech community.

@@ -1,18 +1,7 @@
 import { message } from "antd";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import {
-  Card,
-  Badge,
-  Row,
-  Col,
-  Button,
-  Form,
-  Input,
-  Space,
-  Radio,
-  Select,
-} from "antd";
+import { Card, Badge, Row, Col, Button, Form, Input, Space, Radio, Select } from "antd";
 import { FaPlusCircle, FaRegListAlt } from "react-icons/fa";
 
 import UserService from "services/UserService";
@@ -27,8 +16,7 @@ const AddressItem = (props) => {
 
   const { address, badge } = props;
 
-  const showSelector =
-    typeof props.onSelectAddress === "function" ? true : false;
+  const showSelector = typeof props.onSelectAddress === "function" ? true : false;
 
   const selectAddress = () => {
     setIsLoading(true);
@@ -45,33 +33,19 @@ const AddressItem = (props) => {
   return (
     <>
       <div className="p-2" onClick={selectAddress} bordered="false">
-        <Badge.Ribbon
-          text={badge}
-          color="green"
-          className={badge ? `` : `d-none`}
-        >
+        <Badge.Ribbon text={badge} color="green" className={badge ? `` : `d-none`}>
           <div>
             <Card className="shadow-sm">
               <div className="p-2 border-bottom">
-                {address.address_line_1}{" "}
-                {address.address_line_2.trim() !== ""
-                  ? `, ${address.address_line_2}`
-                  : ``}
+                {address.address_line_1} {address.address_line_2.trim() !== "" ? `, ${address.address_line_2}` : ``}
               </div>
               <div className="p-2 border-bottom">
-                {address.postcode} {address.postcode.trim() !== "" ? `, ` : ``}{" "}
-                {address.city?.city}
+                {address.postcode} {address.postcode.trim() !== "" ? `, ` : ``} {address.city?.city}
               </div>
-              <div className="p-2 border-bottom">
-                {address.city?.country?.country}
-              </div>
+              <div className="p-2 border-bottom">{address.city?.country?.country}</div>
               {showSelector && (
                 <Row className="mt-4">
-                  <Col
-                    xs={24}
-                    md={{ span: 12, offset: 12 }}
-                    xl={{ span: 8, offset: 16 }}
-                  >
+                  <Col xs={24} md={{ span: 12, offset: 12 }} xl={{ span: 8, offset: 16 }}>
                     {isLoading ? (
                       <Loading />
                     ) : (
@@ -89,8 +63,7 @@ const AddressItem = (props) => {
                               "Confirm",
                               "bg-danger",
                             );
-                          }}
-                        >
+                          }}>
                           Select
                         </Button>
                       </>
@@ -156,9 +129,7 @@ const AddAddressForm = (props) => {
       return add.id === value;
     });
 
-    setSelectedAddress(
-      `${address[0].address_line_1}, ${address[0].address_line_2}, ${address[0].postcode}`,
-    );
+    setSelectedAddress(`${address[0].address_line_1}, ${address[0].address_line_2}, ${address[0].postcode}`);
   };
 
   // const onChangeRadio = (e: RadioChangeEvent) => {
@@ -191,19 +162,11 @@ const AddAddressForm = (props) => {
 
   return (
     <>
-      <Radio.Group
-        onChange={onChangeRadio}
-        value={shared}
-        style={{ width: "100%" }}
-      >
+      <Radio.Group onChange={onChangeRadio} value={shared} style={{ width: "100%" }}>
         <Space direction="vertical" style={{ width: "90%" }}>
           <Radio value={true}>Shared Address</Radio>
           {shared && sharedAddresses.length > 0 && (
-            <Form
-              name="validate_other"
-              form={form}
-              onFinish={handleSubmitSharedAddress}
-            >
+            <Form name="validate_other" form={form} onFinish={handleSubmitSharedAddress}>
               <Form.Item
                 name="shared_address"
                 // label="Shared Address"
@@ -212,25 +175,17 @@ const AddAddressForm = (props) => {
                     required: false,
                     message: "Please select Shared Address",
                   },
-                ]}
-              >
+                ]}>
                 <Select
                   showSearch
                   onSelect={(value) => onSelect(value)}
                   style={{ width: "100%" }}
                   placeholder="Search to Select"
                   optionFilterProp="children"
-                  filterOption={(input, option) =>
-                    option.children
-                      .toLowerCase()
-                      .indexOf(input.toLowerCase()) >= 0
-                  }
+                  filterOption={(input, option) => option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
                   filterSort={(optionA, optionB) =>
-                    optionA.children
-                      .toLowerCase()
-                      .localeCompare(optionB.children.toLowerCase())
-                  }
-                >
+                    optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
+                  }>
                   {sharedAddresses
                     ? sharedAddresses.map((addresses) => {
                         return (
@@ -243,9 +198,7 @@ const AddAddressForm = (props) => {
                     : ""}
                 </Select>
               </Form.Item>
-              {selectedAddress !== "" && (
-                <div className="pb-2 px-2">Address: {selectedAddress}</div>
-              )}
+              {selectedAddress !== "" && <div className="pb-2 px-2">Address: {selectedAddress}</div>}
               <Button type="primary" htmlType="submit">
                 Select Address
               </Button>
@@ -253,12 +206,7 @@ const AddAddressForm = (props) => {
           )}
           <Radio value={false}>New Address</Radio>
           {!shared && (
-            <Form
-              name="basicInformation"
-              layout="vertical"
-              form={form}
-              onFinish={onFinishNewAddress}
-            >
+            <Form name="basicInformation" layout="vertical" form={form} onFinish={onFinishNewAddress}>
               <Row>
                 <Col xs={24} sm={24} md={24} lg={24}>
                   <Form.Item
@@ -269,8 +217,7 @@ const AddAddressForm = (props) => {
                         required: true,
                         message: "Please input your Address Line!",
                       },
-                    ]}
-                  >
+                    ]}>
                     <Input />
                   </Form.Item>
                   <Form.Item
@@ -281,8 +228,7 @@ const AddAddressForm = (props) => {
                         required: true,
                         message: "Please input your Address Line!",
                       },
-                    ]}
-                  >
+                    ]}>
                     <Input />
                   </Form.Item>
                   <Form.Item
@@ -293,8 +239,7 @@ const AddAddressForm = (props) => {
                         required: true,
                         message: "Please enter Post Code!",
                       },
-                    ]}
-                  >
+                    ]}>
                     <Input />
                   </Form.Item>
                   <Row justify="space-between">
@@ -387,8 +332,7 @@ const UserAddresses = (props) => {
           className="text-right mb-2 cursor-pointer"
           onClick={() => {
             setSegment("add-address");
-          }}
-        >
+          }}>
           <FaPlusCircle className="mr-2" /> Create new address
         </div>
         {activeAddress && (
@@ -399,13 +343,7 @@ const UserAddresses = (props) => {
         {addresses &&
           addresses.map((address, index) => {
             if (address.id !== addressId) {
-              return (
-                <AddressItem
-                  key={index}
-                  address={address}
-                  onSelectAddress={selectAddress}
-                />
-              );
+              return <AddressItem key={index} address={address} onSelectAddress={selectAddress} />;
             }
           })}
       </div>
@@ -414,16 +352,11 @@ const UserAddresses = (props) => {
           className="text-right mb-2 cursor-pointer"
           onClick={() => {
             setSegment("select-address");
-          }}
-        >
+          }}>
           <FaRegListAlt className="mr-2" /> Select from Addressbook
         </div>
         <div>
-          <AddAddressForm
-            userId={userId}
-            cityId={cityId}
-            onSelectAddress={selectAddress}
-          />
+          <AddAddressForm userId={userId} cityId={cityId} onSelectAddress={selectAddress} />
         </div>
       </div>
     </>

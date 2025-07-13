@@ -22,10 +22,7 @@ const QuotePageSharer = () => {
   };
 
   useEffect(() => {
-    if (
-      window.location.pathname.includes("book_shipment") ||
-      window.location.pathname.includes("booking")
-    ) {
+    if (window.location.pathname.includes("book_shipment") || window.location.pathname.includes("booking")) {
       setShowComponent(true);
     }
   }, [window.location]);
@@ -53,8 +50,7 @@ const QuotePageSharer = () => {
           okButtonProps={{ style: { display: "none" } }}
           onCancel={() => {
             setShowModal(false); // Hide the modal when canceling
-          }}
-        >
+          }}>
           {popupContent} {/* Render the popup content inside the modal */}
         </Modal>
       </div>

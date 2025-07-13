@@ -58,13 +58,11 @@ const MapChart = ({ setTooltipContent, data, mapSource, mapType }) => {
       }}
       data-tip=""
       height={380}
-      projectionConfig={{ scale: 145 }}
-    >
+      projectionConfig={{ scale: 145 }}>
       <Geographies geography={mapSource}>
         {({ geographies }) =>
           geographies.map((geo) => {
-            const geoName =
-              mapType === "world" ? geo.properties.name : geo.properties.NAME_1;
+            const geoName = mapType === "world" ? geo.properties.name : geo.properties.NAME_1;
             return (
               <Geography
                 key={geo.rsmKey}
@@ -97,12 +95,7 @@ const Map = (props) => {
   const [content, setContent] = useState("");
   return (
     <>
-      <MapChart
-        data={data}
-        mapSource={mapSource}
-        mapType={mapType}
-        setTooltipContent={setContent}
-      />
+      <MapChart data={data} mapSource={mapSource} mapType={mapType} setTooltipContent={setContent} />
       <ReactTooltip>{content}</ReactTooltip>
     </>
   );
@@ -110,10 +103,7 @@ const Map = (props) => {
 
 const renderDataList = (data) => {
   const list = data.map((elm) => (
-    <div
-      className="d-flex align-items-center justify-content-between mb-3"
-      key={elm.name}
-    >
+    <div className="d-flex align-items-center justify-content-between mb-3" key={elm.name}>
       <div>
         <Badge color={elm.color} />
         <span className="text-gray-light">{elm.name}</span>
@@ -138,10 +128,7 @@ export const RegiondataWidget = (props) => {
           </div>
         </Col>
         <Col xs={24} sm={24} md={24} lg={17}>
-          <div
-            className="d-flex flex-column justify-content-center"
-            style={{ minHeight: isMobile ? 200 : 435 }}
-          >
+          <div className="d-flex flex-column justify-content-center" style={{ minHeight: isMobile ? 200 : 435 }}>
             <div className="p-3 w-100">
               <Map data={data} mapSource={mapSource} mapType={mapType} />
             </div>

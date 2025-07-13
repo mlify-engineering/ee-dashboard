@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  SIDE_NAV_WIDTH,
-  SIDE_NAV_COLLAPSED_WIDTH,
-  NAV_TYPE_TOP,
-} from "constants/ThemeConstant";
+import { SIDE_NAV_WIDTH, SIDE_NAV_COLLAPSED_WIDTH, NAV_TYPE_TOP } from "constants/ThemeConstant";
 import { APP_NAME } from "configs/AppConfig";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
@@ -56,15 +52,9 @@ export const Logo = (props) => {
   return (
     <div
       className={getLogoDisplay(isMobile, props.mobileLogo)}
-      style={{ width: `${getLogoWidthGutter(props, isMobile)}` }}
-    >
+      style={{ width: `${getLogoWidthGutter(props, isMobile)}` }}>
       <Link to="/">
-        <img
-          className="rectangular-logo"
-          src={getLogo(props)}
-          alt={`${APP_NAME} logo`}
-          width="50px"
-        />
+        <img className="rectangular-logo" src={getLogo(props)} alt={`${APP_NAME} logo`} width="50px" />
       </Link>
     </div>
   );

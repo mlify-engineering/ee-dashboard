@@ -28,8 +28,7 @@ const NavPanel = (props) => {
         placement={props.direction === DIR_RTL ? "left" : "right"}
         width={350}
         onClose={onClose}
-        visible={visible}
-      >
+        visible={visible}>
         <ThemeConfigurator />
       </Drawer>
     </>

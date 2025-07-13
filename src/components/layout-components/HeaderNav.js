@@ -2,10 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Layout } from "antd";
 import Logo from "./Logo";
-import {
-  toggleCollapsedNav,
-  onMobileNavToggle,
-} from "../../redux/actions/Theme";
+import { toggleCollapsedNav, onMobileNavToggle } from "../../redux/actions/Theme";
 import utils from "utils";
 
 const { Header } = Layout;
@@ -15,9 +12,7 @@ export const HeaderNav = (props) => {
 
   const mode = () => {
     if (!headerNavColor) {
-      return utils.getColorContrast(
-        currentTheme === "dark" ? "#00000" : "#ffffff",
-      );
+      return utils.getColorContrast(currentTheme === "dark" ? "#f5222d" : "#ffffff");
     }
     return utils.getColorContrast(headerNavColor);
   };
@@ -26,10 +21,7 @@ export const HeaderNav = (props) => {
   useEffect(() => {});
 
   return (
-    <Header
-      className={`app-header ${navMode}`}
-      style={{ backgroundColor: headerNavColor }}
-    >
+    <Header className={`app-header ${navMode}`} style={{ backgroundColor: headerNavColor }}>
       <div className="app-header--pane">
         <Logo logoType={logoType} />
       </div>
@@ -46,15 +38,11 @@ export const HeaderNav = (props) => {
           alignContent: "center",
           textAlign: "center",
           flexGrow: 1,
-        }}
-      >
-        <h1 className="hide-mobile">
-          Express Entry Visualizer - Overview of Canada&apos;s Immigration
-          Rounds
-        </h1>
+        }}>
+        <h1 className="hide-mobile">Express Entry Dashboard - Insights into Canada's Immigration Trends</h1>
         <h4 className="show-mobile">
-          Express Entry Visualizer <br />
-          Overview of Canada&apos;s Immigration
+          Express Entry Dashboard <br />
+          Canada's Immigration Trends
         </h4>
       </div>
       <img
@@ -67,14 +55,7 @@ export const HeaderNav = (props) => {
 };
 
 const mapStateToProps = ({ theme }) => {
-  const {
-    navCollapsed,
-    navType,
-    headerNavColor,
-    mobileNav,
-    currentTheme,
-    direction,
-  } = theme;
+  const { navCollapsed, navType, headerNavColor, mobileNav, currentTheme, direction } = theme;
   return {
     navCollapsed,
     navType,

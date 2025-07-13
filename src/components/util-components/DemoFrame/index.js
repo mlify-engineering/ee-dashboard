@@ -6,10 +6,7 @@ export class DemoFrame extends Component {
     return (
       <Frame
         style={{ height: `${this.props.height ? this.props.height : "200px"}` }}
-        head={
-          <link type="text/css" rel="stylesheet" href="/css/light-theme.css" />
-        }
-      >
+        head={<link type="text/css" rel="stylesheet" href="/css/light-theme.css" />}>
         <div className={this.props.className}>{this.props.children}</div>
       </Frame>
     );

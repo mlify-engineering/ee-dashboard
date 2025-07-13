@@ -18,11 +18,7 @@ const confirmButton = (
     }
     const defaultLabel = btn.textContent;
     const defaultClassName = btn.className;
-    setButtonProps(
-      btn,
-      confirmLabel,
-      btn.className.replace(bgClassNameToReplace, bgConfirmClassName),
-    );
+    setButtonProps(btn, confirmLabel, btn.className.replace(bgClassNameToReplace, bgConfirmClassName));
     setTimeout(() => {
       setButtonProps(btn, defaultLabel, defaultClassName);
     }, delay);

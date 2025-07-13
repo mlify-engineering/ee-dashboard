@@ -10,8 +10,7 @@ let breadcrumbData = {
 };
 
 navigationConfig.forEach((elm) => {
-  const assignBreadcrumb = (obj) =>
-    (breadcrumbData[obj.path] = <IntlMessage id={obj.title} />);
+  const assignBreadcrumb = (obj) => (breadcrumbData[obj.path] = <IntlMessage id={obj.title} />);
   assignBreadcrumb(elm);
   if (elm.submenu) {
     elm.submenu.forEach((elm) => {

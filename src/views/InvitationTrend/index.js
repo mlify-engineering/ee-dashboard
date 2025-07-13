@@ -18,19 +18,23 @@ const InvitationTrend = () => {
       margin: { l: 0, r: 0, t: 0, b: 0 },
     },
     // Include other layout properties here
-    title: "Invited vs. Pool Candidates", // Updated title as per previous suggestion
+    title: "Invitations vs. Candidate Pool: Historical Trends", // Updated title as per previous suggestion
     font: {
       weight: "bold",
       color: "#000000",
+    },
+    xaxis: {
+      type: "date",
+    },
+    yaxis: {
+      title: "Number of Candidates",
     },
   };
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       const response = await fetch(DATA_INVITATION_ENDPOINT_URL);
-      const rawData = JSON.parse(await response.text());
-      const cleanData = rawData.replace(/\\n/g, ""); // Adjust based on actual issue
-      const data = JSON.parse(cleanData);
+      const data = await response.json();
       const plotData = Object.values(data).map((entry) => ({
         x: entry.x,
         y: entry.y,
@@ -50,12 +54,7 @@ const InvitationTrend = () => {
         <Row gutter={[16, 16]} justify="center">
           <Col span={24}>
             <Card bordered={false}>
-              <Plot
-                data={plotData}
-                layout={layout}
-                useResizeHandler={true}
-                style={{ width: "100%", height: "100%" }}
-              />
+              <Plot data={plotData} layout={layout} useResizeHandler={true} style={{ width: "100%", height: "100%" }} />
             </Card>
           </Col>
         </Row>
@@ -64,12 +63,7 @@ const InvitationTrend = () => {
         <Row gutter={[16, 16]} justify="center">
           <Col span={24}>
             <Card bordered={false}>
-              <Plot
-                data={plotData}
-                layout={layout}
-                useResizeHandler={true}
-                style={{ width: "100%", height: "100%" }}
-              />
+              <Plot data={plotData} layout={layout} useResizeHandler={true} style={{ width: "100%", height: "100%" }} />
             </Card>
           </Col>
         </Row>

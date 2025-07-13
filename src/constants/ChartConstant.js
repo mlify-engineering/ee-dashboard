@@ -125,7 +125,7 @@ export const apexBarChartDefaultOption = {
   },
   tooltip: {
     y: {
-      formatter: val => `${val}`,
+      formatter: (val) => `${val}`,
     },
   },
 };

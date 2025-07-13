@@ -3,13 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { NAV_TYPE_TOP } from "constants/ThemeConstant";
 
-export const PageHeaderAlt = ({
-  children,
-  background,
-  className,
-  overlap,
-  navType,
-}) => {
+export const PageHeaderAlt = ({ children, background, className, overlap, navType }) => {
   const [widthOffset, setWidthOffset] = useState(0);
   const ref = useRef(null);
 
@@ -35,16 +29,9 @@ export const PageHeaderAlt = ({
   return (
     <div
       ref={ref}
-      className={`page-header-alt ${className ? className : ""} ${
-        overlap && "overlap"
-      }`}
-      style={getStyle()}
-    >
-      {navType === NAV_TYPE_TOP ? (
-        <div className="container">{children}</div>
-      ) : (
-        <>{children}</>
-      )}
+      className={`page-header-alt ${className ? className : ""} ${overlap && "overlap"}`}
+      style={getStyle()}>
+      {navType === NAV_TYPE_TOP ? <div className="container">{children}</div> : <>{children}</>}
     </div>
   );
 };

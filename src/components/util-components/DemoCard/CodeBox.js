@@ -29,16 +29,8 @@ export class CodeBox extends PureComponent {
     const { language, value } = this.props;
     return (
       <React.Fragment>
-        <CardToolBar
-          code={value}
-          expand={this.expandCallBack}
-          isExpand={this.state.codeExpand}
-        />
-        <div
-          className={`code-box-highlight ${
-            this.state.codeExpand ? "d-block" : "d-none"
-          }`}
-        >
+        <CardToolBar code={value} expand={this.expandCallBack} isExpand={this.state.codeExpand} />
+        <div className={`code-box-highlight ${this.state.codeExpand ? "d-block" : "d-none"}`}>
           <SyntaxHighlighter language={language} style={syntaxTheme}>
             {value}
           </SyntaxHighlighter>

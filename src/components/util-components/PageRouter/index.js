@@ -9,11 +9,7 @@ const PageRouter = ({ routes, from, to, align, cover }) => {
     <Suspense fallback={<Loading {...loadingProps} />}>
       <Switch>
         {routes.map((route, idx) => (
-          <Route
-            key={idx}
-            path={`${url}/${route.path}`}
-            component={route.component}
-          />
+          <Route key={idx} path={`${url}/${route.path}`} component={route.component} />
         ))}
         <Redirect from={from} to={to} />
       </Switch>

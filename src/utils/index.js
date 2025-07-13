@@ -80,12 +80,9 @@ class Utils {
     R = R < 255 ? R : 255;
     G = G < 255 ? G : 255;
     B = B < 255 ? B : 255;
-    const RR =
-      R.toString(16).length === 1 ? `0${R.toString(16)}` : R.toString(16);
-    const GG =
-      G.toString(16).length === 1 ? `0${G.toString(16)}` : G.toString(16);
-    const BB =
-      B.toString(16).length === 1 ? `0${B.toString(16)}` : B.toString(16);
+    const RR = R.toString(16).length === 1 ? `0${R.toString(16)}` : R.toString(16);
+    const GG = G.toString(16).length === 1 ? `0${G.toString(16)}` : G.toString(16);
+    const BB = B.toString(16).length === 1 ? `0${B.toString(16)}` : B.toString(16);
     return `#${RR}${GG}${BB}`;
   }
 
@@ -100,9 +97,7 @@ class Utils {
       r = parseInt(trim(inParts[0].substring(1)), 10),
       g = parseInt(trim(inParts[1]), 10),
       b = parseInt(trim(inParts[2]), 10),
-      a = parseFloat(
-        trim(inParts[3].substring(0, inParts[3].length - 1)),
-      ).toFixed(2);
+      a = parseFloat(trim(inParts[3].substring(0, inParts[3].length - 1))).toFixed(2);
     const outParts = [
       r.toString(16),
       g.toString(16),
@@ -205,12 +200,7 @@ class Utils {
           if (targ == null) {
             continue;
           }
-          if (
-            targ
-              .toString()
-              .toUpperCase()
-              .indexOf(input.toString().toUpperCase()) !== -1
-          ) {
+          if (targ.toString().toUpperCase().indexOf(input.toString().toUpperCase()) !== -1) {
             return true;
           }
         }
@@ -226,12 +216,7 @@ class Utils {
             }
             continue;
           } else {
-            if (
-              obj[key]
-                .toString()
-                .toUpperCase()
-                .indexOf(input.toString().toUpperCase()) !== -1
-            ) {
+            if (obj[key].toString().toUpperCase().indexOf(input.toString().toUpperCase()) !== -1) {
               return true;
             }
           }

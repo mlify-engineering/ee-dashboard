@@ -14,30 +14,15 @@ import { CopyOutlined } from "@ant-design/icons";
 import ColorPicker from "components/shared-components/ColorPicker";
 import CopyToClipboard from "react-copy-to-clipboard";
 import NavLanguage from "./NavLanguage";
-import {
-  SIDE_NAV_LIGHT,
-  NAV_TYPE_SIDE,
-  NAV_TYPE_TOP,
-  SIDE_NAV_DARK,
-  DIR_RTL,
-  DIR_LTR,
-} from "constants/ThemeConstant";
+import { SIDE_NAV_LIGHT, NAV_TYPE_SIDE, NAV_TYPE_TOP, SIDE_NAV_DARK, DIR_RTL, DIR_LTR } from "constants/ThemeConstant";
 import { useThemeSwitcher } from "react-css-theme-switcher";
 import utils from "utils/index";
 
 const colorOptions = ["#3e82f7", "#24a772", "#de4436", "#924aca", "#193550"];
 
 const ListOption = ({ name, selector, disabled, vertical }) => (
-  <div
-    className={`my-4 ${
-      vertical ? "" : "d-flex align-items-center justify-content-between"
-    }`}
-  >
-    <div
-      className={`${disabled ? "opacity-0-3" : ""} ${vertical ? "mb-3" : ""}`}
-    >
-      {name}
-    </div>
+  <div className={`my-4 ${vertical ? "" : "d-flex align-items-center justify-content-between"}`}>
+    <div className={`${disabled ? "opacity-0-3" : ""} ${vertical ? "mb-3" : ""}`}>{name}</div>
     <div>{selector}</div>
   </div>
 );
@@ -94,8 +79,7 @@ export const ThemeConfigurator = ({
     onNavTypeChange(value);
   };
 
-  const genCopySettingJson = (configState) =>
-    JSON.stringify(configState, null, 2);
+  const genCopySettingJson = (configState) => JSON.stringify(configState, null, 2);
 
   return (
     <>
@@ -105,34 +89,20 @@ export const ThemeConfigurator = ({
           <ListOption
             name="Top Nav Color:"
             vertical
-            selector={
-              <ColorPicker
-                color={topNavColor}
-                colorChange={ontopNavColorClick}
-              />
-            }
+            selector={<ColorPicker color={topNavColor} colorChange={ontopNavColorClick} />}
           />
         ) : (
           <ListOption
             name="Header Nav Color:"
             vertical
-            selector={
-              <ColorPicker
-                color={headerNavColor}
-                colorChange={onHeaderNavColorClick}
-              />
-            }
+            selector={<ColorPicker color={headerNavColor} colorChange={onHeaderNavColorClick} />}
           />
         )}
 
         <ListOption
           name="Navigation Type:"
           selector={
-            <Radio.Group
-              size="small"
-              onChange={(e) => onNavTypeClick(e.target.value)}
-              value={navType}
-            >
+            <Radio.Group size="small" onChange={(e) => onNavTypeClick(e.target.value)} value={navType}>
               <Radio.Button value={NAV_TYPE_SIDE}>Side</Radio.Button>
               <Radio.Button value={NAV_TYPE_TOP}>Top</Radio.Button>
             </Radio.Group>
@@ -145,8 +115,7 @@ export const ThemeConfigurator = ({
               disabled={isNavTop}
               size="small"
               onChange={(e) => onNavStyleChange(e.target.value)}
-              value={sideNavTheme}
-            >
+              value={sideNavTheme}>
               <Radio.Button value={SIDE_NAV_LIGHT}>Light</Radio.Button>
               <Radio.Button value={SIDE_NAV_DARK}>Dark</Radio.Button>
             </Radio.Group>
@@ -156,28 +125,15 @@ export const ThemeConfigurator = ({
         <ListOption
           name="Side Nav Collapse:"
           selector={
-            <Switch
-              disabled={isNavTop}
-              checked={isCollapse}
-              onChange={() => toggleCollapsedNav(!navCollapsed)}
-            />
+            <Switch disabled={isNavTop} checked={isCollapse} onChange={() => toggleCollapsedNav(!navCollapsed)} />
           }
           disabled={isNavTop}
         />
-        <ListOption
-          name="Dark Theme:"
-          selector={
-            <Switch checked={currentTheme === "dark"} onChange={toggleTheme} />
-          }
-        />
+        <ListOption name="Dark Theme:" selector={<Switch checked={currentTheme === "dark"} onChange={toggleTheme} />} />
         <ListOption
           name="Direction:"
           selector={
-            <Radio.Group
-              size="small"
-              onChange={(e) => onDirectionChange(e.target.value)}
-              value={direction}
-            >
+            <Radio.Group size="small" onChange={(e) => onDirectionChange(e.target.value)} value={direction}>
               <Radio.Button value={DIR_LTR}>LTR</Radio.Button>
               <Radio.Button value={DIR_RTL}>RTL</Radio.Button>
             </Radio.Group>
@@ -201,11 +157,8 @@ export const ThemeConfigurator = ({
             direction,
           })}
           onCopy={() =>
-            message.success(
-              "Copy Success, please paste it to src/configs/AppConfig.js THEME_CONFIG variable.",
-            )
-          }
-        >
+            message.success("Copy Success, please paste it to src/configs/AppConfig.js THEME_CONFIG variable.")
+          }>
           <Button icon={<CopyOutlined />} block>
             <span>Copy Setting</span>
           </Button>
@@ -216,16 +169,7 @@ export const ThemeConfigurator = ({
 };
 
 const mapStateToProps = ({ theme }) => {
-  const {
-    navType,
-    sideNavTheme,
-    navCollapsed,
-    topNavColor,
-    headerNavColor,
-    locale,
-    currentTheme,
-    direction,
-  } = theme;
+  const { navType, sideNavTheme, navCollapsed, topNavColor, headerNavColor, locale, currentTheme, direction } = theme;
   return {
     navType,
     sideNavTheme,

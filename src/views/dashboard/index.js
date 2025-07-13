@@ -16,17 +16,17 @@ export const Dashboard = () => {
       case "invitationsTrend":
         return <InvitationTrend />;
       default:
-        return null; // Render nothing if no case matches
+        return null;
     }
   };
 
   return (
     <>
       <Helmet>
-        <title>Express Entry Dashboard - Visualize CRS Score Trends</title>
+        <title>Express Entry Dashboard - CRS, Pool & Invitation Trends</title>
         <meta
           name="description"
-          content="Interactive dashboard visualizing CRS score trends, pool trends, and invitation trends from Canada's Express Entry immigration system."
+          content="Visualize trends in CRS scores, Express Entry pool breakdowns, and invitations issued through Canada's immigration draws. Stay informed with interactive data visualizations."
         />
         <script type="application/ld+json">
           {`
@@ -34,57 +34,55 @@ export const Dashboard = () => {
               "@context": "http://schema.org",
               "@type": "WebPage",
               "name": "Express Entry Dashboard",
-              "description": "Explore detailed visualizations of trends in CRS scores, pool scores, and invitations from Canada's Express Entry system. This tool helps users understand patterns and changes over time.",
+              "description": "An interactive visualization dashboard for analyzing CRS score distribution, Express Entry pool composition, and draw invitation trends. Powered by MLify Inc.",
               "author": {
-                "@type": "MLify",
-                "name": "MLify Inc.",
+                "@type": "Organization",
+                "name": "MLify Inc."
               }
             }
           `}
         </script>
       </Helmet>
-      <nav className="d-flex justify-content-center align-items-center">
+
+      <nav className="d-flex justify-content-left align-items-left">
         <button
           className={`tab-button py-2 px-4 border rounded-top ${selectedTrendTab === "crsScore" ? "active" : ""}`}
           aria-selected={selectedTrendTab === "crsScore"}
-          onClick={() => setSelectedTrendTab("crsScore")}
-        >
+          onClick={() => setSelectedTrendTab("crsScore")}>
           CRS Score Trend
         </button>
         <button
           className={`tab-button py-2 px-4 border rounded-top ${selectedTrendTab === "poolTrend" ? "active" : ""}`}
           aria-selected={selectedTrendTab === "poolTrend"}
-          onClick={() => setSelectedTrendTab("poolTrend")}
-        >
-          Pool Trend
+          onClick={() => setSelectedTrendTab("poolTrend")}>
+          Pool Composition Trend
         </button>
         <button
           className={`tab-button py-2 px-4 border rounded-top ${selectedTrendTab === "invitationsTrend" ? "active" : ""}`}
           aria-selected={selectedTrendTab === "invitationsTrend"}
-          onClick={() => setSelectedTrendTab("invitationsTrend")}
-        >
-          Invitations Trend
+          onClick={() => setSelectedTrendTab("invitationsTrend")}>
+          Invitation History
         </button>
       </nav>
+
       <main>
         <SelectedTabView />
       </main>
+
       <footer>
         <p>
-          Source:{" "}
+          Data Source:{" "}
           <a
             href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/ministerial-instructions/express-entry-rounds.html"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            Canada.ca
+            rel="noopener noreferrer">
+            Immigration, Refugees and Citizenship Canada (IRCC)
           </a>
         </p>
         <p>
-          Disclaimer: Express Entry Visualizer offers insights into CRS scores
-          and invitations from Canada's Express Entry draws. This unofficial
-          tool charts CRS score trends and draw volumes over time, using data
-          from the Canadian government's official site.
+          Disclaimer: This dashboard is a community-built tool that visualizes public Express Entry data from the
+          Government of Canada. It is not affiliated with IRCC and does not guarantee the accuracy or completeness of
+          the data.
         </p>
       </footer>
     </>

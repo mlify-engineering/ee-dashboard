@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import {
-  DownSquareOutlined,
-  UpSquareOutlined,
-  CheckOutlined,
-  SnippetsOutlined,
-} from "@ant-design/icons";
+import { DownSquareOutlined, UpSquareOutlined, CheckOutlined, SnippetsOutlined } from "@ant-design/icons";
 import { Tooltip } from "antd";
 
 const CardToolbar = ({ code, expand, isExpand }) => {
@@ -27,16 +22,11 @@ const CardToolbar = ({ code, expand, isExpand }) => {
 
   return (
     <div className="code-box-actions">
-      <span
-        className={`code-box-icon mr-3 ${
-          copied && copyTooltipVisible ? "text-success" : ""
-        }`}
-      >
+      <span className={`code-box-icon mr-3 ${copied && copyTooltipVisible ? "text-success" : ""}`}>
         <Tooltip
           title={copied ? "Copied" : "Copy code"}
           visible={copyTooltipVisible}
-          onVisibleChange={onCopyTooltipVisibleChange}
-        >
+          onVisibleChange={onCopyTooltipVisibleChange}>
           <CopyToClipboard text={code} onCopy={() => handleCodeCopied()}>
             {copied ? <CheckOutlined /> : <SnippetsOutlined />}
           </CopyToClipboard>

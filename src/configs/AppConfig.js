@@ -1,8 +1,4 @@
-import {
-  SIDE_NAV_LIGHT,
-  NAV_TYPE_SIDE,
-  DIR_LTR,
-} from "../constants/ThemeConstant";
+import { SIDE_NAV_LIGHT, NAV_TYPE_SIDE, DIR_LTR } from "../constants/ThemeConstant";
 
 import { env } from "./EnvironmentConfig";
 
@@ -13,13 +9,13 @@ export const DATA_INVITATION_ENDPOINT_URL = env.DATA_INVITATION_ENDPOINT_URL;
 export const APP_PREFIX_PATH = "/app";
 
 export const THEME_CONFIG = {
-  navCollapsed: false,
+  navCollapsed: true,
   sideNavTheme: SIDE_NAV_LIGHT,
   locale: "en",
   navType: NAV_TYPE_SIDE,
-  topNavColor: "#3e82f7",
-  headerNavColor: "",
-  mobileNav: false,
+  topNavColor: "#f5222d",
+  headerNavColor: "#f5222d",
+  mobileNav: true,
   currentTheme: "dark",
   logoType: "light",
   direction: DIR_LTR,

@@ -4,10 +4,7 @@ import utils from "utils";
 
 export const TopNav = ({ topNavColor, localization = true }) => {
   return (
-    <div
-      className={`top-nav ${utils.getColorContrast(topNavColor)}`}
-      style={{ backgroundColor: topNavColor }}
-    ></div>
+    <div className={`top-nav ${utils.getColorContrast(topNavColor)}`} style={{ backgroundColor: topNavColor }}></div>
   );
 };
 

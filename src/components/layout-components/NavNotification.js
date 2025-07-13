@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { Menu, Dropdown, Badge, Avatar, List, Button } from "antd";
-import {
-  MailOutlined,
-  UserSwitchOutlined,
-  WarningOutlined,
-  CheckCircleOutlined,
-} from "@ant-design/icons";
+import { MailOutlined, UserSwitchOutlined, WarningOutlined, CheckCircleOutlined } from "@ant-design/icons";
 import notificationData from "assets/data/notification.data.json";
 import Flex from "components/shared-components/Flex";
 
@@ -35,10 +30,7 @@ const getNotificationBody = (list) => {
               {item.img ? (
                 <Avatar src={`/img/avatars/${item.img}`} />
               ) : (
-                <Avatar
-                  className={`ant-avatar-${item.type}`}
-                  icon={getIcon(item.icon)}
-                />
+                <Avatar className={`ant-avatar-${item.type}`} icon={getIcon(item.icon)} />
               )}
             </div>
             <div className="mr-3">
@@ -52,10 +44,7 @@ const getNotificationBody = (list) => {
     />
   ) : (
     <div className="empty-notification">
-      <img
-        src="https://gw.alipayobjects.com/zos/rmsportal/sAuJeJzSKbUmHfBQRzmZ.svg"
-        alt="empty"
-      />
+      <img src="https://gw.alipayobjects.com/zos/rmsportal/sAuJeJzSKbUmHfBQRzmZ.svg" alt="empty" />
       <p className="mt-3">You have viewed all notifications</p>
     </div>
   );
@@ -94,8 +83,7 @@ export const NavNotification = () => {
       overlay={notificationList}
       onVisibleChange={handleVisibleChange}
       visible={visible}
-      trigger={["click"]}
-    >
+      trigger={["click"]}>
       <Menu mode="horizontal">
         <Menu.Item>
           <UserSwitchOutlined className="nav-icon mx-auto" />
