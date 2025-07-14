@@ -12,7 +12,7 @@ export const HeaderNav = (props) => {
 
   const mode = () => {
     if (!headerNavColor) {
-      return utils.getColorContrast(currentTheme === "dark" ? "#f5222d" : "#ffffff");
+      return utils.getColorContrast(currentTheme === "dark" ? "#00000" : "#ffffff");
     }
     return utils.getColorContrast(headerNavColor);
   };
