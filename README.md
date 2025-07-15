@@ -33,7 +33,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ee-dashboard.git
+git clone https://github.com/mlif-engineering/ee-dashboard.git
 cd ee-dashboard
 ```
 
@@ -77,8 +77,16 @@ src/
 │   └── AppConfig.js
 ├── redux/
 │   └── store.js
-├── views/
-│   └── CRSScoreTrend.tsx
+└── views
+│       ├── CRSTrend
+│       │   └── index.js
+│       ├── dashboard
+│       │   └── index.js
+│       ├── index.js
+│       ├── InvitationTrend
+│       │   └── index.js
+│       └── PoolTrend
+│           └── index.js
 ├── App.tsx
 ├── index.tsx
 ```
